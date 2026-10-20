@@ -59,9 +59,11 @@ export default function Page() {
             <a href="#results" className="hidden px-2 py-1 text-fg-2 hover:text-fg sm:inline">
               {live ? "Results" : "This week"}
             </a>
-            <a href={SOURCE_URL} className="px-2 py-1 text-fg-2 hover:text-fg">
-              Source
-            </a>
+            {SOURCE_URL && (
+              <a href={SOURCE_URL} className="px-2 py-1 text-fg-2 hover:text-fg">
+                Source
+              </a>
+            )}
             <HireButton className="rounded-[6px] bg-accent px-3 py-1.5 font-medium text-canvas transition-colors duration-150 hover:bg-accent-bright">
               Work with me
             </HireButton>
@@ -233,12 +235,14 @@ export default function Page() {
               Hire me on Upwork
               <ArrowUpRight className="size-4" aria-hidden />
             </HireButton>
-            <a
-              href={SOURCE_URL}
-              className="inline-flex items-center gap-2 rounded-[6px] border border-fg-4 px-4 py-2.5 text-[14px] text-fg transition-colors duration-150 hover:bg-hover"
-            >
-              Read the source
-            </a>
+            {SOURCE_URL && (
+              <a
+                href={SOURCE_URL}
+                className="inline-flex items-center gap-2 rounded-[6px] border border-fg-4 px-4 py-2.5 text-[14px] text-fg transition-colors duration-150 hover:bg-hover"
+              >
+                Read the source
+              </a>
+            )}
           </div>
         </section>
       </main>
