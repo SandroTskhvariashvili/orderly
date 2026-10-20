@@ -12,12 +12,13 @@ const mono = loadMono("normal", { weights: ["400", "500"], subsets: ["latin"] })
 const fraunces = loadFraunces("normal", { weights: ["400"], subsets: ["latin"] });
 const frauncesItalic = loadFraunces("italic", { weights: ["400"], subsets: ["latin"] });
 
-export const fontVars = {
-  "--font-geist": geist.fontFamily,
-  "--font-jetbrains": mono.fontFamily,
-  "--font-fraunces": fraunces.fontFamily,
-} as React.CSSProperties;
-void frauncesItalic;
+// The theme resolves --font-sans etc. on :root, so the font variables must live on :root too.
+export function FontRoot() {
+  void frauncesItalic;
+  return (
+    <style>{`:root{--font-geist:"${geist.fontFamily}";--font-jetbrains:"${mono.fontFamily}";--font-fraunces:"${fraunces.fontFamily}";}`}</style>
+  );
+}
 
 export const ease = Easing.bezier(0.22, 1, 0.36, 1);
 
@@ -118,7 +119,7 @@ export function Cursor({ keys }: { keys: CursorKey[] }) {
 }
 
 /** Lower-third caption: one serif line, fades and lifts in. */
-export function Caption({ from, to, children }: { from: number; to: number; children: React.ReactNode }) {
+export function Caption({ from, to, children, top = false }: { from: number; to: number; children: React.ReactNode; top?: boolean }) {
   const frame = useCurrentFrame();
   const inP = interpolate(frame, [from, from + 18], [0, 1], { easing: ease, extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   const outP = interpolate(frame, [to - 14, to], [1, 0], { easing: ease, extrapolateLeft: "clamp", extrapolateRight: "clamp" });
@@ -128,7 +129,7 @@ export function Caption({ from, to, children }: { from: number; to: number; chil
       style={{
         position: "absolute",
         left: 96,
-        bottom: 84,
+        ...(top ? { top: 72 } : { bottom: 84 }),
         zIndex: 60,
         opacity: Math.min(inP, outP),
         transform: `translateY(${(1 - inP) * 14}px)`,
