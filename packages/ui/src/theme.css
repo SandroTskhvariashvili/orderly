@@ -1,0 +1,68 @@
+/* Orderly design tokens. Imported by the web app and the video, so both render identically.
+   Fonts are provided by the host as --font-geist, --font-jetbrains and --font-fraunces. */
+
+@theme {
+  --font-sans: var(--font-geist), "Söhne", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: var(--font-jetbrains), ui-monospace, "SF Mono", Menlo, monospace;
+  --font-serif: var(--font-fraunces), "Tiempos Headline", Georgia, serif;
+
+  --color-canvas: #0b1220;
+  --color-panel: #0f172a;
+  --color-raised: #131a2e;
+  --color-hover: #1e293b;
+  --color-line: #1c2740;
+  --color-line-strong: #334155;
+
+  --color-fg: #e5e7eb;
+  --color-fg-2: #a3aec2;
+  --color-fg-3: #7a8699;
+  --color-fg-4: #4f5b70;
+
+  /* One accent, three semantic roles. Nothing decorative. */
+  --color-accent: #10b981;
+  --color-accent-bright: #34d399;
+  --color-accent-soft: rgb(16 185 129 / 0.12);
+  --color-amber: #f5b544;
+  --color-amber-soft: rgb(245 181 68 / 0.12);
+  --color-rose: #fb7185;
+  --color-rose-soft: rgb(251 113 133 / 0.12);
+
+  --ease-out-soft: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+@layer base {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    background: var(--color-canvas);
+    color: var(--color-fg);
+    font-family: var(--font-sans);
+    font-size: 15px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    font-feature-settings: "ss01", "cv11";
+  }
+  ::selection {
+    background: rgb(16 185 129 / 0.3);
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-accent-bright);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+  .tabular {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -0.01em;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0ms !important;
+    animation-duration: 0ms !important;
+  }
+}

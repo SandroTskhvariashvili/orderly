@@ -1,0 +1,16 @@
+@import "tailwindcss";
+@import "@orderly/ui/theme.css";
+
+@source "../../../../packages/ui/src";
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 72px;
+}
+
+.serif-display {
+  font-family: var(--font-serif);
+  font-optical-sizing: auto;
+  font-variation-settings: "SOFT" 30, "WONK" 0;
+  letter-spacing: -0.025em;
+}
