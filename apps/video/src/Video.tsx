@@ -40,7 +40,7 @@ const STAGE = { w: 1600, h: 900 };
 
 function MailCard({ email, lines = 16, width = 620 }: { email: DemoEmail; lines?: number; width?: number }) {
   return (
-    <div className="overflow-hidden rounded-[14px] border border-line bg-panel shadow-[0_30px_80px_rgba(0,0,0,0.5)]" style={{ width }}>
+    <div className="overflow-hidden rounded-[14px] border border-line bg-panel shadow-[0_24px_60px_rgba(0,0,0,0.14)]" style={{ width }}>
       <div className="border-b border-line px-7 py-5">
         <div className="flex items-baseline justify-between gap-4">
           <span className="text-[20px] font-medium text-fg">{email.from.name || email.from.address}</span>
@@ -277,22 +277,22 @@ function ConsoleTake() {
             view={st.view}
             pane={st.pane}
             activeLine={hoverLine}
-            className="h-[900px] w-[1600px] shadow-[0_40px_120px_rgba(0,0,0,0.55)]"
+            className="h-[900px] w-[1600px] shadow-[0_30px_80px_rgba(0,0,0,0.16)]"
           />
           <Cursor keys={cursor} />
         </div>
       </Camera>
       <Caption from={s(0.8)} to={T.clickReviewFilter - s(0.3)}>
-        It reads each order, and shows <em className="italic text-accent-bright">where every value came from.</em>
+        It reads each order, and shows where every value came from.
       </Caption>
       <Caption from={T.clickClarify + s(0.8)} to={T.clickInjection - s(0.3)}>
-        When it isn&apos;t sure, it tells a person why, <em className="italic text-accent-bright">and drafts the question.</em>
+        When it isn&apos;t sure, it tells a person why, and drafts the question.
       </Caption>
       <Caption from={T.clickInjection + s(0.8)} to={T.clickMasked - s(0.3)}>
-        Instructions inside an email are just text. <em className="italic text-accent-bright">The model reads. Code decides.</em>
+        Instructions hidden in an email are flagged for a person, never followed.
       </Caption>
       <Caption from={T.toggleMasked + s(0.4)} to={T.end}>
-        Contact details are hidden <em className="italic text-accent-bright">before any model sees the email.</em>
+        Contact details are hidden before any model sees the email.
       </Caption>
     </AbsoluteFill>
   );
@@ -323,7 +323,7 @@ function WeekNumbers() {
         })}
       </div>
       <Caption from={s(0.8)} to={s(8.6)}>
-        One week of orders. <em className="italic text-accent-bright">Every decision comes with its reason.</em>
+        One week of orders, and the reason behind every decision.
       </Caption>
     </AbsoluteFill>
   );
@@ -337,10 +337,10 @@ function EndCard() {
     <AbsoluteFill>
       <Backdrop />
       <div className="absolute left-[150px] top-[290px] max-w-[1500px]">
-        <div className="serif-display text-[112px] leading-[1.02] text-fg" style={{ opacity: a, transform: `translateY(${(1 - a) * 20}px)` }}>
+        <div className="display text-[104px] leading-[1.04] text-fg" style={{ opacity: a, transform: `translateY(${(1 - a) * 20}px)` }}>
           I build systems like this
           <br />
-          <em className="italic text-accent-bright">for real operations.</em>
+          for real operations.
         </div>
         <div className="mt-16 flex items-center gap-6 text-[30px] text-fg-2" style={{ opacity: b }}>
           <span className="font-medium text-fg">Sandro T.</span>

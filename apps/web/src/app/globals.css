@@ -11,10 +11,3 @@ html {
     scroll-behavior: smooth;
   }
 }
-
-.serif-display {
-  font-family: var(--font-serif);
-  font-optical-sizing: auto;
-  font-variation-settings: "SOFT" 30;
-  letter-spacing: -0.025em;
-}

@@ -1,38 +1,38 @@
 /* Orderly design tokens. Imported by the web app and the video, so both render identically.
-   Fonts are provided by the host as --font-geist, --font-jetbrains and --font-fraunces. */
+   Fonts are provided by the host as --font-plex-sans and --font-plex-mono.
+   Light "order desk" paper: ink text, one dark green for done, amber for review, red for danger. */
 
 @theme {
-  --font-sans: var(--font-geist), "Söhne", -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-mono: var(--font-jetbrains), ui-monospace, "SF Mono", Menlo, monospace;
-  --font-serif: var(--font-fraunces), "Tiempos Headline", Georgia, serif;
+  --font-sans: var(--font-plex-sans), "Helvetica Neue", Arial, sans-serif;
+  --font-mono: var(--font-plex-mono), ui-monospace, "SF Mono", Menlo, monospace;
 
-  --color-canvas: #0b1220;
-  --color-panel: #0f172a;
-  --color-raised: #131a2e;
-  --color-hover: #1e293b;
-  --color-line: #1c2740;
-  --color-line-strong: #334155;
+  --color-canvas: #f4f2ec;
+  --color-panel: #fbfaf7;
+  --color-raised: #ffffff;
+  --color-hover: #ebe8df;
+  --color-line: #dedad0;
+  --color-line-strong: #c9c4b6;
 
-  --color-fg: #e5e7eb;
-  --color-fg-2: #a3aec2;
-  --color-fg-3: #8590a1;
-  --color-fg-4: #72819b; /* decorative and large text only; never small text on hover */
+  --color-fg: #1d1c19;
+  --color-fg-2: #47453f;
+  --color-fg-3: #66635b;
+  --color-fg-4: #6f6c63; /* decorative and large text only */
 
   /* One accent, three semantic roles. Nothing decorative. */
-  --color-accent: #10b981;
-  --color-accent-bright: #34d399;
-  --color-accent-soft: rgb(16 185 129 / 0.12);
-  --color-amber: #f5b544;
-  --color-amber-soft: rgb(245 181 68 / 0.12);
-  --color-rose: #fb7185;
-  --color-rose-soft: rgb(251 113 133 / 0.12);
+  --color-accent: #1f6f4a;
+  --color-accent-bright: #185c3d;
+  --color-accent-soft: rgb(31 111 74 / 0.1);
+  --color-amber: #8f5300;
+  --color-amber-soft: rgb(214 140 20 / 0.15);
+  --color-rose: #b42318;
+  --color-rose-soft: rgb(180 35 24 / 0.09);
 
   --ease-out-soft: cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 @layer base {
   html {
-    color-scheme: dark;
+    color-scheme: light;
   }
   body {
     background: var(--color-canvas);
@@ -43,7 +43,7 @@
     -webkit-font-smoothing: antialiased;
   }
   ::selection {
-    background: rgb(16 185 129 / 0.3);
+    background: rgb(31 111 74 / 0.2);
   }
   :focus-visible {
     outline: 2px solid var(--color-accent-bright);
@@ -53,6 +53,15 @@
   .tabular {
     font-family: var(--font-mono);
     font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Headings: the same sans as the text, just heavier and tighter. */
+@layer components {
+  .display {
+    font-family: var(--font-sans);
+    font-weight: 600;
+    letter-spacing: -0.022em;
   }
 }
 

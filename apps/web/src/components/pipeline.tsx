@@ -10,9 +10,9 @@ const STEPS: Array<{ name: string; who: "code" | "model" | "person"; detail: str
 
 // The model is deliberately not painted in the "go" colour: it proposes, code decides.
 const WHO = {
-  code: { label: "code", chip: "border-line-strong text-fg-3", cell: "bg-canvas" },
-  model: { label: "model", chip: "border-fg-3 text-fg", cell: "bg-raised" },
-  person: { label: "person", chip: "border-amber/60 text-amber", cell: "bg-canvas" },
+  code: { label: "Code", chip: "border-line-strong text-fg-3", cell: "bg-canvas" },
+  model: { label: "Model", chip: "border-fg-3 text-fg", cell: "bg-raised" },
+  person: { label: "Person", chip: "border-amber/60 text-amber", cell: "bg-canvas" },
 } as const;
 
 export function Pipeline() {
@@ -24,7 +24,7 @@ export function Pipeline() {
           <li key={s.name} className={`${w.cell} p-4 last:col-span-2 lg:last:col-span-1`}>
             <div className="flex items-center justify-between">
               <span className="tabular text-[11px] text-fg-3">{String(i + 1).padStart(2, "0")}</span>
-              <span className={`rounded-full border px-2 py-px text-[11px] uppercase tracking-[0.08em] ${w.chip}`}>{w.label}</span>
+              <span className={`rounded-[4px] border px-1.5 py-px text-[12px] ${w.chip}`}>{w.label}</span>
             </div>
             <p className="mt-4 text-[14px] font-medium text-fg">{s.name}</p>
             <p className="mt-1 text-[12.5px] leading-snug text-fg-3">{s.detail}</p>

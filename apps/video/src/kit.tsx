@@ -2,22 +2,16 @@
 // real components: a camera that eases between framings, a cursor that glides
 // and clicks, and captions set like an editorial lower third.
 
-import { loadFont as loadFraunces } from "@remotion/google-fonts/Fraunces";
-import { loadFont as loadGeist } from "@remotion/google-fonts/Geist";
-import { loadFont as loadMono } from "@remotion/google-fonts/JetBrainsMono";
+import { loadFont as loadPlexMono } from "@remotion/google-fonts/IBMPlexMono";
+import { loadFont as loadPlexSans } from "@remotion/google-fonts/IBMPlexSans";
 import { AbsoluteFill, Easing, interpolate, spring, useCurrentFrame, useVideoConfig } from "remotion";
 
-const geist = loadGeist("normal", { weights: ["400", "500", "600"], subsets: ["latin"] });
-const mono = loadMono("normal", { weights: ["400", "500"], subsets: ["latin"] });
-const fraunces = loadFraunces("normal", { weights: ["400"], subsets: ["latin"] });
-const frauncesItalic = loadFraunces("italic", { weights: ["400"], subsets: ["latin"] });
+const sans = loadPlexSans("normal", { weights: ["400", "500", "600"], subsets: ["latin"] });
+const mono = loadPlexMono("normal", { weights: ["400", "500"], subsets: ["latin"] });
 
 // The theme resolves --font-sans etc. on :root, so the font variables must live on :root too.
 export function FontRoot() {
-  void frauncesItalic;
-  return (
-    <style>{`:root{--font-geist:"${geist.fontFamily}";--font-jetbrains:"${mono.fontFamily}";--font-fraunces:"${fraunces.fontFamily}";}`}</style>
-  );
+  return <style>{`:root{--font-plex-sans:"${sans.fontFamily}";--font-plex-mono:"${mono.fontFamily}";}`}</style>;
 }
 
 export const ease = Easing.bezier(0.22, 1, 0.36, 1);
@@ -100,7 +94,7 @@ export function Cursor({ keys }: { keys: CursorKey[] }) {
             width: 44,
             height: 44,
             borderRadius: 999,
-            border: "2px solid rgba(52,211,153,0.9)",
+            border: "2px solid rgba(31,111,74,0.85)",
             opacity: 1 - ring,
             transform: `scale(${0.4 + ring * 0.9})`,
           }}
@@ -110,15 +104,15 @@ export function Cursor({ keys }: { keys: CursorKey[] }) {
         width="26"
         height="30"
         viewBox="0 0 26 30"
-        style={{ transform: `scale(${t < 14 ? 0.86 + 0.14 * press : 1})`, transformOrigin: "2px 2px", filter: "drop-shadow(0 2px 3px rgba(0,0,0,.45))" }}
+        style={{ transform: `scale(${t < 14 ? 0.86 + 0.14 * press : 1})`, transformOrigin: "2px 2px", filter: "drop-shadow(0 1px 2px rgba(0,0,0,.35))" }}
       >
-        <path d="M2 2 L2 24 L8 18.5 L12.2 27.5 L16 25.8 L11.9 17 L20 17 Z" fill="#f8fafc" stroke="#0b1220" strokeWidth="1.6" strokeLinejoin="round" />
+        <path d="M2 2 L2 24 L8 18.5 L12.2 27.5 L16 25.8 L11.9 17 L20 17 Z" fill="#111111" stroke="#ffffff" strokeWidth="1.6" strokeLinejoin="round" />
       </svg>
     </div>
   );
 }
 
-/** Lower-third caption: one serif line, fades and lifts in. */
+/** Lower-third caption: one plain line on a paper card, fades and lifts in. */
 export function Caption({ from, to, children, top = false }: { from: number; to: number; children: React.ReactNode; top?: boolean }) {
   const frame = useCurrentFrame();
   const inP = interpolate(frame, [from, from + 18], [0, 1], { easing: ease, extrapolateLeft: "clamp", extrapolateRight: "clamp" });
@@ -136,16 +130,16 @@ export function Caption({ from, to, children, top = false }: { from: number; to:
       }}
     >
       <div
-        className="serif-display"
         style={{
-          fontSize: 54,
-          lineHeight: 1.1,
-          color: "#f1f5f9",
-          padding: "18px 28px 20px",
-          borderRadius: 14,
-          background: "rgba(11,18,32,0.82)",
-          boxShadow: "0 0 0 1px rgba(148,163,184,0.18), 0 24px 60px rgba(0,0,0,0.45)",
-          backdropFilter: "blur(10px)",
+          fontSize: 46,
+          fontWeight: 500,
+          letterSpacing: "-0.015em",
+          lineHeight: 1.15,
+          color: "#1d1c19",
+          padding: "18px 26px 20px",
+          borderRadius: 10,
+          background: "rgba(255,255,255,0.96)",
+          boxShadow: "0 0 0 1px rgba(0,0,0,0.08), 0 18px 40px rgba(0,0,0,0.14)",
           maxWidth: 1300,
         }}
       >
@@ -159,8 +153,7 @@ export function Backdrop() {
   return (
     <AbsoluteFill
       style={{
-        background:
-          "radial-gradient(1200px 700px at 78% -10%, rgba(16,185,129,0.08), transparent 60%), #0a101c",
+        background: "#e6e2d8",
       }}
     />
   );

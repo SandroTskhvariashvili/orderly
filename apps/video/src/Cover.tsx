@@ -12,7 +12,7 @@ const byTime = [...demo.emails].sort((a, b) => a.receivedAt.localeCompare(b.rece
 const score = (e: DemoEmail) => e.lines.filter((l) => l.evidence).length + 3 * e.lines.filter((l) => l.conversion).length;
 const hero = byTime.filter((e) => e.route === "create_draft" && e.lines.some((l) => l.conversion)).sort((a, b) => score(b) - score(a))[0]!;
 
-/** Portfolio cover: one line of type over the real product. 4:3 for Upwork, 1280×769 ratio for Fiverr. */
+/** Portfolio cover: name and one plain line over the real product. 4:3 for Upwork, 1280×769 ratio for Fiverr. */
 export function Cover() {
   const { width, height } = useVideoConfig();
   const scale = width / 1760;
@@ -33,9 +33,9 @@ export function Cover() {
       <FontRoot />
       <Backdrop />
       <div style={{ position: "absolute", left: 80 * scale, top: 64 * scale, transform: `scale(${scale})`, transformOrigin: "0 0", width: 1600 }}>
-        <div className={`serif-display leading-[1.04] text-fg ${wide ? "text-[46px]" : "text-[76px]"}`}>
-          Order emails in. Draft orders out.{wide ? " " : <br />}
-          <em className="italic text-accent-bright">The doubtful ones come to you.</em>
+        <div className={`display leading-[1.1] text-fg ${wide ? "text-[44px]" : "text-[70px]"}`}>Orderly</div>
+        <div className={`mt-3 max-w-[1250px] leading-[1.4] text-fg-2 ${wide ? "text-[24px]" : "text-[34px]"}`}>
+          Reads a wholesaler’s order emails, drafts the orders, and tells a person which ones to check and why.
         </div>
       </div>
       <div
@@ -43,7 +43,7 @@ export function Cover() {
         style={{
           position: "absolute",
           left: 80 * scale,
-          top: (wide ? 150 : 300) * scale,
+          top: (wide ? 170 : 330) * scale,
           transform: `scale(${scale})`,
           transformOrigin: "0 0",
         }}
@@ -54,7 +54,7 @@ export function Cover() {
           interactive={false}
           selectedId={hero.id}
           activeLine={0}
-          className="h-[1100px] w-[1600px] shadow-[0_40px_120px_rgba(0,0,0,0.55)]"
+          className="h-[1100px] w-[1600px] shadow-[0_30px_80px_rgba(0,0,0,0.16)]"
         />
       </div>
     </AbsoluteFill>

@@ -10,8 +10,8 @@ const demo = demoJson as unknown as DemoData;
 function SectionTitle({ id, kicker, title, children }: { id?: string; kicker: string; title: React.ReactNode; children?: React.ReactNode }) {
   return (
     <header id={id}>
-      <p className="text-[11.5px] font-medium uppercase tracking-[0.1em] text-fg-3">{kicker}</p>
-      <h2 className="serif-display mt-3 max-w-[22ch] text-balance text-[34px] leading-[1.12] text-fg sm:text-[40px]">{title}</h2>
+      <p className="text-[13px] font-medium text-fg-3">{kicker}</p>
+      <h2 className="display mt-2 max-w-[24ch] text-balance text-[32px] leading-[1.15] text-fg sm:text-[38px]">{title}</h2>
       {children && <div className="mt-4 max-w-[62ch] text-pretty text-[16px] leading-relaxed text-fg-2">{children}</div>}
     </header>
   );
@@ -75,8 +75,8 @@ export default function Page() {
         {/* Hero, then straight into the product */}
         <section className="mx-auto max-w-[1320px] px-4 pb-12 pt-14 sm:px-6 sm:pt-20">
           <p className="text-[13px] text-fg-3">A working demo by Sandro T., AI and full-stack engineer</p>
-          <h1 className="serif-display mt-5 max-w-[1180px] text-balance text-[44px] leading-[1.04] text-fg sm:text-[64px] lg:text-[76px]">
-            Order emails&nbsp;in. Draft orders&nbsp;out. <em className="italic text-accent-bright sm:block">The doubtful ones come to&nbsp;you.</em>
+          <h1 className="display mt-4 max-w-[17ch] text-balance text-[36px] leading-[1.08] text-fg sm:text-[56px] lg:text-[68px]">
+            Order emails, turned into checked draft orders.
           </h1>
           <p className="mt-7 max-w-[34em] text-pretty text-[17px] leading-relaxed text-fg-2">
             Orderly reads a wholesaler’s order inbox, checks every line against the catalog and the customer’s history, and creates draft
@@ -108,11 +108,7 @@ export default function Page() {
             <SectionTitle
               id="how"
               kicker="How it decides"
-              title={
-                <>
-                  The model reads. <em className="italic">Code decides.</em>
-                </>
-              }
+              title="A model reads the email. Plain code decides what happens."
             >
               It is a workflow with a model at two steps, not a free-roaming agent. That is why it can be trusted with orders.
             </SectionTitle>
@@ -223,8 +219,8 @@ export default function Page() {
 
         {/* CTA */}
         <section className="mx-auto max-w-[1320px] px-4 py-24 sm:px-6">
-          <h2 className="serif-display max-w-[18ch] text-balance text-[36px] leading-[1.1] text-fg sm:text-[48px]">
-            Have an inbox like this? <em className="italic">Let’s measure yours.</em>
+          <h2 className="display max-w-[22ch] text-balance text-[34px] leading-[1.12] text-fg sm:text-[44px]">
+            Have an inbox like this? Let’s measure yours.
           </h2>
           <p className="mt-5 max-w-[62ch] text-pretty text-[16px] leading-relaxed text-fg-2">
             I build systems like this for real operations: order intake, document extraction, support triage, back-office checks. Work usually

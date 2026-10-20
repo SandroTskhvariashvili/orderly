@@ -1,6 +1,6 @@
 # Orderly
 
-**Order emails in. Draft orders out. The doubtful ones go to a person, with the reason.**
+**Order emails, turned into checked draft orders. Anything doubtful goes to a person, with the reason.**
 
 **[Open the live demo](https://orderly-sandro.vercel.app)** · one week of order emails, already processed. Hover any order line to see the words it came from.
 
