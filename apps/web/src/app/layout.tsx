@@ -3,21 +3,36 @@ import { Fraunces, Geist, JetBrains_Mono } from "next/font/google";
 import { SITE_URL } from "@/site";
 import "./globals.css";
 
-const geist = Geist({ subsets: ["latin", "latin-ext"], variable: "--font-geist", display: "swap" });
-const mono = JetBrains_Mono({ subsets: ["latin", "latin-ext"], variable: "--font-jetbrains", display: "swap" });
+// No metric-adjusted local() fallbacks (they can draw wrong glyphs); fall back to deliberate system faces.
+const geist = Geist({
+  subsets: ["latin", "latin-ext"],
+  variable: "--font-geist",
+  display: "swap",
+  adjustFontFallback: false,
+  fallback: ["-apple-system", "BlinkMacSystemFont", "Segoe UI", "sans-serif"],
+});
+const mono = JetBrains_Mono({
+  subsets: ["latin", "latin-ext"],
+  variable: "--font-jetbrains",
+  display: "swap",
+  adjustFontFallback: false,
+  fallback: ["ui-monospace", "SF Mono", "Menlo", "monospace"],
+});
 const fraunces = Fraunces({
   subsets: ["latin", "latin-ext"],
   variable: "--font-fraunces",
   style: ["normal", "italic"],
   axes: ["opsz", "SOFT"],
   display: "swap",
+  adjustFontFallback: false,
+  fallback: ["Georgia", "serif"],
 });
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: "Orderly · order emails in, draft orders out",
   description:
-    "A working order-entry agent for a wholesaler's inbox. It reads order emails, checks every line, creates draft orders, and sends anything doubtful to a person with the reason. Measured on 40 held-out emails.",
+    "An order-entry system for a wholesaler's inbox. It reads order emails, checks every line, creates draft orders, and sends anything doubtful to a person with the reason. Model output is replayed from recorded samples; the lookups, checks, routing and masking are the real code.",
   openGraph: {
     title: "Orderly · order emails in, draft orders out",
     description: "Every value points to the words it came from. Anything doubtful goes to a person, with the reason.",

@@ -15,8 +15,8 @@
 
   --color-fg: #e5e7eb;
   --color-fg-2: #a3aec2;
-  --color-fg-3: #7a8699;
-  --color-fg-4: #4f5b70;
+  --color-fg-3: #8590a1;
+  --color-fg-4: #72819b; /* decorative and large text only; never small text on hover */
 
   /* One accent, three semantic roles. Nothing decorative. */
   --color-accent: #10b981;
@@ -41,7 +41,6 @@
     font-size: 15px;
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
-    font-feature-settings: "ss01", "cv11";
   }
   ::selection {
     background: rgb(16 185 129 / 0.3);
@@ -54,7 +53,6 @@
   .tabular {
     font-family: var(--font-mono);
     font-variant-numeric: tabular-nums;
-    letter-spacing: -0.01em;
   }
 }
 

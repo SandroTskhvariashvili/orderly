@@ -31,6 +31,8 @@ export interface DemoStep {
   name: "read" | "mask" | "triage" | "extract" | "decide" | "reply";
   ms: number;
   note: string;
+  /** Model output replayed from a recorded sample rather than a live call. */
+  sample: boolean;
   model: string | null;
   costUsd: number | null;
   inputTokens: number | null;
@@ -56,6 +58,8 @@ export interface DemoEmail {
   attachments: Array<{ filename: string; text: string }>;
   customer: { id: string; name: string; city: string } | null;
   intent: string;
+  /** Language the email is written in, for the lang attribute. */
+  language: string;
   summary: string;
   route: RouteName;
   issues: DemoIssue[];
@@ -63,6 +67,8 @@ export interface DemoEmail {
   deliveryDate: string | null;
   requestedDeliveryDate: string | null;
   deliveryEvidence: Span | null;
+  /** Text aimed at the system, highlighted as a warning. */
+  flagged: Span[];
   basedOnOrderId: string | null;
   refersToOrderId: string | null;
   changeSummary: string | null;
@@ -106,9 +112,21 @@ export interface ModelComparison {
   latencyP50Ms: number;
 }
 
+/** What the real checks did with this week's inbox. Counts, not accuracy claims. */
+export interface WeekSummary {
+  emails: number;
+  routes: Record<RouteName, number>;
+  reasons: Array<{ reason: string; count: number; example: string }>;
+  contactDetailsMasked: number;
+  lookups: number;
+}
+
 export interface DemoData {
   generatedAt: string;
-  metrics: DemoMetrics;
+  /** "sample": model output replayed from recordings. "live": a measured run against the API. */
+  mode: "sample" | "live";
+  week: WeekSummary;
+  metrics: DemoMetrics | null;
   comparison: ModelComparison[];
   failures: Array<{ id: string; purpose: string; problems: string[] }>;
   emails: DemoEmail[];

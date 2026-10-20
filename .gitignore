@@ -10,3 +10,4 @@ coverage
 .vercel
 eval/runs/*/raw
 apps/video/out
+apps/web/next-env.d.ts

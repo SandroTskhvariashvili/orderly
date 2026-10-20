@@ -4,13 +4,17 @@
 @source "../../../../packages/ui/src";
 
 html {
-  scroll-behavior: smooth;
   scroll-padding-top: 72px;
+}
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
 .serif-display {
   font-family: var(--font-serif);
   font-optical-sizing: auto;
-  font-variation-settings: "SOFT" 30, "WONK" 0;
+  font-variation-settings: "SOFT" 30;
   letter-spacing: -0.025em;
 }
