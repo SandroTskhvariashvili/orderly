@@ -1,0 +1,45 @@
+{
+  "emailId": "E-006",
+  "split": "dev",
+  "intent": "change_order",
+  "customerId": "C-1001",
+  "lines": [
+    {
+      "sku": "COF-HUILA-1K",
+      "qty": 4,
+      "unit": "bag"
+    },
+    {
+      "sku": "PLM-OATB-1L",
+      "qty": 6,
+      "unit": "case"
+    },
+    {
+      "sku": "DAI-BARIS-1L",
+      "qty": 2,
+      "unit": "case"
+    },
+    {
+      "sku": "SYR-VAN-750",
+      "qty": 3,
+      "unit": "bottle"
+    },
+    {
+      "sku": "BAK-CROI-80",
+      "qty": 1,
+      "unit": "box"
+    },
+    {
+      "sku": "PKG-LID80-1000",
+      "qty": 1,
+      "unit": "box"
+    }
+  ],
+  "deliveryDate": "2026-10-13",
+  "route": "needs_review",
+  "reasons": [
+    "change_or_cancel"
+  ],
+  "refersToOrderId": "SO-11361",
+  "purpose": "Changes tomorrow's open order: more oat milk, no decaf, add lids."
+}

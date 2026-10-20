@@ -1,0 +1,18 @@
+{
+  "id": "E-018",
+  "receivedAt": "2026-10-12T13:20:05+02:00",
+  "from": {
+    "name": "Hostel Lys",
+    "address": "frontdesk@hostellys.be"
+  },
+  "to": {
+    "name": "Harbor Lane Orders",
+    "address": "orders@harborlane-provisions.nl"
+  },
+  "cc": [],
+  "subject": "order",
+  "messageId": "<PR3PR02MB96179F5F6EF2828D6964526ACB03511790BB@PR3PR02MB9617.eurprd02.prod.outlook.com>",
+  "inReplyTo": null,
+  "body": "Hello,\n\nfor tomorrow:\nwhole milk 1L - 40\ncrema beans - 3\norange juice 1L - 2\napple juice 1L - 2\nenglish breakfast - 1\nsugar sticks - 1\n\nthx\nPieter\nHostel Lys | front desk",
+  "attachments": []
+}

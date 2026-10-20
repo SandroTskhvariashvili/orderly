@@ -1,0 +1,53 @@
+{
+  "emailId": "E-040",
+  "split": "test",
+  "intent": "new_order",
+  "customerId": "C-1028",
+  "lines": [
+    {
+      "sku": "DAI-WHOLE-1L",
+      "qty": 4,
+      "unit": "case"
+    },
+    {
+      "sku": "DAI-CREAM-1L",
+      "qty": 3,
+      "unit": "case"
+    },
+    {
+      "sku": "DAI-BUTT-250",
+      "qty": 3,
+      "unit": "case"
+    },
+    {
+      "sku": "COF-CREMA-1K",
+      "qty": 3,
+      "unit": "bag"
+    },
+    {
+      "sku": "PLM-OATB-1L",
+      "qty": 2,
+      "unit": "case"
+    },
+    {
+      "sku": "PKG-DW12-500",
+      "qty": 1,
+      "unit": "box"
+    },
+    {
+      "sku": "PKG-BAGS-1000",
+      "qty": 2,
+      "unit": "box"
+    },
+    {
+      "sku": "PKG-LID90-1000",
+      "qty": 2,
+      "unit": "box"
+    }
+  ],
+  "deliveryDate": "2026-10-15",
+  "route": "create_draft",
+  "reasons": [],
+  "refersToOrderId": null,
+  "purpose": "German 'wie letzte Woche' plus two boxes of 12 oz lids."
+}

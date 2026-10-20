@@ -1,0 +1,100 @@
+{
+  "id": "E-042",
+  "receivedAt": "2026-10-14T07:48:55+02:00",
+  "from": {
+    "name": "Priya Nair",
+    "address": "priya.nair@brightwell-analytics.nl"
+  },
+  "to": {
+    "name": "Harbor Lane Orders",
+    "address": "orders@harborlane-provisions.nl"
+  },
+  "cc": [
+    {
+      "name": "Brightwell Accounts Payable",
+      "address": "ap@brightwell-analytics.nl"
+    }
+  ],
+  "subject": "PO 4500012876 - Harbor Lane Provisions",
+  "messageId": "<AM8PR05MB62190F1F86222D15C9641B528865E7197616@AM8PR05MB6219.eurprd05.prod.outlook.com>",
+  "inReplyTo": null,
+  "body": "Hi,\n\nPlease find attached PO 4500012876 for delivery on Thursday 15 October.\n\nPlease quote the PO number on the invoice, otherwise finance can't process it.\n\nThanks,\nPriya Nair\nOffice Coordinator Utrecht\nBrightwell Analytics B.V.\nEuropalaan 400, 3526 KS Utrecht\n\nThe information in this email is confidential and intended solely for the addressee. If you have received this email in error, please notify the sender and delete it.",
+  "attachments": [
+    {
+      "filename": "PO_4500012876.pdf",
+      "po": {
+        "number": "4500012876",
+        "issuedOn": "2026-10-14",
+        "buyer": {
+          "company": "Brightwell Analytics B.V.",
+          "contact": "Priya Nair (Office Coordinator)",
+          "address": [
+            "Europalaan 400",
+            "3526 KS Utrecht",
+            "The Netherlands",
+            "VAT NL862140337B01"
+          ]
+        },
+        "deliverTo": [
+          "Brightwell Analytics B.V.",
+          "Goods reception, ground floor",
+          "Europalaan 400",
+          "3526 KS Utrecht"
+        ],
+        "requestedDelivery": "2026-10-15",
+        "lines": [
+          {
+            "buyerCode": "MAT-00412",
+            "description": "Coffee beans Caffe Crema (Ostkai), 1kg bag",
+            "qty": 4,
+            "unit": "BAG",
+            "unitPriceEur": 18.7
+          },
+          {
+            "buyerCode": "MAT-00415",
+            "description": "Milk semi-skimmed 1L, carton of 6",
+            "qty": 3,
+            "unit": "CAR",
+            "unitPriceEur": 6.6
+          },
+          {
+            "buyerCode": "MAT-00419",
+            "description": "Oat drink original 1L (not barista), carton of 6",
+            "qty": 2,
+            "unit": "CAR",
+            "unitPriceEur": 12.9
+          },
+          {
+            "buyerCode": "MAT-00431",
+            "description": "Tea English Breakfast, box 100 pyramid bags",
+            "qty": 1,
+            "unit": "BOX",
+            "unitPriceEur": 17.5
+          },
+          {
+            "buyerCode": "MAT-00433",
+            "description": "Tea ginger & lemon, box 100 pyramid bags",
+            "qty": 1,
+            "unit": "BOX",
+            "unitPriceEur": 19.5
+          },
+          {
+            "buyerCode": "MAT-00450",
+            "description": "Sparkling water 330ml glass, crate of 24",
+            "qty": 2,
+            "unit": "CRT",
+            "unitPriceEur": 13.2
+          },
+          {
+            "buyerCode": "MAT-00462",
+            "description": "Biscuits caramelised, individually wrapped, box 300",
+            "qty": 1,
+            "unit": "BOX",
+            "unitPriceEur": 18.9
+          }
+        ],
+        "notes": "Deliver to goods reception, ground floor, Mon-Fri 08:00-16:00. Invoices to ap@brightwell-analytics.nl quoting the PO number."
+      }
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "emailId": "E-053",
+  "split": "test",
+  "intent": "new_order",
+  "customerId": "C-1019",
+  "lines": [
+    {
+      "sku": "COF-PERU-1K",
+      "qty": 2,
+      "unit": "bag"
+    },
+    {
+      "sku": "PLM-OATB-1L",
+      "qty": 2,
+      "unit": "case"
+    },
+    {
+      "sku": "PLM-ALMB-1L",
+      "qty": 1,
+      "unit": "case"
+    },
+    {
+      "sku": "DAI-WHOLE-1L",
+      "qty": 2,
+      "unit": "case"
+    },
+    {
+      "sku": "BAK-BANBR-900",
+      "qty": 2,
+      "unit": "each"
+    }
+  ],
+  "deliveryDate": "2026-10-16",
+  "route": "create_draft",
+  "reasons": [],
+  "refersToOrderId": null,
+  "purpose": "'Same as last week' minus the decaf."
+}

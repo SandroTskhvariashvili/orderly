@@ -1,0 +1,18 @@
+{
+  "id": "E-016",
+  "receivedAt": "2026-10-12T11:40:12+02:00",
+  "from": {
+    "name": "Charlotte Dewulf",
+    "address": "charlotte@patersholpantry.be"
+  },
+  "to": {
+    "name": "Harbor Lane Orders",
+    "address": "orders@harborlane-provisions.nl"
+  },
+  "cc": [],
+  "subject": "matcha?",
+  "messageId": "<AM6PR10MB190910BF5386450586062451D79E777E89AF@AM6PR10MB1909.EURP281.prod.outlook.com>",
+  "inReplyTo": null,
+  "body": "Hi,\n\nQuick question, do you have the ceremonial matcha back in stock? A few customers keep asking for proper matcha (not the latte one). If not, any idea when?\n\nAnd could you send me your current price list for the teas? I think the one I have is from the spring.\n\nThanks,\nCharlotte\nPatershol Pantry\nGent",
+  "attachments": []
+}

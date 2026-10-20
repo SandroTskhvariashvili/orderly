@@ -1,0 +1,12 @@
+{
+  "emailId": "E-002",
+  "split": "dev",
+  "intent": "not_business",
+  "customerId": "C-1026",
+  "lines": [],
+  "deliveryDate": null,
+  "route": "not_an_order",
+  "reasons": [],
+  "refersToOrderId": null,
+  "purpose": "Out-of-office auto-reply from a customer's address; nothing to do."
+}

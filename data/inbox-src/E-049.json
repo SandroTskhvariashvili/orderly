@@ -1,0 +1,18 @@
+{
+  "id": "E-049",
+  "receivedAt": "2026-10-14T13:40:09+02:00",
+  "from": {
+    "name": "Theresa Huber",
+    "address": "theresa@isarlust-cafe.de"
+  },
+  "to": {
+    "name": "Harbor Lane Orders",
+    "address": "orders@harborlane-provisions.nl"
+  },
+  "cc": [],
+  "subject": "Bestellung für Freitag",
+  "messageId": "<9e552f66b4b57534.e179ffe8@isarlust-cafe.de>",
+  "inReplyTo": null,
+  "body": "Hallo Harbor Lane,\n\nwir bräuchten diese Woche ausnahmsweise eine Lieferung am Freitag statt Donnerstag, am Donnerstag haben wir wegen Betriebsausflug geschlossen.\n\n3 x Hausmischung 1kg\n3 x Hafermilch Haverland\n3 x Vollmilch 1L\n1 x Vanillesirup\n1 x Karamellsirup\n\nDanke!\nTheresa Huber\nCafé Isarlust\nEhrengutstraße 9, 80469 München\nMo-So 8:30-18 Uhr",
+  "attachments": []
+}

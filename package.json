@@ -1,0 +1,33 @@
+{
+  "name": "orderly",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.4.0",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "check:data": "tsx scripts/check-data.ts",
+    "build:inbox": "tsx scripts/build-inbox.ts",
+    "process": "tsx eval/src/process.ts",
+    "eval": "tsx eval/src/score.ts",
+    "test": "vitest run",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "publish:demo": "tsx eval/src/publish.ts"
+  },
+  "devDependencies": {
+    "@types/node": "22.20.5",
+    "tsx": "4.23.15",
+    "typescript": "5.9.3",
+    "vitest": "5.0.5",
+    "pdfkit": "0.20.2",
+    "@types/pdfkit": "0.17.6",
+    "nodemailer": "10.1.7",
+    "@types/nodemailer": "8.0.2"
+  },
+  "dependencies": {
+    "@orderly/core": "workspace:*",
+    "zod": "4.6.7",
+    "p-limit": "7.3.3"
+  }
+}

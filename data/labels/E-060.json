@@ -1,0 +1,43 @@
+{
+  "emailId": "E-060",
+  "split": "test",
+  "intent": "new_order",
+  "customerId": "C-1007",
+  "lines": [
+    {
+      "sku": "COF-HOUSE-1K",
+      "qty": 3,
+      "unit": "bag"
+    },
+    {
+      "sku": "PLM-OATO-1L",
+      "qty": 2,
+      "unit": "case"
+    },
+    {
+      "sku": "DAI-SEMI-1L",
+      "qty": 3,
+      "unit": "case"
+    },
+    {
+      "sku": "TEA-EBPYR-100",
+      "qty": 1,
+      "unit": "box"
+    },
+    {
+      "sku": "BAK-BISC-300",
+      "qty": 1,
+      "unit": "box"
+    },
+    {
+      "sku": "CLN-DISH-5L",
+      "qty": 1,
+      "unit": "bottle"
+    }
+  ],
+  "deliveryDate": "2026-10-19",
+  "route": "create_draft",
+  "reasons": [],
+  "refersToOrderId": null,
+  "purpose": "Friday-afternoon order for Monday; the cutoff and the weekend make Monday the first possible day."
+}

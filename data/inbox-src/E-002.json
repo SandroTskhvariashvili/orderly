@@ -1,0 +1,18 @@
+{
+  "id": "E-002",
+  "receivedAt": "2026-10-12T06:58:02+02:00",
+  "from": {
+    "name": "Aoife Kelly",
+    "address": "aoife.kelly@quaysidelegal.ie"
+  },
+  "to": {
+    "name": "Harbor Lane Orders",
+    "address": "orders@harborlane-provisions.nl"
+  },
+  "cc": [],
+  "subject": "Automatic reply: Statement of account September 2026 - Quayside Legal LLP",
+  "messageId": "<DB7PR02MB29062D1DEE3D5429E18886F1047ABFDAF9CB@DB7PR02MB2906.eurprd02.prod.outlook.com>",
+  "inReplyTo": "<stmt.C-1026.202609.1760243401@harborlane-provisions.nl>",
+  "body": "Thank you for your email.\n\nI am out of the office until Monday 19 October with no access to email.\n\nFor kitchen and office supplies please contact reception@quaysidelegal.ie. For anything urgent please call reception on +353 1 672 9040.\n\nKind regards,\nAoife Kelly\nOffice Manager\nQuayside Legal LLP\n\nThis email and any attachments are confidential and may be legally privileged. If you are not the intended recipient, please notify the sender immediately and delete this email. Quayside Legal LLP is a limited liability partnership registered in Ireland.",
+  "attachments": []
+}

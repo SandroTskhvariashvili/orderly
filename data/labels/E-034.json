@@ -1,0 +1,12 @@
+{
+  "emailId": "E-034",
+  "split": "dev",
+  "intent": "question",
+  "customerId": "C-1006",
+  "lines": [],
+  "deliveryDate": null,
+  "route": "not_an_order",
+  "reasons": [],
+  "refersToOrderId": null,
+  "purpose": "Asks for next year's price list and a volume discount; mentions 10 cases but orders nothing."
+}

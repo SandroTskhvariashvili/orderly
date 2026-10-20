@@ -1,0 +1,43 @@
+{
+  "emailId": "E-021",
+  "split": "dev",
+  "intent": "new_order",
+  "customerId": "C-1018",
+  "lines": [
+    {
+      "sku": "COF-HAFEN-1K",
+      "qty": 4,
+      "unit": "bag"
+    },
+    {
+      "sku": "PLM-OATB-1L",
+      "qty": 3,
+      "unit": "case"
+    },
+    {
+      "sku": "DAI-WHOLE-1L",
+      "qty": 2,
+      "unit": "case"
+    },
+    {
+      "sku": "SYR-CAR-750",
+      "qty": 2,
+      "unit": "bottle"
+    },
+    {
+      "sku": "PKG-DW8-500",
+      "qty": 1,
+      "unit": "box"
+    },
+    {
+      "sku": "PKG-LID80-1000",
+      "qty": 1,
+      "unit": "box"
+    }
+  ],
+  "deliveryDate": "2026-10-16",
+  "route": "create_draft",
+  "reasons": [],
+  "refersToOrderId": null,
+  "purpose": "Phone-typed order full of typos (espreso, oatmlk, carmel) that still maps to one product each."
+}

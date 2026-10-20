@@ -1,0 +1,18 @@
+{
+  "id": "E-019",
+  "receivedAt": "2026-10-12T13:52:28+02:00",
+  "from": {
+    "name": "Sophie Mulder",
+    "address": "sophie@mapleandrye.nl"
+  },
+  "to": {
+    "name": "Harbor Lane Orders",
+    "address": "orders@harborlane-provisions.nl"
+  },
+  "cc": [],
+  "subject": "Order for tomorrow - Maple & Rye",
+  "messageId": "<CAYD2FQXLwVod-YMPAtPNDEACUIeIppw39TJ_Kttb2I@mail.gmail.com>",
+  "inReplyTo": null,
+  "body": "Hi Harbor Lane,\n\nSorry it's a bit last minute, for tomorrow please:\n\nHouse blend 1kg x4\nHaverland barista oat x5\nWhole milk 1L x4\nButter x2\nWhipping cream x1\nCaramel syrup x2\n12oz cups x1\n12oz lids x1\n\nSophie\n\n--\nMaple & Rye | bakery & coffee\nDistelweg 89, Amsterdam-Noord\nopen daily 8-17 | @mapleandrye",
+  "attachments": []
+}

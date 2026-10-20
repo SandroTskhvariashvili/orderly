@@ -1,0 +1,18 @@
+{
+  "id": "E-012",
+  "receivedAt": "2026-10-12T10:05:43+02:00",
+  "from": {
+    "name": "Natasha Petrova",
+    "address": "purchasing@hoteldezeereep.nl"
+  },
+  "to": {
+    "name": "Harbor Lane Orders",
+    "address": "orders@harborlane-provisions.nl"
+  },
+  "cc": [],
+  "subject": "Order for Wednesday 14.10",
+  "messageId": "<AS8PR04MB07805EDFEE22968F9A83FD0CA723D6C96A63@AS8PR04MB0780.eurprd04.prod.outlook.com>",
+  "inReplyTo": null,
+  "body": "Dear Harbor Lane team,\n\nPlease find our order for Wednesday 14.10:\n\nWhole milk 1L - 36 liters\nStill water 330ml - 48 bottles\nSparkling water 750ml - 12 bottles\nOrange juice 1L - 18 bottles\nCrema beans - 3 kg\n\nWe have big group from Thursday so milk is little more than normal.\n\nBest regards,\nNatasha Petrova\nPurchasing & Operations\nHotel De Zeereep\nZeekant 64, 2586 AH Den Haag\nT +31 70 352 8810",
+  "attachments": []
+}

@@ -1,0 +1,40 @@
+{
+  "emailId": "E-057",
+  "split": "test",
+  "intent": "new_order",
+  "customerId": "C-1032",
+  "lines": [
+    {
+      "sku": "COF-HUILA-1K",
+      "qty": 2,
+      "unit": "bag"
+    },
+    {
+      "sku": "COF-HAFEN-1K",
+      "qty": 2,
+      "unit": "bag"
+    },
+    {
+      "sku": "PLM-OATB-1L",
+      "qty": 3,
+      "unit": "case"
+    },
+    {
+      "sku": "DAI-BARIS-1L",
+      "qty": 1,
+      "unit": "case"
+    },
+    {
+      "sku": "BAK-CROI-80",
+      "qty": 1,
+      "unit": "box"
+    }
+  ],
+  "deliveryDate": "2026-10-19",
+  "route": "needs_review",
+  "reasons": [
+    "unknown_product"
+  ],
+  "refersToOrderId": null,
+  "purpose": "Asks for gluten-free croissants; only butter croissants are in the catalog."
+}

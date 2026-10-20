@@ -1,0 +1,30 @@
+{
+  "emailId": "E-020",
+  "split": "dev",
+  "intent": "new_order",
+  "customerId": "C-1002",
+  "lines": [
+    {
+      "sku": "DAI-WHOLE-1L",
+      "qty": 4,
+      "unit": "case"
+    },
+    {
+      "sku": "DAI-CREAM-1L",
+      "qty": 2,
+      "unit": "case"
+    },
+    {
+      "sku": "DAI-BUTT-250",
+      "qty": 2,
+      "unit": "case"
+    }
+  ],
+  "deliveryDate": "2026-10-13",
+  "route": "needs_review",
+  "reasons": [
+    "invalid_delivery_date"
+  ],
+  "refersToOrderId": null,
+  "purpose": "Asks for tomorrow at 14:07, just after the 14:00 cutoff."
+}

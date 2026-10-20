@@ -1,0 +1,43 @@
+{
+  "emailId": "E-007",
+  "split": "test",
+  "intent": "new_order",
+  "customerId": "C-1010",
+  "lines": [
+    {
+      "sku": "COF-HAFEN-1K",
+      "qty": 3,
+      "unit": "bag"
+    },
+    {
+      "sku": "PLM-OATB-1L",
+      "qty": 3,
+      "unit": "case"
+    },
+    {
+      "sku": "DAI-WHOLE-1L",
+      "qty": 3,
+      "unit": "case"
+    },
+    {
+      "sku": "SYR-VAN-750",
+      "qty": 2,
+      "unit": "bottle"
+    },
+    {
+      "sku": "PKG-DW12-500",
+      "qty": 1,
+      "unit": "box"
+    },
+    {
+      "sku": "PKG-LID90-1000",
+      "qty": 1,
+      "unit": "box"
+    }
+  ],
+  "deliveryDate": "2026-10-14",
+  "route": "create_draft",
+  "reasons": [],
+  "refersToOrderId": null,
+  "purpose": "Short clean order in plain product names for Wednesday."
+}

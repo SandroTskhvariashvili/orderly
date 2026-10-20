@@ -1,0 +1,38 @@
+{
+  "emailId": "E-028",
+  "split": "dev",
+  "intent": "new_order",
+  "customerId": "C-1011",
+  "lines": [
+    {
+      "sku": "DAI-WHOLE-1L",
+      "qty": 2,
+      "unit": "case"
+    },
+    {
+      "sku": "DAI-CREAM-1L",
+      "qty": 1,
+      "unit": "case"
+    },
+    {
+      "sku": "DAI-BUTT-250",
+      "qty": 2,
+      "unit": "case"
+    },
+    {
+      "sku": "COF-CREMA-1K",
+      "qty": 1,
+      "unit": "bag"
+    },
+    {
+      "sku": "PKG-BAGS-1000",
+      "qty": 1,
+      "unit": "box"
+    }
+  ],
+  "deliveryDate": "2026-10-14",
+  "route": "create_draft",
+  "reasons": [],
+  "refersToOrderId": null,
+  "purpose": "'Same as last time' and nothing else; the draft must copy her last order exactly."
+}

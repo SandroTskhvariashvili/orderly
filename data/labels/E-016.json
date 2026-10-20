@@ -1,0 +1,12 @@
+{
+  "emailId": "E-016",
+  "split": "test",
+  "intent": "question",
+  "customerId": "C-1019",
+  "lines": [],
+  "deliveryDate": null,
+  "route": "not_an_order",
+  "reasons": [],
+  "refersToOrderId": null,
+  "purpose": "Asks if matcha is back in stock and for a tea price list; no order."
+}

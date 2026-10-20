@@ -1,0 +1,63 @@
+{
+  "emailId": "E-035",
+  "split": "test",
+  "intent": "new_order",
+  "customerId": "C-1031",
+  "lines": [
+    {
+      "sku": "COF-CREMA-1K",
+      "qty": 4,
+      "unit": "bag"
+    },
+    {
+      "sku": "DAI-WHOLE-1L",
+      "qty": 5,
+      "unit": "case"
+    },
+    {
+      "sku": "DAI-LACFR-1L",
+      "qty": 1,
+      "unit": "case"
+    },
+    {
+      "sku": "DAI-SKIM-1L",
+      "qty": 1,
+      "unit": "case"
+    },
+    {
+      "sku": "PLM-SOYB-1L",
+      "qty": 1,
+      "unit": "case"
+    },
+    {
+      "sku": "DAI-YOGH-1K",
+      "qty": 3,
+      "unit": "case"
+    },
+    {
+      "sku": "JUI-ORNG-1L",
+      "qty": 3,
+      "unit": "case"
+    },
+    {
+      "sku": "JUI-APCL-1L",
+      "qty": 2,
+      "unit": "case"
+    },
+    {
+      "sku": "TEA-EBPYR-100",
+      "qty": 1,
+      "unit": "box"
+    },
+    {
+      "sku": "TEA-CHAM-100",
+      "qty": 1,
+      "unit": "box"
+    }
+  ],
+  "deliveryDate": "2026-10-16",
+  "route": "create_draft",
+  "reasons": [],
+  "refersToOrderId": null,
+  "purpose": "German PDF purchase order with the hotel's own article codes; 18 bottles of juice become 3 cases."
+}

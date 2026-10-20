@@ -1,0 +1,18 @@
+{
+  "id": "E-054",
+  "receivedAt": "2026-10-15T08:40:03+02:00",
+  "from": {
+    "name": "Natasha Petrova",
+    "address": "purchasing@hoteldezeereep.nl"
+  },
+  "to": {
+    "name": "Harbor Lane Orders",
+    "address": "orders@harborlane-provisions.nl"
+  },
+  "cc": [],
+  "subject": "Order for Friday 16.10",
+  "messageId": "<AS8PR04MB80914DEB6A70DD43E7D0F18C33594FFF57E5@AS8PR04MB8091.eurprd04.prod.outlook.com>",
+  "inReplyTo": null,
+  "body": "Dear team,\n\nOur order for Friday:\n\nWhole milk 1L - 5 cases\nOrange juice 1L - 3 cases\nEarl Grey - 2\nEnglish Breakfast tea - 1 box\nCrema beans - 3 bags\n\nBest regards,\nNatasha Petrova\nPurchasing & Operations\nHotel De Zeereep",
+  "attachments": []
+}

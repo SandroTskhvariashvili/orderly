@@ -1,0 +1,43 @@
+{
+  "emailId": "E-015",
+  "split": "test",
+  "intent": "new_order",
+  "customerId": "C-1036",
+  "lines": [
+    {
+      "sku": "DAI-WHOLE-1L",
+      "qty": 6,
+      "unit": "case"
+    },
+    {
+      "sku": "DAI-BUTT-250",
+      "qty": 2,
+      "unit": "case"
+    },
+    {
+      "sku": "COF-HOUSE-1K",
+      "qty": 4,
+      "unit": "bag"
+    },
+    {
+      "sku": "BAK-CROI-80",
+      "qty": 2,
+      "unit": "box"
+    },
+    {
+      "sku": "BAK-PAINC-75",
+      "qty": 2,
+      "unit": "box"
+    },
+    {
+      "sku": "PKG-BAGS-1000",
+      "qty": 1,
+      "unit": "box"
+    }
+  ],
+  "deliveryDate": "2026-10-14",
+  "route": "create_draft",
+  "reasons": [],
+  "refersToOrderId": null,
+  "purpose": "Spanish order; 'napolitanas de chocolate' means pain au chocolat, not the chocolate napolitains."
+}

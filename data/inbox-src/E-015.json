@@ -1,0 +1,18 @@
+{
+  "id": "E-015",
+  "receivedAt": "2026-10-12T11:18:50+02:00",
+  "from": {
+    "name": "Forn Sant Gervasi",
+    "address": "comandes@fornsantgervasi.es"
+  },
+  "to": {
+    "name": "Harbor Lane Orders",
+    "address": "orders@harborlane-provisions.nl"
+  },
+  "cc": [],
+  "subject": "Pedido miércoles - Forn Sant Gervasi",
+  "messageId": "<a55e691019a64e4c.4af936d6@fornsantgervasi.es>",
+  "inReplyTo": null,
+  "body": "Hola, buenos días:\n\nPara el miércoles necesitamos:\n\n- 6 cajas de leche entera de litro\n- 2 cajas de mantequilla\n- 4 bolsas de café de la casa (1 kg)\n- 2 cajas de cruasanes de mantequilla, los grandes\n- 2 cajas de napolitanas de chocolate\n- 1 caja de bolsas de papel pequeñas\n\nOtra cosa: a partir de noviembre la domiciliación de las facturas tiene que ir a la cuenta nueva, ES91 2100 0418 4502 0005 1332. ¿Me confirmáis que lo cambiáis?\n\nGracias,\nMontse\n\nForn Sant Gervasi\nC/ de Sant Gervasi de Cassoles 58, 08022 Barcelona\nTel. 932 11 47 63",
+  "attachments": []
+}

@@ -1,0 +1,38 @@
+{
+  "emailId": "E-052",
+  "split": "test",
+  "intent": "new_order",
+  "customerId": "C-1004",
+  "lines": [
+    {
+      "sku": "BAK-CROI-45",
+      "qty": 1,
+      "unit": "box"
+    },
+    {
+      "sku": "JUI-ORNG-250",
+      "qty": 2,
+      "unit": "case"
+    },
+    {
+      "sku": "DAI-SEMI-1L",
+      "qty": 5,
+      "unit": "case"
+    },
+    {
+      "sku": "PKG-SUGW-1000",
+      "qty": 2,
+      "unit": "box"
+    },
+    {
+      "sku": "COF-CREMA-1K",
+      "qty": 4,
+      "unit": "bag"
+    }
+  ],
+  "deliveryDate": "2026-10-17",
+  "route": "create_draft",
+  "reasons": [],
+  "refersToOrderId": null,
+  "purpose": "Counts in pieces, bottles, litres and sticks that convert to whole boxes and cases."
+}

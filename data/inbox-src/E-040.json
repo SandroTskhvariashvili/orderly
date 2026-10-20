@@ -1,0 +1,18 @@
+{
+  "id": "E-040",
+  "receivedAt": "2026-10-13T15:30:33+02:00",
+  "from": {
+    "name": "Sabine Hoffmann",
+    "address": "s.hoffmann@hoffmann-soehne-backhaus.de"
+  },
+  "to": {
+    "name": "Harbor Lane Orders",
+    "address": "orders@harborlane-provisions.nl"
+  },
+  "cc": [],
+  "subject": "Bestellung Donnerstag",
+  "messageId": "<24523012d2407fad.794f0441@hoffmann-soehne-backhaus.de>",
+  "inReplyTo": null,
+  "body": "Hallo,\n\nbitte für Donnerstag wieder das Gleiche wie letzte Woche, nur zusätzlich 2 Kartons Deckel für die 12oz-Becher.\n\nViele Grüße\nSabine Hoffmann\n\nBäckerei Hoffmann & Söhne\nBergmannstraße 58, 10961 Berlin\nTel. 030 6981 2245",
+  "attachments": []
+}

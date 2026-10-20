@@ -1,0 +1,18 @@
+{
+  "id": "E-033",
+  "receivedAt": "2026-10-13T09:48:02+02:00",
+  "from": {
+    "name": "Kevin Tan",
+    "address": "kevin.leafandbean@gmail.com"
+  },
+  "to": {
+    "name": "Harbor Lane Orders",
+    "address": "orders@harborlane-provisions.nl"
+  },
+  "cc": [],
+  "subject": "Fri order",
+  "messageId": "<CAX9ElbOMVwGt+qFc6dQvcyXNkZkrW2UGEA1=l84cUj@mail.gmail.com>",
+  "inReplyTo": null,
+  "body": "Hey Harbor Lane\n\nfor friday:\n- house x2\n- peru x1\n- plainsong oat x3\n- whole milk 1L x2\n- EB tea x1\n- chai concentrate x2\n- 12oz double walls x1\n\nty!\nKevin\nLeaf & Bean · Leiden",
+  "attachments": []
+}

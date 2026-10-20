@@ -1,0 +1,18 @@
+{
+  "id": "E-045",
+  "receivedAt": "2026-10-14T10:02:47+02:00",
+  "from": {
+    "name": "Tom Kelleher",
+    "address": "tom@sixtyounce-coffee.nl"
+  },
+  "to": {
+    "name": "Harbor Lane Orders",
+    "address": "orders@harborlane-provisions.nl"
+  },
+  "cc": [],
+  "subject": "order thursday",
+  "messageId": "<CAJyAPyi5uQpU+CYpTXnpAQp2IQHdolWQIK2_GaxTS5@mail.gmail.com>",
+  "inReplyTo": null,
+  "body": "Hey, for tomorrow:\n\n3 Colombia\n2 barista milk\n3 Plainsong oat\n1 box 8oz cups\n1 box 12oz cups\n2 boxes of lids\n\nTa,\nTom",
+  "attachments": []
+}

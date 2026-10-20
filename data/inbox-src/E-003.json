@@ -1,0 +1,18 @@
+{
+  "id": "E-003",
+  "receivedAt": "2026-10-12T07:12:44+02:00",
+  "from": {
+    "name": "Aisha Rahman",
+    "address": "aisha.rahman.tlf@gmail.com"
+  },
+  "to": {
+    "name": "Harbor Lane Orders",
+    "address": "orders@harborlane-provisions.nl"
+  },
+  "cc": [],
+  "subject": "order",
+  "messageId": "<0DFF1C0D-8493-98E9-A241-1899E347AB05@gmail.com>",
+  "inReplyTo": null,
+  "body": "hi! same as last week pls but double the oat milk, we ran out on sunday 😅\n\nthanks\naisha\n\nSent from my iPhone",
+  "attachments": []
+}

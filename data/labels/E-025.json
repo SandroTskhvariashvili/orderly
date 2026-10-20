@@ -1,0 +1,12 @@
+{
+  "emailId": "E-025",
+  "split": "dev",
+  "intent": "complaint",
+  "customerId": "C-1025",
+  "lines": [],
+  "deliveryDate": null,
+  "route": "not_an_order",
+  "reasons": [],
+  "refersToOrderId": null,
+  "purpose": "Two vanilla bottles arrived broken; asks for a credit, not an order."
+}

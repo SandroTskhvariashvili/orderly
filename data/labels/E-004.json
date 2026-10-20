@@ -1,0 +1,48 @@
+{
+  "emailId": "E-004",
+  "split": "test",
+  "intent": "new_order",
+  "customerId": "C-1027",
+  "lines": [
+    {
+      "sku": "PLM-OATB-1L",
+      "qty": 4,
+      "unit": "case"
+    },
+    {
+      "sku": "COF-HOUSE-1K",
+      "qty": 3,
+      "unit": "bag"
+    },
+    {
+      "sku": "SYR-VAN-750",
+      "qty": 4,
+      "unit": "bottle"
+    },
+    {
+      "sku": "DAI-WHOLE-1L",
+      "qty": 3,
+      "unit": "case"
+    },
+    {
+      "sku": "CHO-HOT28-1K",
+      "qty": 1,
+      "unit": "bag"
+    },
+    {
+      "sku": "PKG-DW12-500",
+      "qty": 1,
+      "unit": "box"
+    },
+    {
+      "sku": "PKG-LID90-1000",
+      "qty": 1,
+      "unit": "box"
+    }
+  ],
+  "deliveryDate": "2026-10-15",
+  "route": "create_draft",
+  "reasons": [],
+  "refersToOrderId": null,
+  "purpose": "German order with German product names (Hafermilch, Hausmischung, Trinkschokolade) for Thursday."
+}

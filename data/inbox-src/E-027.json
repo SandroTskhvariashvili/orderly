@@ -1,0 +1,18 @@
+{
+  "id": "E-027",
+  "receivedAt": "2026-10-12T21:48:03+02:00",
+  "from": {
+    "name": "Pepa",
+    "address": "hornolapepa@gmail.com"
+  },
+  "to": {
+    "name": "Harbor Lane Orders",
+    "address": "orders@harborlane-provisions.nl"
+  },
+  "cc": [],
+  "subject": "pedido miercoles",
+  "messageId": "<99929AD0-6C32-8A25-6804-4E21BCED03F1@gmail.com>",
+  "inReplyTo": null,
+  "body": "Hello,\n\nfor wednesday please:\n3 boxes whole milk 1 litre\n2 butter\n1 cream\n2 coffee house blend\n1 cocoa powder\n\nThank you very much\nPepa\nHorno La Pepa - Valencia\n\nEnviado desde mi iPhone",
+  "attachments": []
+}

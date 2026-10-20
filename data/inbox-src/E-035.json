@@ -1,0 +1,115 @@
+{
+  "id": "E-035",
+  "receivedAt": "2026-10-13T10:55:12+02:00",
+  "from": {
+    "name": "Katrin Vogel",
+    "address": "einkauf@alsterblick-garni.de"
+  },
+  "to": {
+    "name": "Harbor Lane Orders",
+    "address": "orders@harborlane-provisions.nl"
+  },
+  "cc": [],
+  "subject": "Bestellung PO-2026-0417 Hotel Alsterblick Garni",
+  "messageId": "<2daa07ae6205f5b1.956f743c@alsterblick-garni.de>",
+  "inReplyTo": null,
+  "body": "Sehr geehrte Damen und Herren,\n\nanbei unsere Bestellung PO-2026-0417 mit der Bitte um Lieferung am Freitag, 16.10.2026.\n\nBitte bestätigen Sie den Liefertermin kurz per E-Mail.\n\nMit freundlichen Grüßen\n\nKatrin Vogel\nEinkauf\n\nHotel Alsterblick Garni GmbH\nSchwanenwik 30, 22087 Hamburg\nTel. +49 40 2297 3310\nGeschäftsführer: Henning Vogel | Amtsgericht Hamburg HRB 148822",
+  "attachments": [
+    {
+      "filename": "PO-2026-0417_Harbor_Lane.pdf",
+      "po": {
+        "number": "PO-2026-0417",
+        "issuedOn": "2026-10-13",
+        "buyer": {
+          "company": "Hotel Alsterblick Garni GmbH",
+          "contact": "Katrin Vogel, Einkauf",
+          "address": [
+            "Schwanenwik 30",
+            "22087 Hamburg",
+            "Deutschland"
+          ]
+        },
+        "deliverTo": [
+          "Hotel Alsterblick Garni",
+          "Warenannahme Hintereingang",
+          "Schwanenwik 30",
+          "22087 Hamburg"
+        ],
+        "requestedDelivery": "2026-10-16",
+        "lines": [
+          {
+            "buyerCode": "AB-1102",
+            "description": "Kaffee Crema, ganze Bohne, 1 kg",
+            "qty": 4,
+            "unit": "Btl.",
+            "unitPriceEur": 18.7
+          },
+          {
+            "buyerCode": "AB-2010",
+            "description": "Vollmilch 3,5 % 1 L (Karton à 6)",
+            "qty": 5,
+            "unit": "Kart.",
+            "unitPriceEur": 7.2
+          },
+          {
+            "buyerCode": "AB-2014",
+            "description": "Laktosefreie Vollmilch 1 L (Karton à 6)",
+            "qty": 1,
+            "unit": "Kart.",
+            "unitPriceEur": 9.6
+          },
+          {
+            "buyerCode": "AB-2016",
+            "description": "Magermilch 0,1 % 1 L (Karton à 6)",
+            "qty": 1,
+            "unit": "Kart.",
+            "unitPriceEur": 6.3
+          },
+          {
+            "buyerCode": "AB-2031",
+            "description": "Sojadrink Barista 1 L (Karton à 6)",
+            "qty": 1,
+            "unit": "Kart.",
+            "unitPriceEur": 13.8
+          },
+          {
+            "buyerCode": "AB-2040",
+            "description": "Joghurt griechische Art 10 %, 1 kg (Karton à 4)",
+            "qty": 3,
+            "unit": "Kart.",
+            "unitPriceEur": 15.6
+          },
+          {
+            "buyerCode": "AB-3005",
+            "description": "Orangensaft frisch gepresst, 1 L Flasche",
+            "qty": 18,
+            "unit": "Fl.",
+            "unitPriceEur": 3.6
+          },
+          {
+            "buyerCode": "AB-3007",
+            "description": "Apfelsaft naturtrüb 1 L (Karton à 6)",
+            "qty": 2,
+            "unit": "Kart.",
+            "unitPriceEur": 13.8
+          },
+          {
+            "buyerCode": "AB-4101",
+            "description": "Tee English Breakfast, Pyramidenbeutel (100 St.)",
+            "qty": 1,
+            "unit": "Pkg.",
+            "unitPriceEur": 17.5
+          },
+          {
+            "buyerCode": "AB-4108",
+            "description": "Kamillentee, Pyramidenbeutel (100 St.)",
+            "qty": 1,
+            "unit": "Pkg.",
+            "unitPriceEur": 18
+          }
+        ],
+        "notes": "Anlieferung bitte bis 10:00 Uhr über die Warenannahme. Lieferschein bitte mit PO-Nummer."
+      }
+    }
+  ]
+}

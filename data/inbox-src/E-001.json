@@ -1,0 +1,23 @@
+{
+  "id": "E-001",
+  "receivedAt": "2026-10-12T06:41:17+02:00",
+  "from": {
+    "name": "Mark Bosman",
+    "address": "m.bosman@hotelkeizersloot.nl"
+  },
+  "to": {
+    "name": "Harbor Lane Orders",
+    "address": "orders@harborlane-provisions.nl"
+  },
+  "cc": [
+    {
+      "name": "Keuken Keizersloot",
+      "address": "keuken@hotelkeizersloot.nl"
+    }
+  ],
+  "subject": "Order Tuesday 13/10 - Hotel Keizersloot",
+  "messageId": "<AM9PR03MB6374C6E5523A5D799EC71CDD20975FEB7600@AM9PR03MB6374.eurprd03.prod.outlook.com>",
+  "inReplyTo": null,
+  "body": "Good morning,\n\nPlease deliver the following tomorrow (Tuesday 13/10), before 08:00 if possible as the breakfast team starts at 06:30.\n\n- Whole milk 1L: 5 cases\n- Semi-skimmed 1L: 3 cases\n- Orange juice 1L: 3 cases\n- Cloudy apple juice 1L: 2 cases\n- Greek yoghurt: 3 cases\n- Mini croissants: 1 box\n- Caffè Crema beans: 4 bags\n\nGoods entrance on the Leliegracht side as usual. Ruud from the kitchen is in cc in case the driver has questions.\n\nKind regards,\n\nMark Bosman\nF&B Manager\nHotel Keizersloot\nKeizersgracht 318, 1016 EZ Amsterdam\nT +31 20 624 1187",
+  "attachments": []
+}

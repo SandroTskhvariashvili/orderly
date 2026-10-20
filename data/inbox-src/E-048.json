@@ -1,0 +1,18 @@
+{
+  "id": "E-048",
+  "receivedAt": "2026-10-14T12:05:21+02:00",
+  "from": {
+    "name": "Hatch Lane Coffee",
+    "address": "orders@hatchlanecoffee.ie"
+  },
+  "to": {
+    "name": "Harbor Lane Orders",
+    "address": "orders@harborlane-provisions.nl"
+  },
+  "cc": [],
+  "subject": "fri",
+  "messageId": "<CAQVt00cSJSpE-jgB5ZhbiZBgnEAlCznvsO0=jXx4PH@mail.gmail.com>",
+  "inReplyTo": null,
+  "body": "Hiya, for Friday pls\n\nplainsong oat x4\nhouse x3\ncolombia (not the decaf!) x2\nwhole milk 1L x3\nsalted caramel x2\nchoc sauce x1\n\nCiara",
+  "attachments": []
+}

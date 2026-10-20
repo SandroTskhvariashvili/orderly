@@ -1,0 +1,18 @@
+{
+  "id": "E-044",
+  "receivedAt": "2026-10-14T09:15:30+02:00",
+  "from": {
+    "name": "Gracht & Grind",
+    "address": "orders@grachtandgrind.nl"
+  },
+  "to": {
+    "name": "Harbor Lane Orders",
+    "address": "orders@harborlane-provisions.nl"
+  },
+  "cc": [],
+  "subject": "Order Friday",
+  "messageId": "<CAGC9gXpqloyx_c5HUSpn5jC26zDodg5mw5W=p1QHGs@mail.gmail.com>",
+  "inReplyTo": null,
+  "body": "Hi Harbor Lane,\n\nFor Friday please:\n4 x Colombia Huila\n1 x Colombia decaf\n1 x seasonal\n4 x Haverland barista\n2 x Polderhof barista milk\n3 x vanilla syrup\n1 x 8oz cups\n\nThanks,\nBas\nGracht & Grind",
+  "attachments": []
+}

@@ -1,0 +1,35 @@
+{
+  "emailId": "E-009",
+  "split": "dev",
+  "intent": "new_order",
+  "customerId": "C-1022",
+  "lines": [
+    {
+      "sku": "COF-HOUSE-1K",
+      "qty": 3,
+      "unit": "bag"
+    },
+    {
+      "sku": "COF-HUILA-1K",
+      "qty": 2,
+      "unit": "bag"
+    },
+    {
+      "sku": "DAI-WHOLE-1L",
+      "qty": 3,
+      "unit": "case"
+    },
+    {
+      "sku": "SYR-SCAR-750",
+      "qty": 2,
+      "unit": "bottle"
+    }
+  ],
+  "deliveryDate": "2026-10-14",
+  "route": "needs_review",
+  "reasons": [
+    "ambiguous_product"
+  ],
+  "refersToOrderId": null,
+  "purpose": "Asks for 'oat milk' but this café buys both Haverland and Plainsong barista oat."
+}

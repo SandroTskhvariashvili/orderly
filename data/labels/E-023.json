@@ -1,0 +1,50 @@
+{
+  "emailId": "E-023",
+  "split": "test",
+  "intent": "change_order",
+  "customerId": "C-1017",
+  "lines": [
+    {
+      "sku": "COF-HOUSE-1K",
+      "qty": 3,
+      "unit": "bag"
+    },
+    {
+      "sku": "PLM-OATB-1L",
+      "qty": 6,
+      "unit": "case"
+    },
+    {
+      "sku": "DAI-WHOLE-1L",
+      "qty": 3,
+      "unit": "case"
+    },
+    {
+      "sku": "BAK-CROI-80",
+      "qty": 2,
+      "unit": "box"
+    },
+    {
+      "sku": "SYR-VAN-750",
+      "qty": 2,
+      "unit": "bottle"
+    },
+    {
+      "sku": "PKG-DW8-500",
+      "qty": 1,
+      "unit": "box"
+    },
+    {
+      "sku": "BAK-CROI-45",
+      "qty": 1,
+      "unit": "box"
+    }
+  ],
+  "deliveryDate": "2026-10-13",
+  "route": "needs_review",
+  "reasons": [
+    "change_or_cancel"
+  ],
+  "refersToOrderId": "SO-11357",
+  "purpose": "Replies to her own Friday order to change tomorrow's delivery, after the cutoff."
+}

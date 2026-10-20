@@ -1,0 +1,18 @@
+{
+  "id": "E-047",
+  "receivedAt": "2026-10-14T11:20:44+02:00",
+  "from": {
+    "name": "The Little Fern",
+    "address": "hello@thelittlefern.nl"
+  },
+  "to": {
+    "name": "Harbor Lane Orders",
+    "address": "orders@harborlane-provisions.nl"
+  },
+  "cc": [],
+  "subject": "Big order for Friday - wedding brunch",
+  "messageId": "<CAC3eX2TciH2R+iPSeIYzKkAKNvwJM2iSswQ=Am8vGq@mail.gmail.com>",
+  "inReplyTo": null,
+  "body": "Hi Marieke,\n\nWe're doing the brunch for a wedding on Saturday (about 120 people) so this one is a lot bigger than normal. For Friday please:\n\n20 cases Haverland oat\n12 cases whole milk 1L\n6 boxes butter croissants\n6 boxes pain au chocolat\n10 cases orange juice 1L\n4 bags house blend\n\nCan you confirm you can do this?\n\nThanks!\nAisha\nThe Little Fern",
+  "attachments": []
+}

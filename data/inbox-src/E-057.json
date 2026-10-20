@@ -1,0 +1,18 @@
+{
+  "id": "E-057",
+  "receivedAt": "2026-10-15T11:50:34+02:00",
+  "from": {
+    "name": "Lukas Schmitz",
+    "address": "lukas@kaffeekontor-ehrenfeld.de"
+  },
+  "to": {
+    "name": "Harbor Lane Orders",
+    "address": "orders@harborlane-provisions.nl"
+  },
+  "cc": [],
+  "subject": "Order Monday + gluten free?",
+  "messageId": "<8dde90b2b958cb27.b748e8fc@kaffeekontor-ehrenfeld.de>",
+  "inReplyTo": null,
+  "body": "Hi,\n\nfor Monday please:\n\n2x Colombia Huila\n2x Hafen Espresso\n3x Haverland Barista Oat\n1x barista milk\n1 box butter croissants\n1 box gluten-free croissants\n\nWe get asked for gluten-free a lot lately, hope you have them.\n\nThanks,\nLukas",
+  "attachments": []
+}

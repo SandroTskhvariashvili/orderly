@@ -1,0 +1,18 @@
+{
+  "id": "E-051",
+  "receivedAt": "2026-10-14T16:10:52+02:00",
+  "from": {
+    "name": "Ricardo Mendes",
+    "address": "ricardo@perronvijf.nl"
+  },
+  "to": {
+    "name": "Harbor Lane Orders",
+    "address": "orders@harborlane-provisions.nl"
+  },
+  "cc": [],
+  "subject": "wrong syrup on Monday",
+  "messageId": "<CAMIzqjhJV8oE-P3mXUvfQHWVn5kORF2Kv2m_VabBL1@mail.gmail.com>",
+  "inReplyTo": null,
+  "body": "Hi,\n\nIn Monday's delivery we got 3 bottles of the sugar free vanilla instead of the normal vanilla. Only noticed today when a regular said her latte tasted weird.\n\nCan you pick them up and bring the right ones with the next delivery? Two are unopened, one we already opened, sorry.\n\nRicardo\nPerron Vijf",
+  "attachments": []
+}

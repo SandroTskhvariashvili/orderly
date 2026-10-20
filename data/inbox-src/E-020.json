@@ -1,0 +1,18 @@
+{
+  "id": "E-020",
+  "receivedAt": "2026-10-12T14:07:41+02:00",
+  "from": {
+    "name": "Joost Verhoeven",
+    "address": "joost.verhoeven@outlook.com"
+  },
+  "to": {
+    "name": "Harbor Lane Orders",
+    "address": "orders@harborlane-provisions.nl"
+  },
+  "cc": [],
+  "subject": "Order for tomorrow morning",
+  "messageId": "<DU0P191MB0017DE12673140670A432C3D09FAAA6E50@DU0P191MB0017.EURP194.PROD.OUTLOOK.COM>",
+  "inReplyTo": null,
+  "body": "Hi,\n\nCan we still get this tomorrow morning? We're completely out after the weekend.\n\nwhole milk 1L 4 cases\nwhipping cream 2\nbutter 2\n\nThanks, Joost\n\nBakkerij Verhoeven\nJavastraat 87, Amsterdam",
+  "attachments": []
+}

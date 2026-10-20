@@ -1,0 +1,18 @@
+{
+  "id": "E-038",
+  "receivedAt": "2026-10-13T13:05:51+02:00",
+  "from": {
+    "name": "Javi Ortega",
+    "address": "javi@cafenomada-bcn.es"
+  },
+  "to": {
+    "name": "Harbor Lane Orders",
+    "address": "orders@harborlane-provisions.nl"
+  },
+  "cc": [],
+  "subject": "Pedido para el viernes",
+  "messageId": "<CAYtB7cYLk6Ur_m8HCrbrHWLWgdy98Pb3ZlU_NF6QFv@mail.gmail.com>",
+  "inReplyTo": null,
+  "body": "Hola equipo,\n\nOs paso el pedido para el viernes:\n\n2 x Colombia Huila 1kg\n1 x Seasonal (el de Ruanda)\n3 x Haverland Barista (cajas)\n3 x leche entera 1L (cajas)\n1 x almendra Plainsong\n1 x vasos 8oz\n1 x tapas 8oz\n\n¡Gracias!\nJavi\n\nCafetería Nómada · Gràcia, Barcelona\n@cafenomada.bcn",
+  "attachments": []
+}

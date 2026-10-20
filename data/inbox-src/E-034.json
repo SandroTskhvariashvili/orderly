@@ -1,0 +1,18 @@
+{
+  "id": "E-034",
+  "receivedAt": "2026-10-13T10:20:45+02:00",
+  "from": {
+    "name": "Dewi Hartono",
+    "address": "dewi.studiopandan@gmail.com"
+  },
+  "to": {
+    "name": "Harbor Lane Orders",
+    "address": "orders@harborlane-provisions.nl"
+  },
+  "cc": [],
+  "subject": "price list?",
+  "messageId": "<CAMx9pT4eRw2Lk7nYd0Bq3vZs8Hc1Fu5Gj6Ni2Ao9WtE@mail.gmail.com>",
+  "inReplyTo": null,
+  "body": "Hi Marieke,\n\nCould you send me the price list for 2027 when you have it? We're redoing our menu prices in November and I'd like to know if the oat milk and the coffee are going up.\n\nAlso is there a discount if we take 10 cases of oat at once? We have more space in the back now.\n\nThanks!\nDewi\nStudio Pandan",
+  "attachments": []
+}

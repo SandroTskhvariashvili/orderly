@@ -1,0 +1,18 @@
+{
+  "id": "E-022",
+  "receivedAt": "2026-10-12T15:10:54+02:00",
+  "from": {
+    "name": "Sanne Hoekstra",
+    "address": "sanne@draaischijfkoffie.nl"
+  },
+  "to": {
+    "name": "Harbor Lane Orders",
+    "address": "orders@harborlane-provisions.nl"
+  },
+  "cc": [],
+  "subject": "First order + new account - Draaischijf Koffie (Amsterdam-Noord)",
+  "messageId": "<CATwByg6VKBqR-DAxegNTV22sQ1szAXL8GXD=Vz3JhF@mail.gmail.com>",
+  "inReplyTo": null,
+  "body": "Hello Harbor Lane,\n\nWe're opening Draaischijf Koffie on 24 October in Amsterdam-Noord, a small specialty café with about 30 seats. Sophie at Maple & Rye recommended you. We'd like to open an account and place a first order:\n\n- House Espresso Blend 1kg: 6 bags\n- Haverland Barista Oat: 4 cases\n- Whole milk 1L: 3 cases\n- 8oz double wall cups: 1 box\n- 8oz lids: 1 box\n- Vanilla syrup: 2 bottles\n\nIdeally delivered on Thursday 22 October so we can do a test week on the machine.\n\nInvoice details:\nDraaischijf Koffie V.O.F.\nGedempt Hamerkanaal 140, 1021 KP Amsterdam\nKvK 91827364\nIBAN NL91 ABNA 0417 1643 00 (direct debit is fine)\n\nLet me know if you need anything else from us.\n\nBest,\nSanne Hoekstra\nDraaischijf Koffie\n06 4127 9930",
+  "attachments": []
+}

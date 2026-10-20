@@ -1,0 +1,48 @@
+{
+  "emailId": "E-044",
+  "split": "test",
+  "intent": "new_order",
+  "customerId": "C-1001",
+  "lines": [
+    {
+      "sku": "COF-HUILA-1K",
+      "qty": 4,
+      "unit": "bag"
+    },
+    {
+      "sku": "COF-HUILD-1K",
+      "qty": 1,
+      "unit": "bag"
+    },
+    {
+      "sku": "COF-SEAS-1K",
+      "qty": 1,
+      "unit": "bag"
+    },
+    {
+      "sku": "PLM-OATB-1L",
+      "qty": 4,
+      "unit": "case"
+    },
+    {
+      "sku": "DAI-BARIS-1L",
+      "qty": 2,
+      "unit": "case"
+    },
+    {
+      "sku": "SYR-VAN-750",
+      "qty": 3,
+      "unit": "bottle"
+    },
+    {
+      "sku": "PKG-DW8-500",
+      "qty": 1,
+      "unit": "box"
+    }
+  ],
+  "deliveryDate": "2026-10-16",
+  "route": "create_draft",
+  "reasons": [],
+  "refersToOrderId": null,
+  "purpose": "Clean order from the café's shared orders@ address, signed by a staff member."
+}

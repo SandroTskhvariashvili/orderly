@@ -1,0 +1,18 @@
+{
+  "id": "E-004",
+  "receivedAt": "2026-10-12T07:35:09+02:00",
+  "from": {
+    "name": "Café Graureiher",
+    "address": "bestellung@graureiher-cafe.de"
+  },
+  "to": {
+    "name": "Harbor Lane Orders",
+    "address": "orders@harborlane-provisions.nl"
+  },
+  "cc": [],
+  "subject": "Bestellung für Donnerstag",
+  "messageId": "<8ed83d2b4f6c9ce6.11d2e3d4@graureiher-cafe.de>",
+  "inReplyTo": null,
+  "body": "Hallo zusammen,\n\nfür Donnerstag bitte:\n\n4 Kartons Hafermilch (die Haverland Barista)\n3x Hausmischung 1kg\n4 Flaschen Vanillesirup\n3 Kisten Vollmilch 1L\n1 Beutel Trinkschokolade\nBecher 12oz + passende Deckel, je 1 Karton\n\nDanke und schöne Woche!\nJonas\n\nCafé Graureiher\nWiener Str. 41, 10999 Berlin\nMo-Fr 8-18 Uhr, Sa/So 9-18 Uhr\ninstagram.com/graureiher.cafe",
+  "attachments": []
+}

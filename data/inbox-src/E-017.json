@@ -1,0 +1,18 @@
+{
+  "id": "E-017",
+  "receivedAt": "2026-10-12T12:15:33+02:00",
+  "from": {
+    "name": "Anna Lindgren",
+    "address": "anna.lindgren@gmx.de"
+  },
+  "to": {
+    "name": "Harbor Lane Orders",
+    "address": "orders@harborlane-provisions.nl"
+  },
+  "cc": [],
+  "subject": "order for tomorrow",
+  "messageId": "<trinity-463111c9-80b2-d805-0670-2701d0c9d295-1760208307632@3c-app-gmx-bap64>",
+  "inReplyTo": null,
+  "body": "Hej Marieke,\n\nOrder for tomorrow (Tuesday):\n\nHouse Blend 1kg x 2\nWhole milk 1L x 3\nHaverland Barista x 2\nOrange juice 1L x 2\nGreek yoghurt x 2\nCinnamon rolls x 1 box\n\nThanks and have a nice week,\nAnna\n\nFrühstückshaus Lindgren\nBöckhstraße 22, 10967 Berlin",
+  "attachments": []
+}

@@ -1,0 +1,48 @@
+{
+  "emailId": "E-003",
+  "split": "dev",
+  "intent": "new_order",
+  "customerId": "C-1003",
+  "lines": [
+    {
+      "sku": "COF-HOUSE-1K",
+      "qty": 3,
+      "unit": "bag"
+    },
+    {
+      "sku": "PLM-OATB-1L",
+      "qty": 8,
+      "unit": "case"
+    },
+    {
+      "sku": "DAI-WHOLE-1L",
+      "qty": 4,
+      "unit": "case"
+    },
+    {
+      "sku": "JUI-ORNG-1L",
+      "qty": 2,
+      "unit": "case"
+    },
+    {
+      "sku": "BAK-CROI-80",
+      "qty": 1,
+      "unit": "box"
+    },
+    {
+      "sku": "DAI-YOGH-1K",
+      "qty": 2,
+      "unit": "case"
+    },
+    {
+      "sku": "SYR-VAN-750",
+      "qty": 2,
+      "unit": "bottle"
+    }
+  ],
+  "deliveryDate": "2026-10-13",
+  "route": "create_draft",
+  "reasons": [],
+  "refersToOrderId": null,
+  "purpose": "Says 'same as last week' but doubles the oat milk."
+}

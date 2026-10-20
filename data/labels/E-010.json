@@ -1,0 +1,12 @@
+{
+  "emailId": "E-010",
+  "split": "test",
+  "intent": "not_business",
+  "customerId": null,
+  "lines": [],
+  "deliveryDate": null,
+  "route": "not_an_order",
+  "reasons": [],
+  "refersToOrderId": null,
+  "purpose": "Packaging supplier's newsletter in the orders inbox."
+}

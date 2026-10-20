@@ -1,0 +1,18 @@
+{
+  "id": "E-008",
+  "receivedAt": "2026-10-12T08:47:36+02:00",
+  "from": {
+    "name": "Lucía Fernández",
+    "address": "lucia.fernandez@casaolmohostal.es"
+  },
+  "to": {
+    "name": "Harbor Lane Orders",
+    "address": "orders@harborlane-provisions.nl"
+  },
+  "cc": [],
+  "subject": "Cancelar pedido del jueves 15/10",
+  "messageId": "<9caafb5e00babd33.b9d2b3a8@casaolmohostal.es>",
+  "inReplyTo": null,
+  "body": "Buenos días,\n\nOs escribo para cancelar el pedido que hicimos el viernes para este jueves 15. Se nos ha caído un grupo de 30 personas que tenía reservado medio hostal y vamos sobrados con lo que tenemos.\n\nEl de la semana que viene lo hago el viernes como siempre.\n\nPerdonad las molestias y gracias.\n\nUn saludo,\n\nLucía Fernández\nCasa Olmo Hostal\nC/ del Olmo 21, 28012 Madrid\nTel. +34 914 67 22 08",
+  "attachments": []
+}

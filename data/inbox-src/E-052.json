@@ -1,0 +1,18 @@
+{
+  "id": "E-052",
+  "receivedAt": "2026-10-15T07:20:15+02:00",
+  "from": {
+    "name": "Hotel Keizersloot F&B",
+    "address": "fb@hotelkeizersloot.nl"
+  },
+  "to": {
+    "name": "Harbor Lane Orders",
+    "address": "orders@harborlane-provisions.nl"
+  },
+  "cc": [],
+  "subject": "Order Saturday 17/10",
+  "messageId": "<AM9PR03MB6299F4FFE827DF7E7A3EFBD66F2A9572EE85@AM9PR03MB6299.eurprd03.prod.outlook.com>",
+  "inReplyTo": null,
+  "body": "Good morning,\n\nFor Saturday 17/10 please, we are fully booked this weekend:\n\n- 120 mini croissants\n- 24 small orange juices (250ml bottles)\n- 30 litres semi-skimmed\n- 2000 white sugar sticks\n- 4 bags Caffè Crema\n\nRegards,\nMark Bosman\nF&B Manager | Hotel Keizersloot",
+  "attachments": []
+}

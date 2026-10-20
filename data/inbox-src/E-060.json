@@ -1,0 +1,18 @@
+{
+  "id": "E-060",
+  "receivedAt": "2026-10-16T16:40:22+02:00",
+  "from": {
+    "name": "Lotte Jansen",
+    "address": "facilities@werkhal-noord.nl"
+  },
+  "to": {
+    "name": "Harbor Lane Orders",
+    "address": "orders@harborlane-provisions.nl"
+  },
+  "cc": [],
+  "subject": "Order for Monday",
+  "messageId": "<AM0PR06MB6550D3C2E87D627F259119F3AE3562F67FE7@AM0PR06MB6550.eurprd06.prod.outlook.com>",
+  "inReplyTo": null,
+  "body": "Hi,\n\nBefore the weekend: could we get this on Monday?\n\n3 x House Espresso Blend 1kg\n2 x Haverland Oat Original\n3 x semi-skimmed milk\n1 x English Breakfast pyramid bags\n1 x caramelised biscuits\n1 x dishwashing liquid 5L\n\nThanks and have a good weekend,\n\nLotte Jansen\nOffice & Community Manager\nWerkhal Noord Coworking",
+  "attachments": []
+}

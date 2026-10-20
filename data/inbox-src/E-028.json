@@ -1,0 +1,18 @@
+{
+  "id": "E-028",
+  "receivedAt": "2026-10-13T06:12:39+02:00",
+  "from": {
+    "name": "Ingrid van Dam",
+    "address": "hetzoetehoekje@hotmail.com"
+  },
+  "to": {
+    "name": "Harbor Lane Orders",
+    "address": "orders@harborlane-provisions.nl"
+  },
+  "cc": [],
+  "subject": "bestelling",
+  "messageId": "<DU0P190MB5994E5B2BE284CE989E4265BCDCF590ABA@DU0P190MB5994.EURP194.PROD.OUTLOOK.COM>",
+  "inReplyTo": null,
+  "body": "Hi,\n\nSame as last time please.\n\nThanks\nIngrid",
+  "attachments": []
+}

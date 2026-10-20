@@ -1,0 +1,45 @@
+{
+  "emailId": "E-043",
+  "split": "test",
+  "intent": "new_order",
+  "customerId": "C-1024",
+  "lines": [
+    {
+      "sku": "DAI-WHOLE-1L",
+      "qty": 2,
+      "unit": "case"
+    },
+    {
+      "sku": "JUI-ORNG-1L",
+      "qty": 2,
+      "unit": "case"
+    },
+    {
+      "sku": "COF-CREMA-1K",
+      "qty": 2,
+      "unit": "bag"
+    },
+    {
+      "sku": "TEA-EBPYR-100",
+      "qty": 1,
+      "unit": "box"
+    },
+    {
+      "sku": "DAI-YOGH-1K",
+      "qty": 1,
+      "unit": "case"
+    },
+    {
+      "sku": "BAK-CROI-45",
+      "qty": 1,
+      "unit": "box"
+    }
+  ],
+  "deliveryDate": "2026-10-16",
+  "route": "needs_review",
+  "reasons": [
+    "possible_duplicate"
+  ],
+  "refersToOrderId": null,
+  "purpose": "Resends Tuesday's order 'just in case'; drafting it again would double the delivery."
+}

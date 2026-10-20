@@ -1,0 +1,48 @@
+{
+  "emailId": "E-011",
+  "split": "dev",
+  "intent": "new_order",
+  "customerId": "C-1005",
+  "lines": [
+    {
+      "sku": "COF-HUILA-1K",
+      "qty": 3,
+      "unit": "bag"
+    },
+    {
+      "sku": "COF-SEAS-1K",
+      "qty": 2,
+      "unit": "bag"
+    },
+    {
+      "sku": "DAI-BARIS-1L",
+      "qty": 2,
+      "unit": "case"
+    },
+    {
+      "sku": "PLM-OATP-1L",
+      "qty": 3,
+      "unit": "case"
+    },
+    {
+      "sku": "PKG-DW12-500",
+      "qty": 1,
+      "unit": "box"
+    },
+    {
+      "sku": "PKG-LID90-1000",
+      "qty": 1,
+      "unit": "box"
+    },
+    {
+      "sku": "CLN-ESPTB-100",
+      "qty": 1,
+      "unit": "each"
+    }
+  ],
+  "deliveryDate": "2026-10-13",
+  "route": "create_draft",
+  "reasons": [],
+  "refersToOrderId": null,
+  "purpose": "Clean order with exact names and sizes, for tomorrow."
+}

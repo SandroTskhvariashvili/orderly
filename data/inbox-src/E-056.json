@@ -1,0 +1,18 @@
+{
+  "id": "E-056",
+  "receivedAt": "2026-10-15T10:45:58+02:00",
+  "from": {
+    "name": "Declan Murphy",
+    "address": "declan@rathminesbakehouse.ie"
+  },
+  "to": {
+    "name": "Harbor Lane Orders",
+    "address": "orders@harborlane-provisions.nl"
+  },
+  "cc": [],
+  "subject": "Phone hours + bank holiday",
+  "messageId": "<DB9PR08MB111229443B36384F80A7FD3062F92ABE5A13@DB9PR08MB1112.eurprd08.prod.outlook.com>",
+  "inReplyTo": null,
+  "body": "Hi,\n\nQuick one, what time does your customer service close on Fridays? I need to ring someone about a September invoice, the amount looks off.\n\nAlso are you delivering on the bank holiday Monday (26th)? We're open that day so want to plan ahead.\n\nThanks,\nDeclan",
+  "attachments": []
+}

@@ -1,0 +1,45 @@
+{
+  "emailId": "E-018",
+  "split": "dev",
+  "intent": "new_order",
+  "customerId": "C-1020",
+  "lines": [
+    {
+      "sku": "DAI-WHOLE-1L",
+      "qty": 40,
+      "unit": "case"
+    },
+    {
+      "sku": "COF-CREMA-1K",
+      "qty": 3,
+      "unit": "bag"
+    },
+    {
+      "sku": "JUI-ORNG-1L",
+      "qty": 2,
+      "unit": "case"
+    },
+    {
+      "sku": "JUI-APCL-1L",
+      "qty": 2,
+      "unit": "case"
+    },
+    {
+      "sku": "TEA-EBPYR-100",
+      "qty": 1,
+      "unit": "box"
+    },
+    {
+      "sku": "PKG-SUGW-1000",
+      "qty": 1,
+      "unit": "box"
+    }
+  ],
+  "deliveryDate": "2026-10-13",
+  "route": "needs_review",
+  "reasons": [
+    "unusual_quantity"
+  ],
+  "refersToOrderId": null,
+  "purpose": "40 cases of milk where this hostel usually takes 4; probably a typo."
+}

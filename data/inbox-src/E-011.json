@@ -1,0 +1,18 @@
+{
+  "id": "E-011",
+  "receivedAt": "2026-10-12T09:41:25+02:00",
+  "from": {
+    "name": "Tom Kelleher",
+    "address": "tom@sixtyounce-coffee.nl"
+  },
+  "to": {
+    "name": "Harbor Lane Orders",
+    "address": "orders@harborlane-provisions.nl"
+  },
+  "cc": [],
+  "subject": "tomorrow",
+  "messageId": "<CACzK3Xl3ZwgF_UypRf9Ya5CqlDqCURRlC1y_6IneeL@mail.gmail.com>",
+  "inReplyTo": null,
+  "body": "Hey,\n\nCan we get for tomorrow:\n3 x Colombia Huila 1kg\n2 x Seasonal (the Rwanda)\n2 x Polderhof barista milk\n3 x Plainsong oat\n1 box 12oz cups + 1 box 12oz lids\n\nAlso one tub of the cleaning tablets, we're on the last few.\n\nCheers\nTom",
+  "attachments": []
+}

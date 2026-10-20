@@ -1,0 +1,43 @@
+{
+  "emailId": "E-037",
+  "split": "test",
+  "intent": "new_order",
+  "customerId": "C-1021",
+  "lines": [
+    {
+      "sku": "COF-HUILA-1K",
+      "qty": 2,
+      "unit": "bag"
+    },
+    {
+      "sku": "DAI-WHOLE-1L",
+      "qty": 3,
+      "unit": "case"
+    },
+    {
+      "sku": "DAI-CREAM-1L",
+      "qty": 2,
+      "unit": "case"
+    },
+    {
+      "sku": "DAI-BUTT-250",
+      "qty": 2,
+      "unit": "case"
+    },
+    {
+      "sku": "BAK-ALMCR-90",
+      "qty": 1,
+      "unit": "box"
+    },
+    {
+      "sku": "CHO-HOT34-1K",
+      "qty": 1,
+      "unit": "bag"
+    }
+  ],
+  "deliveryDate": "2026-10-14",
+  "route": "create_draft",
+  "reasons": [],
+  "refersToOrderId": null,
+  "purpose": "Clean order for tomorrow; 'dark hot chocolate' is the 34%, not the regular one."
+}

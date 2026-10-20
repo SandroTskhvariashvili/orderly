@@ -1,0 +1,18 @@
+{
+  "id": "E-059",
+  "receivedAt": "2026-10-16T10:20:46+02:00",
+  "from": {
+    "name": "Café Schelde",
+    "address": "info@cafeschelde.be"
+  },
+  "to": {
+    "name": "Harbor Lane Orders",
+    "address": "orders@harborlane-provisions.nl"
+  },
+  "cc": [],
+  "subject": "order tuesday + invoices",
+  "messageId": "<AS2PR02MB9069B4B702E2274EF9B132A053DADDCEF69B@AS2PR02MB9069.eurprd02.prod.outlook.com>",
+  "inReplyTo": null,
+  "body": "Hi Harbor Lane,\n\nOrder for Tuesday:\n2 Hafen Espresso\n3 Haverland Barista Oat\n2 whole milk 1L\n2 caramel syrup\n1 vanilla syrup\n1 box 8oz cups\n1 box 8oz lids\n1 hot chocolate\n\nOther thing: can you send the invoices to this address (info@) from now on instead of my own? Our accountant takes over the books in November.\n\nThanks,\nYoussef",
+  "attachments": []
+}

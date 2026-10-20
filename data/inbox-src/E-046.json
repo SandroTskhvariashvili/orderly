@@ -1,0 +1,18 @@
+{
+  "id": "E-046",
+  "receivedAt": "2026-10-14T10:40:13+02:00",
+  "from": {
+    "name": "Emma Bakker",
+    "address": "emma@domanddaisy.nl"
+  },
+  "to": {
+    "name": "Harbor Lane Orders",
+    "address": "orders@harborlane-provisions.nl"
+  },
+  "cc": [],
+  "subject": "Extra delivery Thursday?",
+  "messageId": "<CAWfNP6etgGKr-XooJcO6QpbQIURDM2t7P87=KrFjyi@mail.gmail.com>",
+  "inReplyTo": null,
+  "body": "Hi Marieke,\n\nCould we get an extra drop tomorrow? The PSL is flying out the door:\n\n6 bottles pumpkin spice syrup\n2 cases Haverland oat\n1 case whole milk 1L\n\nThanks so much!\nEmma",
+  "attachments": []
+}

@@ -1,0 +1,18 @@
+{
+  "id": "E-005",
+  "receivedAt": "2026-10-12T07:50:31+02:00",
+  "from": {
+    "name": "Mail Administrator",
+    "address": "no-reply@webmail-quota-check.net"
+  },
+  "to": {
+    "name": "Harbor Lane Orders",
+    "address": "orders@harborlane-provisions.nl"
+  },
+  "cc": [],
+  "subject": "[Action Required] orders@harborlane-provisions.nl - mailbox 98% full",
+  "messageId": "<20261012055029.7F3A21C0E4@srv4.webmail-quota-check.net>",
+  "inReplyTo": null,
+  "body": "Mailbox Storage Notification\n\nDear orders,\n\nYour mailbox orders@harborlane-provisions.nl has reached 98% (4.91 GB of 5 GB) of its storage limit. New incoming messages are being held and will be returned to sender after 24 hours.\n\nTo prevent loss of incoming mails, kindly upgrade your quota at no cost by verifying your account below:\n\nVerify mailbox: https://harborlane-provisions.webmail-quota-check.net/owa/verify?user=orders\n\nFailure to verify within 24 hours will result in restriction of your account.\n\nThank you,\nMail Administrator\nharborlane-provisions.nl\n\nThis is an automated message, please do not reply.\n© 2026 Webmail Services. All rights reserved.",
+  "attachments": []
+}

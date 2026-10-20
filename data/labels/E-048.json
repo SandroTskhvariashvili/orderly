@@ -1,0 +1,43 @@
+{
+  "emailId": "E-048",
+  "split": "test",
+  "intent": "new_order",
+  "customerId": "C-1022",
+  "lines": [
+    {
+      "sku": "PLM-OATP-1L",
+      "qty": 4,
+      "unit": "case"
+    },
+    {
+      "sku": "COF-HOUSE-1K",
+      "qty": 3,
+      "unit": "bag"
+    },
+    {
+      "sku": "COF-HUILA-1K",
+      "qty": 2,
+      "unit": "bag"
+    },
+    {
+      "sku": "DAI-WHOLE-1L",
+      "qty": 3,
+      "unit": "case"
+    },
+    {
+      "sku": "SYR-SCAR-750",
+      "qty": 2,
+      "unit": "bottle"
+    },
+    {
+      "sku": "SYR-CHOCS-1L",
+      "qty": 1,
+      "unit": "bottle"
+    }
+  ],
+  "deliveryDate": "2026-10-16",
+  "route": "create_draft",
+  "reasons": [],
+  "refersToOrderId": null,
+  "purpose": "Nicknames (house, choc sauce, 'colombia not the decaf') from the café whose Monday oat order was ambiguous; this time it names the brand."
+}

@@ -1,0 +1,40 @@
+{
+  "emailId": "E-039",
+  "split": "test",
+  "intent": "new_order",
+  "customerId": "C-1009",
+  "lines": [
+    {
+      "sku": "COF-HAFEN-1K",
+      "qty": 2,
+      "unit": "bag"
+    },
+    {
+      "sku": "DAI-WHOLE-1L",
+      "qty": 2,
+      "unit": "case"
+    },
+    {
+      "sku": "PLM-OATB-1L",
+      "qty": 1,
+      "unit": "case"
+    },
+    {
+      "sku": "WAT-SPRK-330",
+      "qty": 2,
+      "unit": "case"
+    },
+    {
+      "sku": "WAT-STIL-330",
+      "qty": 1,
+      "unit": "case"
+    }
+  ],
+  "deliveryDate": "2026-10-14",
+  "route": "needs_review",
+  "reasons": [
+    "credit_hold"
+  ],
+  "refersToOrderId": null,
+  "purpose": "Normal order from a customer whose account is on credit hold."
+}

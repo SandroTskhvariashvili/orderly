@@ -1,0 +1,18 @@
+{
+  "id": "E-043",
+  "receivedAt": "2026-10-14T08:30:02+02:00",
+  "from": {
+    "name": "Siobhán Doyle",
+    "address": "siobhan@liffeyside.ie"
+  },
+  "to": {
+    "name": "Harbor Lane Orders",
+    "address": "orders@harborlane-provisions.nl"
+  },
+  "cc": [],
+  "subject": "FW: Order for Friday",
+  "messageId": "<DB8PR03MB3012CC77C2C17D8B78CE7B0829DE453663CC@DB8PR03MB3012.eurprd03.prod.outlook.com>",
+  "inReplyTo": null,
+  "body": "Hi, not sure this went through yesterday, I didn't get the usual confirmation. Sending again just in case.\n\nSiobhán\n\n________________________________\nFrom: Siobhán Doyle <siobhan@liffeyside.ie>\nSent: Tuesday 13 October 2026 08:40\nTo: Harbor Lane Orders <orders@harborlane-provisions.nl>\nSubject: Order for Friday\n\nGood morning,\n\nCould I order the following for Friday please?\n\n2 x whole milk 1L\n2 x orange juice 1L\n2 x Caffè Crema beans\n1 x English Breakfast tea bags\n1 x Greek yoghurt\n1 x mini croissants\n\nMany thanks,\nSiobhán\n\nLiffeyside Guesthouse\n14 Ormond Quay Upper, Dublin 7\n+353 1 873 4402",
+  "attachments": []
+}

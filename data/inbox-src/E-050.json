@@ -1,0 +1,18 @@
+{
+  "id": "E-050",
+  "receivedAt": "2026-10-14T14:25:36+02:00",
+  "from": {
+    "name": "Jesse Bouwman",
+    "address": "jesse.bouwman94@gmail.com"
+  },
+  "to": {
+    "name": "Harbor Lane Orders",
+    "address": "orders@harborlane-provisions.nl"
+  },
+  "cc": [],
+  "subject": "order Maple & Rye for saturday",
+  "messageId": "<CAHvewv4NaVOQ-wK6KHRT29au0srm9PIOLxO=fi4MtR@mail.gmail.com>",
+  "inReplyTo": null,
+  "body": "hi, this is Jesse from Maple & Rye (I work in the bakery). Sophie is on holiday this week and asked me to do the order, I don't have the shop email on my phone so sending from mine\n\nfor saturday:\n5 haverland oat\n4 house blend\n4 whole milk 1L\n2 butter\n1 dark callets\n1 box paper bags\n\nthanks!\nJesse",
+  "attachments": []
+}

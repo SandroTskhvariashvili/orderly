@@ -1,0 +1,18 @@
+{
+  "id": "E-025",
+  "receivedAt": "2026-10-12T16:20:09+02:00",
+  "from": {
+    "name": "Niamh O'Connell",
+    "address": "niamh.bothar@gmail.com"
+  },
+  "to": {
+    "name": "Harbor Lane Orders",
+    "address": "orders@harborlane-provisions.nl"
+  },
+  "cc": [],
+  "subject": "Broken syrup bottles in Thursday's delivery",
+  "messageId": "<CAH2xRf8bK4qM1dVn7sYw0Lp9EuZ3tJc6Gi5Ao4NmXk@mail.gmail.com>",
+  "inReplyTo": null,
+  "body": "Hi there,\n\nJust letting you know 2 of the 4 vanilla syrups in last Thursday's delivery were smashed when we opened the box. The whole carton was soaked and the hazelnut one was sticky but ok. Have photos if you need them.\n\nCould you credit the two? It's not the first time the syrups come loose in a big box, a bit more padding would help.\n\nThanks,\nNiamh\nBóthar Café, Galway",
+  "attachments": []
+}

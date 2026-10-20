@@ -1,0 +1,40 @@
+{
+  "emailId": "E-029",
+  "split": "test",
+  "intent": "change_order",
+  "customerId": "C-1030",
+  "lines": [
+    {
+      "sku": "COF-HAFEN-1K",
+      "qty": 3,
+      "unit": "bag"
+    },
+    {
+      "sku": "COF-CREMA-1K",
+      "qty": 2,
+      "unit": "bag"
+    },
+    {
+      "sku": "PLM-OATB-1L",
+      "qty": 3,
+      "unit": "case"
+    },
+    {
+      "sku": "DAI-WHOLE-1L",
+      "qty": 3,
+      "unit": "case"
+    },
+    {
+      "sku": "SYR-CAR-750",
+      "qty": 1,
+      "unit": "bottle"
+    }
+  ],
+  "deliveryDate": "2026-10-16",
+  "route": "needs_review",
+  "reasons": [
+    "change_or_cancel"
+  ],
+  "refersToOrderId": "SO-11359",
+  "purpose": "German email moving tomorrow's open order to Friday, same contents."
+}

@@ -1,0 +1,18 @@
+{
+  "id": "E-021",
+  "receivedAt": "2026-10-12T14:33:16+02:00",
+  "from": {
+    "name": "Youssef El Amrani",
+    "address": "youssef@cafeschelde.be"
+  },
+  "to": {
+    "name": "Harbor Lane Orders",
+    "address": "orders@harborlane-provisions.nl"
+  },
+  "cc": [],
+  "subject": "bestelling",
+  "messageId": "<C251F313-343E-F44B-497A-7864B8B6F363@cafeschelde.be>",
+  "inReplyTo": null,
+  "body": "hi\npls for friday\nhafen espreso 4kg\noatmlk haverland 3\nwhole mlk 1l 2\ncarmel syrup 2\n8oz cups 1 box and the 8oz lids 1 box\n\nthx Youssef\n\nVerzonden vanaf mijn iPhone",
+  "attachments": []
+}

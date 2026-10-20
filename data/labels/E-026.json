@@ -1,0 +1,48 @@
+{
+  "emailId": "E-026",
+  "split": "dev",
+  "intent": "new_order",
+  "customerId": "C-1032",
+  "lines": [
+    {
+      "sku": "COF-HUILA-1K",
+      "qty": 2,
+      "unit": "bag"
+    },
+    {
+      "sku": "COF-HAFEN-1K",
+      "qty": 2,
+      "unit": "bag"
+    },
+    {
+      "sku": "PLM-OATB-1L",
+      "qty": 3,
+      "unit": "case"
+    },
+    {
+      "sku": "DAI-BARIS-1L",
+      "qty": 1,
+      "unit": "case"
+    },
+    {
+      "sku": "PKG-DW8-500",
+      "qty": 1,
+      "unit": "box"
+    },
+    {
+      "sku": "PKG-LID80-1000",
+      "qty": 1,
+      "unit": "box"
+    },
+    {
+      "sku": "SYR-HAZ-750",
+      "qty": 1,
+      "unit": "bottle"
+    }
+  ],
+  "deliveryDate": "2026-10-15",
+  "route": "create_draft",
+  "reasons": [],
+  "refersToOrderId": null,
+  "purpose": "Clean order for Thursday; 'hazelnut syrup' must map to the 750 ml, not the discontinued 1 L."
+}

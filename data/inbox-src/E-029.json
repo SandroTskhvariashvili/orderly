@@ -1,0 +1,23 @@
+{
+  "id": "E-029",
+  "receivedAt": "2026-10-13T07:30:14+02:00",
+  "from": {
+    "name": "Malte Petersen",
+    "address": "malte@elbkontor-cafe.de"
+  },
+  "to": {
+    "name": "Harbor Lane Orders",
+    "address": "orders@harborlane-provisions.nl"
+  },
+  "cc": [
+    {
+      "name": "Elbkontor Café",
+      "address": "info@elbkontor-cafe.de"
+    }
+  ],
+  "subject": "Lieferung Mittwoch -> Freitag?",
+  "messageId": "<90b3de6b11510b7f.327dd4cd@elbkontor-cafe.de>",
+  "inReplyTo": null,
+  "body": "Moin,\n\nkönnen wir unsere Lieferung von morgen (Mittwoch) auf Freitag schieben? Bei uns wird ab morgen früh die Straße aufgerissen und der Lieferwagen kommt nicht vor die Tür. Inhalt bleibt gleich.\n\nDanke & Gruß\nMalte\n\nElbkontor Café\nGroße Elbstraße 146, 22767 Hamburg\nTel. 040 3861 4472",
+  "attachments": []
+}

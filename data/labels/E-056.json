@@ -1,0 +1,12 @@
+{
+  "emailId": "E-056",
+  "split": "test",
+  "intent": "question",
+  "customerId": "C-1023",
+  "lines": [],
+  "deliveryDate": null,
+  "route": "not_an_order",
+  "reasons": [],
+  "refersToOrderId": null,
+  "purpose": "Asks about phone hours and bank holiday deliveries; no order."
+}

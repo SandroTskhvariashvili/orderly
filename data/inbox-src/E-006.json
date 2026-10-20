@@ -1,0 +1,18 @@
+{
+  "id": "E-006",
+  "receivedAt": "2026-10-12T08:04:52+02:00",
+  "from": {
+    "name": "Femke de Wit",
+    "address": "femke@grachtandgrind.nl"
+  },
+  "to": {
+    "name": "Harbor Lane Orders",
+    "address": "orders@harborlane-provisions.nl"
+  },
+  "cc": [],
+  "subject": "Change to tomorrow's order",
+  "messageId": "<CAGoof7ZigEXD-Chj0so4lZDZo044GgklAYM_UrAbGL@mail.gmail.com>",
+  "inReplyTo": null,
+  "body": "Morning Marieke,\n\nCan we change tomorrow's order a bit? Oat milk 6 instead of 4 (crazy weekend), and no decaf this time, we still have 2 bags. If it's not too late can you also throw in a box of 8oz lids.\n\nThanks!!\nFemke\n\nGracht & Grind\nWesterstraat 152, Amsterdam\n@grachtandgrind",
+  "attachments": []
+}

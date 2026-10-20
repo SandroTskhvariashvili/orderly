@@ -1,0 +1,12 @@
+{
+  "emailId": "E-051",
+  "split": "test",
+  "intent": "complaint",
+  "customerId": "C-1010",
+  "lines": [],
+  "deliveryDate": null,
+  "route": "not_an_order",
+  "reasons": [],
+  "refersToOrderId": null,
+  "purpose": "Got sugar-free vanilla instead of regular and wants a swap; not a new order."
+}

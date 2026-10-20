@@ -1,0 +1,18 @@
+{
+  "id": "E-039",
+  "receivedAt": "2026-10-13T13:58:20+02:00",
+  "from": {
+    "name": "Daan Visser",
+    "address": "daan@luckypigeon.nl"
+  },
+  "to": {
+    "name": "Harbor Lane Orders",
+    "address": "orders@harborlane-provisions.nl"
+  },
+  "cc": [],
+  "subject": "order",
+  "messageId": "<CABBTqASmWjtu+CMKezHj1j8IBRd064ZrEnw=AvxqeE@mail.gmail.com>",
+  "inReplyTo": null,
+  "body": "Hey,\n\nCan you drop off tomorrow:\n2x hafen espresso\n2x whole milk 1L\n1x haverland oat\n2 cases sparkling 330\n1 case still 330\n\nRe the invoices, our accountant is on it, should be paid by the end of the week.\n\nCheers\nDaan\nLucky Pigeon",
+  "attachments": []
+}

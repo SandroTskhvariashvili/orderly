@@ -1,0 +1,18 @@
+{
+  "id": "E-058",
+  "receivedAt": "2026-10-16T07:55:11+02:00",
+  "from": {
+    "name": "Joost Verhoeven",
+    "address": "joost.verhoeven@outlook.com"
+  },
+  "to": {
+    "name": "Harbor Lane Orders",
+    "address": "orders@harborlane-provisions.nl"
+  },
+  "cc": [],
+  "subject": "order saturday",
+  "messageId": "<DU0P199MB7183598D9D0C275EC174ECCE017AA119D4@DU0P199MB7183.EURP194.PROD.OUTLOOK.COM>",
+  "inReplyTo": null,
+  "body": "Morning,\n\nFor tomorrow (Saturday):\na dozen of the 2 litre whole milk\n18 bottles whole milk 1 litre\n2 cases butter\n2 cream\n1 box small paper bags\n\nWednesday's delivery was fine by the way, thanks for sorting that.\n\nJoost",
+  "attachments": []
+}

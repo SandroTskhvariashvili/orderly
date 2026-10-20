@@ -1,0 +1,18 @@
+{
+  "id": "E-024",
+  "receivedAt": "2026-10-12T15:46:22+02:00",
+  "from": {
+    "name": "Declan Murphy",
+    "address": "declan@rathminesbakehouse.ie"
+  },
+  "to": {
+    "name": "Harbor Lane Orders",
+    "address": "orders@harborlane-provisions.nl"
+  },
+  "cc": [],
+  "subject": "Order - Rathmines Bakehouse",
+  "messageId": "<DB9PR08MB014329EE9F4BF965A973512D63368EBC961B@DB9PR08MB0143.eurprd08.prod.outlook.com>",
+  "inReplyTo": null,
+  "body": "Hi lads,\n\nCan we get the following for Wednesday:\n\nButter x 3 cases\nWhole milk 2L x 3 cases\nCream x 2\nMilk callets x 1 bag\nHouse blend x 2\nPaper bags x 1 box\n\nCheers,\nDeclan\n\nRathmines Bakehouse\n211 Upper Rathmines Road, Dublin 6\n01 497 3318",
+  "attachments": []
+}

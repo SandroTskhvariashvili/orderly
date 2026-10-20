@@ -1,0 +1,18 @@
+{
+  "id": "E-014",
+  "receivedAt": "2026-10-12T10:52:07+02:00",
+  "from": {
+    "name": "Emma Bakker",
+    "address": "emma@domanddaisy.nl"
+  },
+  "to": {
+    "name": "Harbor Lane Orders",
+    "address": "orders@harborlane-provisions.nl"
+  },
+  "cc": [],
+  "subject": "Order Dom & Daisy - Tuesday",
+  "messageId": "<CAFpw3iVWPqoc_XUb3IgPmBdEaDZFdfTSJrq_xtxuCj@mail.gmail.com>",
+  "inReplyTo": null,
+  "body": "Hi Marieke,\n\nHope you had a good weekend! For tomorrow please:\n\n2 colombia huila\n2 house blend\nhaverland oat x3\nalmond barista x1\nwhole milk 1L x3\nvanilla x2\nand 1 hot choc, the normal one not the dark\n\nThanks!\nEmma\n\nDom & Daisy\nOudegracht 211, Utrecht",
+  "attachments": []
+}

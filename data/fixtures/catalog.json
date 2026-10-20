@@ -1,0 +1,2265 @@
+[
+  {
+    "sku": "COF-HUILA-1K",
+    "name": "Colombia Huila Espresso, whole bean",
+    "brand": "Northmill Roasters",
+    "category": "coffee",
+    "unit": "bag",
+    "packSize": "1 kg bag",
+    "priceEur": 25.4,
+    "aliases": [
+      "colombia",
+      "colombia beans",
+      "colombia huila",
+      "huila",
+      "colombia espresso",
+      "kolumbien",
+      "café colombia",
+      "colombia 1kg"
+    ],
+    "stock": 140,
+    "active": true
+  },
+  {
+    "sku": "COF-HUILD-1K",
+    "name": "Colombia Huila Decaf (sugarcane process), whole bean",
+    "brand": "Northmill Roasters",
+    "category": "coffee",
+    "unit": "bag",
+    "packSize": "1 kg bag",
+    "priceEur": 28.9,
+    "aliases": [
+      "decaf",
+      "colombia decaf",
+      "decaf beans",
+      "decaf colombia",
+      "huila decaf",
+      "entkoffeiniert",
+      "koffeinfrei",
+      "descafeinado",
+      "café descafeinado"
+    ],
+    "stock": 64,
+    "active": true
+  },
+  {
+    "sku": "COF-HOUSE-1K",
+    "name": "House Espresso Blend, whole bean",
+    "brand": "Northmill Roasters",
+    "category": "coffee",
+    "unit": "bag",
+    "packSize": "1 kg bag",
+    "priceEur": 19.6,
+    "aliases": [
+      "house blend",
+      "house espresso",
+      "house beans",
+      "the house one",
+      "espresso blend",
+      "northmill house",
+      "hausmischung",
+      "mezcla de la casa",
+      "café de la casa"
+    ],
+    "stock": 320,
+    "active": true
+  },
+  {
+    "sku": "COF-HOUSE-250",
+    "name": "House Espresso Blend, retail bags",
+    "brand": "Northmill Roasters",
+    "category": "coffee",
+    "unit": "case",
+    "packSize": "12 × 250 g",
+    "priceEur": 62.4,
+    "aliases": [
+      "house blend retail",
+      "retail bags",
+      "250g bags",
+      "house blend 250g",
+      "bags for the shelf"
+    ],
+    "stock": 38,
+    "active": true
+  },
+  {
+    "sku": "COF-BRAZ-1K",
+    "name": "Brazil Cerrado Natural, whole bean",
+    "brand": "Northmill Roasters",
+    "category": "coffee",
+    "unit": "bag",
+    "packSize": "1 kg bag",
+    "priceEur": 21.8,
+    "aliases": [
+      "brazil cerrado",
+      "cerrado"
+    ],
+    "stock": 0,
+    "active": false
+  },
+  {
+    "sku": "COF-BRSUL-1K",
+    "name": "Brazil Sul de Minas, whole bean",
+    "brand": "Northmill Roasters",
+    "category": "coffee",
+    "unit": "bag",
+    "packSize": "1 kg bag",
+    "priceEur": 22.4,
+    "aliases": [
+      "brazil",
+      "brazil beans",
+      "sul de minas",
+      "brasil",
+      "brasilien"
+    ],
+    "stock": 110,
+    "active": true
+  },
+  {
+    "sku": "COF-ETGUJ-1K",
+    "name": "Ethiopia Guji Natural, whole bean",
+    "brand": "Valle Roja",
+    "category": "coffee",
+    "unit": "bag",
+    "packSize": "1 kg bag",
+    "priceEur": 32.5,
+    "aliases": [
+      "ethiopia",
+      "ethiopian",
+      "guji",
+      "äthiopien",
+      "etiopía"
+    ],
+    "stock": 2,
+    "active": true
+  },
+  {
+    "sku": "COF-PERU-1K",
+    "name": "Peru Cajamarca Organic, whole bean",
+    "brand": "Valle Roja",
+    "category": "coffee",
+    "unit": "bag",
+    "packSize": "1 kg bag",
+    "priceEur": 26.9,
+    "aliases": [
+      "peru",
+      "peru organic",
+      "cajamarca",
+      "organic beans",
+      "bio kaffee",
+      "café ecológico"
+    ],
+    "stock": 72,
+    "active": true
+  },
+  {
+    "sku": "COF-SEAS-1K",
+    "name": "Seasonal Espresso (autumn: Rwanda Nyamasheke), whole bean",
+    "brand": "Valle Roja",
+    "category": "coffee",
+    "unit": "bag",
+    "packSize": "1 kg bag",
+    "priceEur": 29.5,
+    "aliases": [
+      "seasonal",
+      "seasonal espresso",
+      "guest espresso",
+      "guest coffee",
+      "rwanda"
+    ],
+    "stock": 45,
+    "active": true
+  },
+  {
+    "sku": "COF-FILT-1K",
+    "name": "Daybreak Filter Blend, whole bean",
+    "brand": "Northmill Roasters",
+    "category": "coffee",
+    "unit": "bag",
+    "packSize": "1 kg bag",
+    "priceEur": 21.4,
+    "aliases": [
+      "filter blend",
+      "daybreak",
+      "filter beans",
+      "batch brew beans",
+      "filterkaffee"
+    ],
+    "stock": 90,
+    "active": true
+  },
+  {
+    "sku": "COF-FILTG-1K",
+    "name": "Daybreak Filter Blend, ground for batch brew",
+    "brand": "Northmill Roasters",
+    "category": "coffee",
+    "unit": "bag",
+    "packSize": "1 kg bag",
+    "priceEur": 21.4,
+    "aliases": [
+      "daybreak",
+      "daybreak ground",
+      "ground filter",
+      "filter ground",
+      "pre-ground filter",
+      "filterkaffee gemahlen",
+      "café molido"
+    ],
+    "stock": 85,
+    "active": true
+  },
+  {
+    "sku": "COF-HAFEN-1K",
+    "name": "Hafen Espresso Dark Roast, whole bean",
+    "brand": "Ostkai Kaffeerösterei",
+    "category": "coffee",
+    "unit": "bag",
+    "packSize": "1 kg bag",
+    "priceEur": 20.9,
+    "aliases": [
+      "hafen",
+      "hafen espresso",
+      "dark roast",
+      "dunkle röstung",
+      "ostkai espresso"
+    ],
+    "stock": 150,
+    "active": true
+  },
+  {
+    "sku": "COF-CREMA-1K",
+    "name": "Caffè Crema Classico, whole bean",
+    "brand": "Ostkai Kaffeerösterei",
+    "category": "coffee",
+    "unit": "bag",
+    "packSize": "1 kg bag",
+    "priceEur": 18.7,
+    "aliases": [
+      "crema",
+      "crema classico",
+      "caffè crema",
+      "cafe crema",
+      "crema bohnen"
+    ],
+    "stock": 160,
+    "active": true
+  },
+  {
+    "sku": "COF-COLDB-5L",
+    "name": "Cold Brew Concentrate, bag-in-box",
+    "brand": "Northmill Roasters",
+    "category": "coffee",
+    "unit": "box",
+    "packSize": "5 L bag-in-box",
+    "priceEur": 39,
+    "aliases": [
+      "cold brew",
+      "cold brew concentrate",
+      "cold brew bib",
+      "cold brew box"
+    ],
+    "stock": 26,
+    "active": true
+  },
+  {
+    "sku": "COF-DRIP-50",
+    "name": "House Blend Drip Bags",
+    "brand": "Northmill Roasters",
+    "category": "coffee",
+    "unit": "box",
+    "packSize": "50 × 10 g",
+    "priceEur": 24,
+    "aliases": [
+      "drip bags",
+      "coffee drip bags",
+      "pour over bags",
+      "drip coffee"
+    ],
+    "stock": 60,
+    "active": true
+  },
+  {
+    "sku": "COF-INST-500",
+    "name": "Instant Coffee Gold, freeze-dried",
+    "brand": "Ostkai Kaffeerösterei",
+    "category": "coffee",
+    "unit": "each",
+    "packSize": "500 g tin",
+    "priceEur": 13.9,
+    "aliases": [
+      "instant",
+      "instant coffee",
+      "löslicher kaffee",
+      "soluble coffee",
+      "café soluble"
+    ],
+    "stock": 55,
+    "active": true
+  },
+  {
+    "sku": "TEA-EBPYR-100",
+    "name": "English Breakfast, pyramid bags",
+    "brand": "Kettle & Crane",
+    "category": "tea",
+    "unit": "box",
+    "packSize": "100 pyramid bags",
+    "priceEur": 17.5,
+    "aliases": [
+      "english breakfast",
+      "eb",
+      "eb tea",
+      "breakfast tea",
+      "builders tea",
+      "black tea",
+      "schwarzer tee",
+      "té negro"
+    ],
+    "stock": 140,
+    "active": true
+  },
+  {
+    "sku": "TEA-EGPYR-100",
+    "name": "Earl Grey, pyramid bags",
+    "brand": "Kettle & Crane",
+    "category": "tea",
+    "unit": "box",
+    "packSize": "100 pyramid bags",
+    "priceEur": 18.5,
+    "aliases": [
+      "earl grey",
+      "earl grey bags",
+      "earl grey pyramids",
+      "eg bags"
+    ],
+    "stock": 96,
+    "active": true
+  },
+  {
+    "sku": "TEA-EGLOO-1K",
+    "name": "Earl Grey, loose leaf",
+    "brand": "Kettle & Crane",
+    "category": "tea",
+    "unit": "kg",
+    "packSize": "1 kg foil bag",
+    "priceEur": 42,
+    "aliases": [
+      "earl grey",
+      "earl grey loose",
+      "loose earl grey",
+      "earl grey leaf",
+      "loose leaf earl grey"
+    ],
+    "stock": 30,
+    "active": true
+  },
+  {
+    "sku": "TEA-ENGLO-1K",
+    "name": "English Breakfast, loose leaf",
+    "brand": "Kettle & Crane",
+    "category": "tea",
+    "unit": "kg",
+    "packSize": "1 kg foil bag",
+    "priceEur": 26,
+    "aliases": [
+      "english breakfast loose",
+      "loose breakfast tea",
+      "loose eb",
+      "loose leaf breakfast"
+    ],
+    "stock": 28,
+    "active": true
+  },
+  {
+    "sku": "TEA-SENCH-100",
+    "name": "Japanese Sencha, pyramid bags",
+    "brand": "Kettle & Crane",
+    "category": "tea",
+    "unit": "box",
+    "packSize": "100 pyramid bags",
+    "priceEur": 21,
+    "aliases": [
+      "sencha",
+      "green tea",
+      "grüner tee",
+      "té verde",
+      "groene thee"
+    ],
+    "stock": 70,
+    "active": true
+  },
+  {
+    "sku": "TEA-MINT-100",
+    "name": "Moroccan Mint, pyramid bags",
+    "brand": "Kettle & Crane",
+    "category": "tea",
+    "unit": "box",
+    "packSize": "100 pyramid bags",
+    "priceEur": 18,
+    "aliases": [
+      "mint",
+      "mint tea",
+      "moroccan mint",
+      "peppermint",
+      "pfefferminz",
+      "pfefferminztee",
+      "menta",
+      "té de menta",
+      "muntthee"
+    ],
+    "stock": 110,
+    "active": true
+  },
+  {
+    "sku": "TEA-CHAM-100",
+    "name": "Chamomile Flowers, pyramid bags",
+    "brand": "Kettle & Crane",
+    "category": "tea",
+    "unit": "box",
+    "packSize": "100 pyramid bags",
+    "priceEur": 18,
+    "aliases": [
+      "chamomile",
+      "camomile",
+      "kamille",
+      "kamillentee",
+      "manzanilla"
+    ],
+    "stock": 80,
+    "active": true
+  },
+  {
+    "sku": "TEA-GINLE-100",
+    "name": "Ginger & Lemon, pyramid bags",
+    "brand": "Kettle & Crane",
+    "category": "tea",
+    "unit": "box",
+    "packSize": "100 pyramid bags",
+    "priceEur": 19.5,
+    "aliases": [
+      "ginger lemon",
+      "ginger and lemon",
+      "ginger tea",
+      "ingwer zitrone",
+      "jengibre y limón"
+    ],
+    "stock": 75,
+    "active": true
+  },
+  {
+    "sku": "TEA-CHAIP-1K",
+    "name": "Spiced Chai Latte Powder",
+    "brand": "Leafline",
+    "category": "tea",
+    "unit": "bag",
+    "packSize": "1 kg bag",
+    "priceEur": 22.5,
+    "aliases": [
+      "chai",
+      "chai powder",
+      "chai latte powder",
+      "spiced chai",
+      "chai pulver"
+    ],
+    "stock": 48,
+    "active": true
+  },
+  {
+    "sku": "TEA-MATCH-100",
+    "name": "Ceremonial Grade Matcha",
+    "brand": "Leafline",
+    "category": "tea",
+    "unit": "each",
+    "packSize": "100 g tin",
+    "priceEur": 29,
+    "aliases": [
+      "matcha",
+      "ceremonial matcha",
+      "ceremonial grade",
+      "matcha tin"
+    ],
+    "stock": 0,
+    "active": true
+  },
+  {
+    "sku": "TEA-MATCU-500",
+    "name": "Culinary / Latte Grade Matcha",
+    "brand": "Leafline",
+    "category": "tea",
+    "unit": "bag",
+    "packSize": "500 g bag",
+    "priceEur": 38,
+    "aliases": [
+      "matcha",
+      "culinary matcha",
+      "latte grade matcha",
+      "matcha latte powder",
+      "matcha powder"
+    ],
+    "stock": 22,
+    "active": true
+  },
+  {
+    "sku": "DAI-WHOLE-1L",
+    "name": "Fresh Whole Milk 3.5%, 1 L",
+    "brand": "Polderhof",
+    "category": "dairy",
+    "unit": "case",
+    "packSize": "6 × 1 L",
+    "priceEur": 7.2,
+    "aliases": [
+      "whole milk",
+      "whole milk 1l",
+      "full fat",
+      "full fat milk",
+      "volle melk",
+      "vollmilch",
+      "leche entera",
+      "milk 1l",
+      "1l whole"
+    ],
+    "stock": 420,
+    "active": true
+  },
+  {
+    "sku": "DAI-WHOLE-2L",
+    "name": "Fresh Whole Milk 3.5%, 2 L",
+    "brand": "Polderhof",
+    "category": "dairy",
+    "unit": "case",
+    "packSize": "6 × 2 L",
+    "priceEur": 13.2,
+    "aliases": [
+      "whole milk",
+      "whole milk 2l",
+      "2 litre milk",
+      "2l whole",
+      "big milk",
+      "vollmilch 2l",
+      "leche entera 2l"
+    ],
+    "stock": 260,
+    "active": true
+  },
+  {
+    "sku": "DAI-SEMI-1L",
+    "name": "Fresh Semi-Skimmed Milk 1.5%, 1 L",
+    "brand": "Polderhof",
+    "category": "dairy",
+    "unit": "case",
+    "packSize": "6 × 1 L",
+    "priceEur": 6.6,
+    "aliases": [
+      "semi skimmed",
+      "semi-skimmed",
+      "semi",
+      "halfvolle melk",
+      "fettarme milch",
+      "leche semidesnatada",
+      "low fat milk"
+    ],
+    "stock": 300,
+    "active": true
+  },
+  {
+    "sku": "DAI-SKIM-1L",
+    "name": "Fresh Skimmed Milk 0.1%, 1 L",
+    "brand": "Polderhof",
+    "category": "dairy",
+    "unit": "case",
+    "packSize": "6 × 1 L",
+    "priceEur": 6.3,
+    "aliases": [
+      "skimmed",
+      "skim",
+      "skinny milk",
+      "magere melk",
+      "magermilch",
+      "leche desnatada"
+    ],
+    "stock": 120,
+    "active": true
+  },
+  {
+    "sku": "DAI-BARIS-1L",
+    "name": "Barista Whole Milk 3.8%, 1 L",
+    "brand": "Polderhof",
+    "category": "dairy",
+    "unit": "case",
+    "packSize": "12 × 1 L",
+    "priceEur": 16.8,
+    "aliases": [
+      "barista milk",
+      "barista dairy",
+      "polderhof barista",
+      "barista whole",
+      "barista milch",
+      "leche barista"
+    ],
+    "stock": 180,
+    "active": true
+  },
+  {
+    "sku": "DAI-LACFR-1L",
+    "name": "Lactose-Free Whole Milk, 1 L",
+    "brand": "Weidekamp",
+    "category": "dairy",
+    "unit": "case",
+    "packSize": "6 × 1 L",
+    "priceEur": 9.6,
+    "aliases": [
+      "lactose free",
+      "lactose-free milk",
+      "lf milk",
+      "laktosefrei",
+      "laktosefreie milch",
+      "sin lactosa",
+      "leche sin lactosa"
+    ],
+    "stock": 90,
+    "active": true
+  },
+  {
+    "sku": "DAI-CREAM-1L",
+    "name": "Whipping Cream 35%, 1 L",
+    "brand": "Polderhof",
+    "category": "dairy",
+    "unit": "case",
+    "packSize": "6 × 1 L",
+    "priceEur": 27,
+    "aliases": [
+      "whipping cream",
+      "cream",
+      "slagroom",
+      "sahne",
+      "schlagsahne",
+      "nata",
+      "nata para montar"
+    ],
+    "stock": 75,
+    "active": true
+  },
+  {
+    "sku": "DAI-BUTT-250",
+    "name": "Unsalted Butter, 250 g",
+    "brand": "Weidekamp",
+    "category": "dairy",
+    "unit": "case",
+    "packSize": "20 × 250 g",
+    "priceEur": 49,
+    "aliases": [
+      "butter",
+      "unsalted butter",
+      "roomboter",
+      "ungesalzene butter",
+      "mantequilla",
+      "mantequilla sin sal"
+    ],
+    "stock": 60,
+    "active": true
+  },
+  {
+    "sku": "DAI-YOGH-1K",
+    "name": "Greek-Style Yoghurt 10%, 1 kg",
+    "brand": "Weidekamp",
+    "category": "dairy",
+    "unit": "case",
+    "packSize": "4 × 1 kg",
+    "priceEur": 15.6,
+    "aliases": [
+      "greek yoghurt",
+      "greek yogurt",
+      "yoghurt",
+      "yogurt",
+      "griechischer joghurt",
+      "yogur griego"
+    ],
+    "stock": 70,
+    "active": true
+  },
+  {
+    "sku": "DAI-CUPS-240",
+    "name": "Coffee Creamer Portions, 10 ml",
+    "brand": "Polderhof",
+    "category": "dairy",
+    "unit": "box",
+    "packSize": "240 × 10 ml",
+    "priceEur": 14.4,
+    "aliases": [
+      "creamer cups",
+      "milk cups",
+      "milk portions",
+      "creamers",
+      "koffiemelk cupjes",
+      "kaffeesahne portionen"
+    ],
+    "stock": 85,
+    "active": true
+  },
+  {
+    "sku": "PLM-OATB-1L",
+    "name": "Haverland Barista Oat, 1 L",
+    "brand": "Haverland",
+    "category": "plant-milk",
+    "unit": "case",
+    "packSize": "6 × 1 L",
+    "priceEur": 14.7,
+    "aliases": [
+      "oat milk",
+      "oat",
+      "barista oat",
+      "oat barista",
+      "haverland",
+      "haverland barista",
+      "haverland oat barista",
+      "hafermilch",
+      "haferdrink",
+      "leche de avena",
+      "bebida de avena",
+      "havermelk"
+    ],
+    "stock": 380,
+    "active": true
+  },
+  {
+    "sku": "PLM-OATP-1L",
+    "name": "Plainsong Barista Oat, 1 L",
+    "brand": "Plainsong",
+    "category": "plant-milk",
+    "unit": "case",
+    "packSize": "6 × 1 L",
+    "priceEur": 17.4,
+    "aliases": [
+      "oat milk",
+      "oat",
+      "barista oat",
+      "oat barista",
+      "plainsong",
+      "plainsong oat",
+      "plainsong barista",
+      "hafermilch",
+      "leche de avena"
+    ],
+    "stock": 190,
+    "active": true
+  },
+  {
+    "sku": "PLM-OATO-1L",
+    "name": "Haverland Oat Original (not barista), 1 L",
+    "brand": "Haverland",
+    "category": "plant-milk",
+    "unit": "case",
+    "packSize": "6 × 1 L",
+    "priceEur": 12.9,
+    "aliases": [
+      "oat drink",
+      "haverland original",
+      "oat original",
+      "non barista oat",
+      "regular oat",
+      "hafer original"
+    ],
+    "stock": 140,
+    "active": true
+  },
+  {
+    "sku": "PLM-ALMB-1L",
+    "name": "Plainsong Almond Barista, 1 L",
+    "brand": "Plainsong",
+    "category": "plant-milk",
+    "unit": "case",
+    "packSize": "6 × 1 L",
+    "priceEur": 18.9,
+    "aliases": [
+      "almond",
+      "almond milk",
+      "almond barista",
+      "mandelmilch",
+      "mandeldrink",
+      "leche de almendra",
+      "amandelmelk"
+    ],
+    "stock": 110,
+    "active": true
+  },
+  {
+    "sku": "PLM-SOYB-1L",
+    "name": "Haverland Soya Barista, 1 L",
+    "brand": "Haverland",
+    "category": "plant-milk",
+    "unit": "case",
+    "packSize": "6 × 1 L",
+    "priceEur": 13.8,
+    "aliases": [
+      "soy",
+      "soya",
+      "soy milk",
+      "soya milk",
+      "sojamilch",
+      "leche de soja",
+      "sojamelk"
+    ],
+    "stock": 150,
+    "active": true
+  },
+  {
+    "sku": "PLM-SOYP-1L",
+    "name": "Plainsong Soya Barista, 1 L (discontinued)",
+    "brand": "Plainsong",
+    "category": "plant-milk",
+    "unit": "case",
+    "packSize": "6 × 1 L",
+    "priceEur": 15.9,
+    "aliases": [
+      "plainsong soy",
+      "plainsong soya"
+    ],
+    "stock": 0,
+    "active": false
+  },
+  {
+    "sku": "PLM-COCB-1L",
+    "name": "Plainsong Coconut Barista, 1 L",
+    "brand": "Plainsong",
+    "category": "plant-milk",
+    "unit": "case",
+    "packSize": "6 × 1 L",
+    "priceEur": 19.2,
+    "aliases": [
+      "coconut",
+      "coconut milk",
+      "coconut barista",
+      "kokosmilch",
+      "leche de coco"
+    ],
+    "stock": 60,
+    "active": true
+  },
+  {
+    "sku": "PLM-PISB-1L",
+    "name": "Plainsong Pistachio Barista, 1 L",
+    "brand": "Plainsong",
+    "category": "plant-milk",
+    "unit": "case",
+    "packSize": "6 × 1 L",
+    "priceEur": 23.4,
+    "aliases": [
+      "pistachio",
+      "pistachio milk",
+      "pistazienmilch",
+      "leche de pistacho"
+    ],
+    "stock": 40,
+    "active": true
+  },
+  {
+    "sku": "PLM-RICE-1L",
+    "name": "Haverland Rice Drink, 1 L",
+    "brand": "Haverland",
+    "category": "plant-milk",
+    "unit": "case",
+    "packSize": "6 × 1 L",
+    "priceEur": 12.6,
+    "aliases": [
+      "rice milk",
+      "rice drink",
+      "reismilch",
+      "bebida de arroz"
+    ],
+    "stock": 55,
+    "active": true
+  },
+  {
+    "sku": "PLM-HAZB-1L",
+    "name": "Plainsong Hazelnut Barista, 1 L",
+    "brand": "Plainsong",
+    "category": "plant-milk",
+    "unit": "case",
+    "packSize": "6 × 1 L",
+    "priceEur": 21.6,
+    "aliases": [
+      "hazelnut milk",
+      "hazelnut barista",
+      "haselnussmilch",
+      "leche de avellana"
+    ],
+    "stock": 45,
+    "active": true
+  },
+  {
+    "sku": "SYR-VAN-750",
+    "name": "Vanilla Syrup, 750 ml",
+    "brand": "Copperleaf",
+    "category": "syrup",
+    "unit": "bottle",
+    "packSize": "750 ml glass bottle",
+    "priceEur": 7.9,
+    "aliases": [
+      "vanilla",
+      "vanilla syrup",
+      "vanille",
+      "vanillesirup",
+      "vanille sirup",
+      "vainilla",
+      "sirope de vainilla"
+    ],
+    "stock": 260,
+    "active": true
+  },
+  {
+    "sku": "SYR-VANSF-750",
+    "name": "Sugar-Free Vanilla Syrup, 750 ml",
+    "brand": "Copperleaf",
+    "category": "syrup",
+    "unit": "bottle",
+    "packSize": "750 ml glass bottle",
+    "priceEur": 8.6,
+    "aliases": [
+      "sugar free vanilla",
+      "sugar-free vanilla",
+      "sf vanilla",
+      "skinny vanilla",
+      "vanilla sugar free",
+      "vanille zuckerfrei",
+      "vainilla sin azúcar"
+    ],
+    "stock": 90,
+    "active": true
+  },
+  {
+    "sku": "SYR-CAR-750",
+    "name": "Caramel Syrup, 750 ml",
+    "brand": "Copperleaf",
+    "category": "syrup",
+    "unit": "bottle",
+    "packSize": "750 ml glass bottle",
+    "priceEur": 7.9,
+    "aliases": [
+      "caramel",
+      "caramel syrup",
+      "karamell",
+      "karamellsirup",
+      "caramelo",
+      "sirope de caramelo"
+    ],
+    "stock": 210,
+    "active": true
+  },
+  {
+    "sku": "SYR-SCAR-750",
+    "name": "Salted Caramel Syrup, 750 ml",
+    "brand": "Copperleaf",
+    "category": "syrup",
+    "unit": "bottle",
+    "packSize": "750 ml glass bottle",
+    "priceEur": 8.2,
+    "aliases": [
+      "salted caramel",
+      "salted caramel syrup",
+      "salzkaramell",
+      "gesalzenes karamell",
+      "caramelo salado"
+    ],
+    "stock": 150,
+    "active": true
+  },
+  {
+    "sku": "SYR-HAZ-750",
+    "name": "Hazelnut Syrup, 750 ml",
+    "brand": "Copperleaf",
+    "category": "syrup",
+    "unit": "bottle",
+    "packSize": "750 ml glass bottle",
+    "priceEur": 7.9,
+    "aliases": [
+      "hazelnut",
+      "hazelnut syrup",
+      "haselnuss",
+      "haselnusssirup",
+      "avellana",
+      "sirope de avellana"
+    ],
+    "stock": 170,
+    "active": true
+  },
+  {
+    "sku": "SYR-HAZ-1L",
+    "name": "Hazelnut Syrup, 1 L (old format, discontinued)",
+    "brand": "Copperleaf",
+    "category": "syrup",
+    "unit": "bottle",
+    "packSize": "1 L glass bottle",
+    "priceEur": 9.4,
+    "aliases": [
+      "hazelnut 1l",
+      "hazelnut syrup 1 litre"
+    ],
+    "stock": 0,
+    "active": false
+  },
+  {
+    "sku": "SYR-GING-750",
+    "name": "Gingerbread Syrup, 750 ml (discontinued)",
+    "brand": "Copperleaf",
+    "category": "syrup",
+    "unit": "bottle",
+    "packSize": "750 ml glass bottle",
+    "priceEur": 8.2,
+    "aliases": [
+      "gingerbread",
+      "gingerbread syrup",
+      "lebkuchen"
+    ],
+    "stock": 0,
+    "active": false
+  },
+  {
+    "sku": "SYR-SPEC-750",
+    "name": "Speculoos Syrup, 750 ml",
+    "brand": "Copperleaf",
+    "category": "syrup",
+    "unit": "bottle",
+    "packSize": "750 ml glass bottle",
+    "priceEur": 8.4,
+    "aliases": [
+      "speculoos",
+      "speculaas",
+      "spekulatius",
+      "speculoos syrup",
+      "cookie syrup"
+    ],
+    "stock": 120,
+    "active": true
+  },
+  {
+    "sku": "SYR-PUMP-750",
+    "name": "Pumpkin Spice Syrup, 750 ml",
+    "brand": "Copperleaf",
+    "category": "syrup",
+    "unit": "bottle",
+    "packSize": "750 ml glass bottle",
+    "priceEur": 8.4,
+    "aliases": [
+      "pumpkin spice",
+      "pumpkin",
+      "pumpkin syrup",
+      "psl syrup",
+      "kürbis",
+      "kürbissirup",
+      "calabaza"
+    ],
+    "stock": 0,
+    "active": true
+  },
+  {
+    "sku": "SYR-CINN-750",
+    "name": "Cinnamon Syrup, 750 ml",
+    "brand": "Copperleaf",
+    "category": "syrup",
+    "unit": "bottle",
+    "packSize": "750 ml glass bottle",
+    "priceEur": 7.9,
+    "aliases": [
+      "cinnamon",
+      "cinnamon syrup",
+      "zimt",
+      "zimtsirup",
+      "canela"
+    ],
+    "stock": 95,
+    "active": true
+  },
+  {
+    "sku": "SYR-IRISH-750",
+    "name": "Irish Cream Syrup, 750 ml",
+    "brand": "Copperleaf",
+    "category": "syrup",
+    "unit": "bottle",
+    "packSize": "750 ml glass bottle",
+    "priceEur": 7.9,
+    "aliases": [
+      "irish cream",
+      "irish",
+      "irish cream syrup"
+    ],
+    "stock": 80,
+    "active": true
+  },
+  {
+    "sku": "SYR-CLAS-1L",
+    "name": "Classic Sugar Syrup, 1 L",
+    "brand": "Dolce Riva",
+    "category": "syrup",
+    "unit": "bottle",
+    "packSize": "1 L PET bottle",
+    "priceEur": 6.4,
+    "aliases": [
+      "simple syrup",
+      "sugar syrup",
+      "classic syrup",
+      "gomme",
+      "zuckersirup",
+      "sirope simple",
+      "jarabe de azúcar"
+    ],
+    "stock": 140,
+    "active": true
+  },
+  {
+    "sku": "SYR-CHAIC-1L",
+    "name": "Chai Concentrate, 1 L",
+    "brand": "Dolce Riva",
+    "category": "syrup",
+    "unit": "bottle",
+    "packSize": "1 L carton",
+    "priceEur": 11.5,
+    "aliases": [
+      "chai",
+      "chai concentrate",
+      "chai syrup",
+      "liquid chai",
+      "chai konzentrat"
+    ],
+    "stock": 70,
+    "active": true
+  },
+  {
+    "sku": "SYR-CHOCS-1L",
+    "name": "Chocolate Sauce, 1 L squeeze bottle",
+    "brand": "Dolce Riva",
+    "category": "syrup",
+    "unit": "bottle",
+    "packSize": "1 L squeeze bottle",
+    "priceEur": 9.8,
+    "aliases": [
+      "chocolate sauce",
+      "choc sauce",
+      "mocha sauce",
+      "schokosauce",
+      "schokoladensauce",
+      "salsa de chocolate"
+    ],
+    "stock": 85,
+    "active": true
+  },
+  {
+    "sku": "SYR-CARSA-1L",
+    "name": "Caramel Sauce, 1 L squeeze bottle",
+    "brand": "Dolce Riva",
+    "category": "syrup",
+    "unit": "bottle",
+    "packSize": "1 L squeeze bottle",
+    "priceEur": 9.8,
+    "aliases": [
+      "caramel sauce",
+      "caramel drizzle",
+      "karamellsauce",
+      "salsa de caramelo"
+    ],
+    "stock": 80,
+    "active": true
+  },
+  {
+    "sku": "CHO-HOT28-1K",
+    "name": "Hot Chocolate Powder 28%",
+    "brand": "Velluto",
+    "category": "chocolate",
+    "unit": "bag",
+    "packSize": "1 kg bag",
+    "priceEur": 13.9,
+    "aliases": [
+      "hot chocolate",
+      "hot choc",
+      "hot chocolate powder",
+      "trinkschokolade",
+      "kakaopulver für getränke",
+      "chocolate a la taza",
+      "chocolate caliente",
+      "warme chocolademelk"
+    ],
+    "stock": 150,
+    "active": true
+  },
+  {
+    "sku": "CHO-HOT34-1K",
+    "name": "Dark Hot Chocolate Powder 34%",
+    "brand": "Velluto",
+    "category": "chocolate",
+    "unit": "bag",
+    "packSize": "1 kg bag",
+    "priceEur": 17.2,
+    "aliases": [
+      "dark hot chocolate",
+      "dark hot choc",
+      "34% hot chocolate",
+      "dunkle trinkschokolade",
+      "chocolate negro a la taza"
+    ],
+    "stock": 70,
+    "active": true
+  },
+  {
+    "sku": "CHO-WHITE-1K",
+    "name": "White Hot Chocolate Powder",
+    "brand": "Velluto",
+    "category": "chocolate",
+    "unit": "bag",
+    "packSize": "1 kg bag",
+    "priceEur": 15.6,
+    "aliases": [
+      "white hot chocolate",
+      "white hot choc",
+      "white choc powder",
+      "weiße trinkschokolade",
+      "chocolate blanco"
+    ],
+    "stock": 40,
+    "active": true
+  },
+  {
+    "sku": "CHO-FLAKE-1K",
+    "name": "Chocolate Flakes for Dusting",
+    "brand": "Velluto",
+    "category": "chocolate",
+    "unit": "bag",
+    "packSize": "1 kg bag",
+    "priceEur": 12.4,
+    "aliases": [
+      "choc flakes",
+      "chocolate flakes",
+      "chocolate sprinkles",
+      "chocolate dusting",
+      "schokoflocken",
+      "virutas de chocolate"
+    ],
+    "stock": 50,
+    "active": true
+  },
+  {
+    "sku": "CHO-COCOA-1K",
+    "name": "Cocoa Powder 22–24%, for baking",
+    "brand": "Cacao Norte",
+    "category": "chocolate",
+    "unit": "bag",
+    "packSize": "1 kg bag",
+    "priceEur": 11.2,
+    "aliases": [
+      "cocoa",
+      "cocoa powder",
+      "baking cocoa",
+      "backkakao",
+      "kakao",
+      "cacao en polvo",
+      "cacaopoeder"
+    ],
+    "stock": 65,
+    "active": true
+  },
+  {
+    "sku": "CHO-CAL54-25",
+    "name": "Dark Chocolate Callets 54%",
+    "brand": "Cacao Norte",
+    "category": "chocolate",
+    "unit": "bag",
+    "packSize": "2.5 kg bag",
+    "priceEur": 34.5,
+    "aliases": [
+      "dark callets",
+      "callets",
+      "dark chocolate drops",
+      "54% callets",
+      "couverture",
+      "kuvertüre",
+      "zartbitter kuvertüre",
+      "chocolate negro de cobertura"
+    ],
+    "stock": 3,
+    "active": true
+  },
+  {
+    "sku": "CHO-CALMK-25",
+    "name": "Milk Chocolate Callets 33%",
+    "brand": "Cacao Norte",
+    "category": "chocolate",
+    "unit": "bag",
+    "packSize": "2.5 kg bag",
+    "priceEur": 32.9,
+    "aliases": [
+      "milk callets",
+      "milk chocolate drops",
+      "milk couverture",
+      "vollmilch kuvertüre",
+      "chocolate con leche de cobertura"
+    ],
+    "stock": 28,
+    "active": true
+  },
+  {
+    "sku": "CHO-NAPO-500",
+    "name": "Dark Chocolate Napolitains, individually wrapped",
+    "brand": "Cacao Norte",
+    "category": "chocolate",
+    "unit": "box",
+    "packSize": "500 × 4.5 g",
+    "priceEur": 26,
+    "aliases": [
+      "napolitains",
+      "chocolate squares",
+      "coffee chocolates",
+      "chocs for the saucers",
+      "little chocolates",
+      "koffiechocolaatjes",
+      "schokotäfelchen"
+    ],
+    "stock": 75,
+    "active": true
+  },
+  {
+    "sku": "BAK-CROI-80",
+    "name": "Butter Croissant 80 g, frozen ready-to-bake",
+    "brand": "Maison Ferrand",
+    "category": "bakery",
+    "unit": "box",
+    "packSize": "60 pcs",
+    "priceEur": 39.6,
+    "aliases": [
+      "croissant",
+      "croissants",
+      "butter croissant",
+      "butter croissants",
+      "big croissants",
+      "buttercroissant",
+      "cruasán",
+      "cruasanes",
+      "croissants de mantequilla"
+    ],
+    "stock": 160,
+    "active": true
+  },
+  {
+    "sku": "BAK-CROI-45",
+    "name": "Mini Butter Croissant 45 g, frozen ready-to-bake",
+    "brand": "Maison Ferrand",
+    "category": "bakery",
+    "unit": "box",
+    "packSize": "120 pcs",
+    "priceEur": 44.4,
+    "aliases": [
+      "mini croissant",
+      "mini croissants",
+      "small croissants",
+      "mini buttercroissant",
+      "mini cruasanes"
+    ],
+    "stock": 70,
+    "active": true
+  },
+  {
+    "sku": "BAK-PAINC-75",
+    "name": "Pain au Chocolat 75 g, frozen ready-to-bake",
+    "brand": "Maison Ferrand",
+    "category": "bakery",
+    "unit": "box",
+    "packSize": "60 pcs",
+    "priceEur": 42,
+    "aliases": [
+      "pain au chocolat",
+      "pain au choc",
+      "chocolate croissant",
+      "choc croissant",
+      "schokocroissant",
+      "napolitana de chocolate",
+      "napolitanas"
+    ],
+    "stock": 120,
+    "active": true
+  },
+  {
+    "sku": "BAK-ALMCR-90",
+    "name": "Almond Croissant 90 g, frozen bake-off",
+    "brand": "Maison Ferrand",
+    "category": "bakery",
+    "unit": "box",
+    "packSize": "48 pcs",
+    "priceEur": 46.8,
+    "aliases": [
+      "almond croissant",
+      "almond croissants",
+      "mandelcroissant",
+      "cruasán de almendra"
+    ],
+    "stock": 50,
+    "active": true
+  },
+  {
+    "sku": "BAK-CINR-100",
+    "name": "Cinnamon Roll 100 g, frozen ready-to-bake",
+    "brand": "Ovenmeester",
+    "category": "bakery",
+    "unit": "box",
+    "packSize": "48 pcs",
+    "priceEur": 38.4,
+    "aliases": [
+      "cinnamon roll",
+      "cinnamon rolls",
+      "cinnamon buns",
+      "cinnamon swirls",
+      "zimtschnecke",
+      "zimtschnecken",
+      "kanelbullar",
+      "rollos de canela"
+    ],
+    "stock": 65,
+    "active": true
+  },
+  {
+    "sku": "BAK-APTU-90",
+    "name": "Apple Turnover 90 g, frozen (discontinued)",
+    "brand": "Ovenmeester",
+    "category": "bakery",
+    "unit": "box",
+    "packSize": "48 pcs",
+    "priceEur": 34,
+    "aliases": [
+      "apple turnover",
+      "apple turnovers",
+      "appelflap",
+      "apfeltasche"
+    ],
+    "stock": 0,
+    "active": false
+  },
+  {
+    "sku": "BAK-BANBR-900",
+    "name": "Banana Bread Loaf, pre-sliced (12 slices)",
+    "brand": "Ovenmeester",
+    "category": "bakery",
+    "unit": "each",
+    "packSize": "900 g loaf",
+    "priceEur": 9.8,
+    "aliases": [
+      "banana bread",
+      "bananenbrot",
+      "pan de plátano"
+    ],
+    "stock": 80,
+    "active": true
+  },
+  {
+    "sku": "BAK-MUFBB-12",
+    "name": "Blueberry Muffin 110 g, thaw & serve",
+    "brand": "Ovenmeester",
+    "category": "bakery",
+    "unit": "tray",
+    "packSize": "12 pcs",
+    "priceEur": 13.2,
+    "aliases": [
+      "blueberry muffin",
+      "blueberry muffins",
+      "heidelbeermuffin",
+      "muffin de arándanos"
+    ],
+    "stock": 90,
+    "active": true
+  },
+  {
+    "sku": "BAK-MUFCH-12",
+    "name": "Double Chocolate Muffin 110 g, thaw & serve",
+    "brand": "Ovenmeester",
+    "category": "bakery",
+    "unit": "tray",
+    "packSize": "12 pcs",
+    "priceEur": 13.2,
+    "aliases": [
+      "chocolate muffin",
+      "choc muffin",
+      "chocolate muffins",
+      "double choc muffins",
+      "schokomuffin",
+      "muffin de chocolate"
+    ],
+    "stock": 85,
+    "active": true
+  },
+  {
+    "sku": "BAK-BROWN-24",
+    "name": "Chocolate Brownie Slab, pre-cut",
+    "brand": "Ovenmeester",
+    "category": "bakery",
+    "unit": "tray",
+    "packSize": "24 pcs",
+    "priceEur": 27.6,
+    "aliases": [
+      "brownie",
+      "brownies",
+      "brownie tray",
+      "brownie slab"
+    ],
+    "stock": 40,
+    "active": true
+  },
+  {
+    "sku": "BAK-CARR-14",
+    "name": "Carrot Cake, pre-cut",
+    "brand": "Ovenmeester",
+    "category": "bakery",
+    "unit": "each",
+    "packSize": "1 cake, 14 slices",
+    "priceEur": 23.5,
+    "aliases": [
+      "carrot cake",
+      "karottenkuchen",
+      "rüblikuchen",
+      "tarta de zanahoria",
+      "worteltaart"
+    ],
+    "stock": 30,
+    "active": true
+  },
+  {
+    "sku": "BAK-COOK-60",
+    "name": "Chocolate Chip Cookie Dough Pucks 80 g, frozen",
+    "brand": "Ovenmeester",
+    "category": "bakery",
+    "unit": "box",
+    "packSize": "60 pcs",
+    "priceEur": 31.2,
+    "aliases": [
+      "cookies",
+      "cookie dough",
+      "choc chip cookies",
+      "cookie pucks",
+      "chocolate chip cookies",
+      "galletas"
+    ],
+    "stock": 55,
+    "active": true
+  },
+  {
+    "sku": "BAK-STRW-200",
+    "name": "Mini Stroopwafels, individually wrapped",
+    "brand": "Molenaar",
+    "category": "bakery",
+    "unit": "box",
+    "packSize": "200 pcs",
+    "priceEur": 24,
+    "aliases": [
+      "stroopwafels",
+      "mini stroopwafels",
+      "stroopies",
+      "syrup waffles",
+      "waffles for the cups",
+      "karamellwaffeln"
+    ],
+    "stock": 120,
+    "active": true
+  },
+  {
+    "sku": "BAK-BISC-300",
+    "name": "Caramelised Biscuits, individually wrapped",
+    "brand": "Molenaar",
+    "category": "bakery",
+    "unit": "box",
+    "packSize": "300 pcs",
+    "priceEur": 18.9,
+    "aliases": [
+      "biscuits",
+      "caramel biscuits",
+      "coffee biscuits",
+      "the little biscuits",
+      "karamellkekse",
+      "kekse",
+      "galletas caramelizadas",
+      "koekjes"
+    ],
+    "stock": 140,
+    "active": true
+  },
+  {
+    "sku": "PKG-DW8-500",
+    "name": "Double Wall Hot Cup 8 oz, white",
+    "brand": "Corva Pack",
+    "category": "packaging",
+    "unit": "box",
+    "packSize": "500 pcs",
+    "priceEur": 58,
+    "aliases": [
+      "cups",
+      "coffee cups",
+      "takeaway cups",
+      "8oz cups",
+      "8 oz cups",
+      "8oz double wall",
+      "small cups",
+      "becher 8oz",
+      "kaffeebecher",
+      "vasos de 8oz",
+      "vasos"
+    ],
+    "stock": 140,
+    "active": true
+  },
+  {
+    "sku": "PKG-DW12-500",
+    "name": "Double Wall Hot Cup 12 oz, white",
+    "brand": "Corva Pack",
+    "category": "packaging",
+    "unit": "box",
+    "packSize": "500 pcs",
+    "priceEur": 69,
+    "aliases": [
+      "cups",
+      "coffee cups",
+      "takeaway cups",
+      "12oz cups",
+      "12 oz cups",
+      "12oz double wall",
+      "large cups",
+      "big cups",
+      "becher 12oz",
+      "kaffeebecher",
+      "vasos de 12oz",
+      "vasos"
+    ],
+    "stock": 130,
+    "active": true
+  },
+  {
+    "sku": "PKG-SW4-1000",
+    "name": "Single Wall Espresso Cup 4 oz, white",
+    "brand": "Corva Pack",
+    "category": "packaging",
+    "unit": "box",
+    "packSize": "1000 pcs",
+    "priceEur": 27,
+    "aliases": [
+      "4oz cups",
+      "4 oz cups",
+      "espresso cups",
+      "espresso to go cups",
+      "small espresso cups"
+    ],
+    "stock": 60,
+    "active": true
+  },
+  {
+    "sku": "PKG-SW7-1000",
+    "name": "Single Wall Hot Cup 7 oz (discontinued)",
+    "brand": "Corva Pack",
+    "category": "packaging",
+    "unit": "box",
+    "packSize": "1000 pcs",
+    "priceEur": 34,
+    "aliases": [
+      "7oz cups",
+      "7 oz cups",
+      "single wall 7oz"
+    ],
+    "stock": 0,
+    "active": false
+  },
+  {
+    "sku": "PKG-LID80-1000",
+    "name": "Sip Lid 80 mm, white (fits 8 oz)",
+    "brand": "Corva Pack",
+    "category": "packaging",
+    "unit": "box",
+    "packSize": "1000 pcs",
+    "priceEur": 26,
+    "aliases": [
+      "lids",
+      "coffee lids",
+      "8oz lids",
+      "80mm lids",
+      "small lids",
+      "lids for 8oz",
+      "deckel",
+      "deckel 8oz",
+      "tapas",
+      "tapas 8oz"
+    ],
+    "stock": 150,
+    "active": true
+  },
+  {
+    "sku": "PKG-LID90-1000",
+    "name": "Sip Lid 90 mm, white (fits 12 oz)",
+    "brand": "Corva Pack",
+    "category": "packaging",
+    "unit": "box",
+    "packSize": "1000 pcs",
+    "priceEur": 29,
+    "aliases": [
+      "lids",
+      "coffee lids",
+      "12oz lids",
+      "90mm lids",
+      "big lids",
+      "lids for 12oz",
+      "deckel",
+      "deckel 12oz",
+      "tapas",
+      "tapas 12oz"
+    ],
+    "stock": 140,
+    "active": true
+  },
+  {
+    "sku": "PKG-LID62-1000",
+    "name": "Sip Lid 62 mm, white (fits 4 oz)",
+    "brand": "Corva Pack",
+    "category": "packaging",
+    "unit": "box",
+    "packSize": "1000 pcs",
+    "priceEur": 19,
+    "aliases": [
+      "4oz lids",
+      "espresso lids",
+      "62mm lids"
+    ],
+    "stock": 50,
+    "active": true
+  },
+  {
+    "sku": "PKG-CLD16-1000",
+    "name": "rPET Clear Cold Cup 16 oz",
+    "brand": "Corva Pack",
+    "category": "packaging",
+    "unit": "box",
+    "packSize": "1000 pcs",
+    "priceEur": 64,
+    "aliases": [
+      "cold cups",
+      "iced coffee cups",
+      "clear cups",
+      "16oz clear",
+      "plastic cups",
+      "pet cups",
+      "iced cups"
+    ],
+    "stock": 4,
+    "active": true
+  },
+  {
+    "sku": "PKG-CLDL-1000",
+    "name": "Dome Lid for 16 oz Cold Cup",
+    "brand": "Corva Pack",
+    "category": "packaging",
+    "unit": "box",
+    "packSize": "1000 pcs",
+    "priceEur": 38,
+    "aliases": [
+      "dome lids",
+      "cold cup lids",
+      "iced lids",
+      "lids for cold cups"
+    ],
+    "stock": 30,
+    "active": true
+  },
+  {
+    "sku": "PKG-STRAW-3K",
+    "name": "Paper Straws 8 mm, individually wrapped",
+    "brand": "Corva Pack",
+    "category": "packaging",
+    "unit": "box",
+    "packSize": "3000 pcs",
+    "priceEur": 34,
+    "aliases": [
+      "straws",
+      "paper straws",
+      "strohhalme",
+      "rietjes",
+      "pajitas"
+    ],
+    "stock": 45,
+    "active": true
+  },
+  {
+    "sku": "PKG-CARR-300",
+    "name": "Moulded Pulp Cup Carrier, 4 cups",
+    "brand": "Corva Pack",
+    "category": "packaging",
+    "unit": "box",
+    "packSize": "300 pcs",
+    "priceEur": 39,
+    "aliases": [
+      "cup carriers",
+      "carriers",
+      "cup holders",
+      "4 cup carriers",
+      "trays for cups",
+      "getränkehalter"
+    ],
+    "stock": 40,
+    "active": true
+  },
+  {
+    "sku": "PKG-NAPK-1600",
+    "name": "Napkins 2-ply 33 × 33 cm, white",
+    "brand": "Corva Pack",
+    "category": "packaging",
+    "unit": "box",
+    "packSize": "8 × 200 pcs",
+    "priceEur": 24,
+    "aliases": [
+      "napkins",
+      "serviettes",
+      "servetten",
+      "servietten",
+      "servilletas"
+    ],
+    "stock": 120,
+    "active": true
+  },
+  {
+    "sku": "PKG-STIR-10K",
+    "name": "Wooden Stirrers 140 mm",
+    "brand": "Corva Pack",
+    "category": "packaging",
+    "unit": "case",
+    "packSize": "10 × 1000 pcs",
+    "priceEur": 36,
+    "aliases": [
+      "stirrers",
+      "wooden stirrers",
+      "coffee stirrers",
+      "roerstaafjes",
+      "rührstäbchen",
+      "removedores"
+    ],
+    "stock": 70,
+    "active": true
+  },
+  {
+    "sku": "PKG-SUGW-1000",
+    "name": "White Sugar Sticks 4 g",
+    "brand": "Harbor Lane Essentials",
+    "category": "packaging",
+    "unit": "box",
+    "packSize": "1000 pcs",
+    "priceEur": 14.8,
+    "aliases": [
+      "sugar",
+      "sugar sticks",
+      "white sugar",
+      "white sugar sticks",
+      "suikerzakjes",
+      "zuckersticks",
+      "azúcar",
+      "sobres de azúcar"
+    ],
+    "stock": 200,
+    "active": true
+  },
+  {
+    "sku": "PKG-SUGB-1000",
+    "name": "Brown Sugar Sticks 4 g",
+    "brand": "Harbor Lane Essentials",
+    "category": "packaging",
+    "unit": "box",
+    "packSize": "1000 pcs",
+    "priceEur": 16.2,
+    "aliases": [
+      "brown sugar",
+      "brown sugar sticks",
+      "rohrzucker",
+      "brauner zucker",
+      "azúcar moreno",
+      "bruine suiker"
+    ],
+    "stock": 120,
+    "active": true
+  },
+  {
+    "sku": "PKG-STEV-1000",
+    "name": "Stevia Sweetener Sticks",
+    "brand": "Harbor Lane Essentials",
+    "category": "packaging",
+    "unit": "box",
+    "packSize": "1000 pcs",
+    "priceEur": 19.5,
+    "aliases": [
+      "sweetener",
+      "stevia",
+      "sweetener sticks",
+      "süßstoff",
+      "edulcorante",
+      "zoetjes"
+    ],
+    "stock": 60,
+    "active": true
+  },
+  {
+    "sku": "PKG-BAGS-1000",
+    "name": "Kraft Paper Pastry Bags, small",
+    "brand": "Corva Pack",
+    "category": "packaging",
+    "unit": "box",
+    "packSize": "1000 pcs",
+    "priceEur": 22,
+    "aliases": [
+      "paper bags",
+      "pastry bags",
+      "croissant bags",
+      "bakery bags",
+      "papiertüten",
+      "bolsas de papel",
+      "zakjes"
+    ],
+    "stock": 90,
+    "active": true
+  },
+  {
+    "sku": "CLN-ESPTB-100",
+    "name": "Espresso Machine Cleaning Tablets 2 g",
+    "brand": "Klaar",
+    "category": "cleaning",
+    "unit": "each",
+    "packSize": "tub of 100 tablets",
+    "priceEur": 17.9,
+    "aliases": [
+      "cleaning tablets",
+      "machine tablets",
+      "espresso tablets",
+      "espresso machine cleaner",
+      "group head tablets",
+      "reinigungstabletten",
+      "pastillas de limpieza"
+    ],
+    "stock": 80,
+    "active": true
+  },
+  {
+    "sku": "CLN-ESPPW-900",
+    "name": "Espresso Machine Cleaning Powder",
+    "brand": "Klaar",
+    "category": "cleaning",
+    "unit": "each",
+    "packSize": "900 g tub",
+    "priceEur": 16.5,
+    "aliases": [
+      "cleaning powder",
+      "backflush powder",
+      "machine powder",
+      "espresso machine cleaner",
+      "reinigungspulver",
+      "polvo de limpieza"
+    ],
+    "stock": 60,
+    "active": true
+  },
+  {
+    "sku": "CLN-MILK-1L",
+    "name": "Milk System Cleaner",
+    "brand": "Klaar",
+    "category": "cleaning",
+    "unit": "bottle",
+    "packSize": "1 L bottle",
+    "priceEur": 13.4,
+    "aliases": [
+      "milk cleaner",
+      "milk system cleaner",
+      "steam wand cleaner",
+      "milchsystemreiniger",
+      "limpiador de leche"
+    ],
+    "stock": 70,
+    "active": true
+  },
+  {
+    "sku": "CLN-DESC-1L",
+    "name": "Liquid Descaler",
+    "brand": "Klaar",
+    "category": "cleaning",
+    "unit": "bottle",
+    "packSize": "1 L bottle",
+    "priceEur": 11.2,
+    "aliases": [
+      "descaler",
+      "entkalker",
+      "ontkalker",
+      "descalcificador"
+    ],
+    "stock": 65,
+    "active": true
+  },
+  {
+    "sku": "CLN-DISH-5L",
+    "name": "Dishwashing Liquid",
+    "brand": "Scrubline",
+    "category": "cleaning",
+    "unit": "bottle",
+    "packSize": "5 L jerrycan",
+    "priceEur": 14.6,
+    "aliases": [
+      "dish soap",
+      "washing up liquid",
+      "dishwashing liquid",
+      "afwasmiddel",
+      "spülmittel",
+      "lavavajillas a mano"
+    ],
+    "stock": 55,
+    "active": true
+  },
+  {
+    "sku": "CLN-SANI-750",
+    "name": "Food-Safe Surface Sanitiser Spray",
+    "brand": "Scrubline",
+    "category": "cleaning",
+    "unit": "case",
+    "packSize": "6 × 750 ml",
+    "priceEur": 22.8,
+    "aliases": [
+      "sanitiser",
+      "sanitizer",
+      "surface spray",
+      "sanitiser spray",
+      "desinfektionsspray",
+      "desinfectante"
+    ],
+    "stock": 50,
+    "active": true
+  },
+  {
+    "sku": "CLN-HSOAP-500",
+    "name": "Antibacterial Hand Soap",
+    "brand": "Scrubline",
+    "category": "cleaning",
+    "unit": "case",
+    "packSize": "6 × 500 ml",
+    "priceEur": 15.9,
+    "aliases": [
+      "hand soap",
+      "handzeep",
+      "handseife",
+      "jabón de manos"
+    ],
+    "stock": 45,
+    "active": true
+  },
+  {
+    "sku": "CLN-BLUE-6",
+    "name": "Blue Centrefeed Paper Roll",
+    "brand": "Scrubline",
+    "category": "cleaning",
+    "unit": "case",
+    "packSize": "6 rolls",
+    "priceEur": 21,
+    "aliases": [
+      "blue roll",
+      "centrefeed",
+      "paper towel",
+      "paper rolls",
+      "küchenrolle",
+      "papierrollen",
+      "papel secamanos"
+    ],
+    "stock": 60,
+    "active": true
+  },
+  {
+    "sku": "JUI-ORNG-1L",
+    "name": "Fresh-Pressed Orange Juice (HPP, chilled), 1 L",
+    "brand": "Orchard Hill",
+    "category": "juice",
+    "unit": "case",
+    "packSize": "6 × 1 L",
+    "priceEur": 21.6,
+    "aliases": [
+      "orange juice",
+      "oj",
+      "fresh orange",
+      "orange juice 1l",
+      "sinaasappelsap",
+      "orangensaft",
+      "zumo de naranja"
+    ],
+    "stock": 110,
+    "active": true
+  },
+  {
+    "sku": "JUI-ORNG-250",
+    "name": "Fresh-Pressed Orange Juice (HPP, chilled), 250 ml",
+    "brand": "Orchard Hill",
+    "category": "juice",
+    "unit": "case",
+    "packSize": "12 × 250 ml",
+    "priceEur": 15.6,
+    "aliases": [
+      "orange juice",
+      "oj",
+      "small oj",
+      "orange juice small",
+      "oj bottles",
+      "orange 250",
+      "orangensaft klein"
+    ],
+    "stock": 90,
+    "active": true
+  },
+  {
+    "sku": "JUI-APCL-1L",
+    "name": "Cloudy Apple Juice, 1 L",
+    "brand": "Orchard Hill",
+    "category": "juice",
+    "unit": "case",
+    "packSize": "6 × 1 L",
+    "priceEur": 13.8,
+    "aliases": [
+      "apple juice",
+      "cloudy apple",
+      "apple juice 1l",
+      "appelsap",
+      "apfelsaft",
+      "apfelsaft naturtrüb",
+      "zumo de manzana"
+    ],
+    "stock": 100,
+    "active": true
+  },
+  {
+    "sku": "JUI-APCL-250",
+    "name": "Cloudy Apple Juice, 250 ml",
+    "brand": "Orchard Hill",
+    "category": "juice",
+    "unit": "case",
+    "packSize": "12 × 250 ml",
+    "priceEur": 13.2,
+    "aliases": [
+      "apple juice small",
+      "small apple juice",
+      "apple 250",
+      "apfelsaft klein"
+    ],
+    "stock": 80,
+    "active": true
+  },
+  {
+    "sku": "JUI-GING-60",
+    "name": "Ginger Shot, cold-pressed",
+    "brand": "Sol de Huerta",
+    "category": "juice",
+    "unit": "case",
+    "packSize": "12 × 60 ml",
+    "priceEur": 16.8,
+    "aliases": [
+      "ginger shot",
+      "ginger shots",
+      "ingwer shot",
+      "shot de jengibre"
+    ],
+    "stock": 5,
+    "active": true
+  },
+  {
+    "sku": "JUI-LEMO-275",
+    "name": "Organic Sparkling Lemonade",
+    "brand": "Sol de Huerta",
+    "category": "juice",
+    "unit": "case",
+    "packSize": "12 × 275 ml",
+    "priceEur": 14.4,
+    "aliases": [
+      "lemonade",
+      "sparkling lemonade",
+      "limonade",
+      "limonada"
+    ],
+    "stock": 70,
+    "active": true
+  },
+  {
+    "sku": "WAT-STIL-330",
+    "name": "Still Mineral Water, 330 ml glass",
+    "brand": "Veldbron",
+    "category": "water",
+    "unit": "case",
+    "packSize": "24 × 330 ml",
+    "priceEur": 13.2,
+    "aliases": [
+      "still water",
+      "still",
+      "still 330",
+      "small still",
+      "plat water",
+      "stilles wasser",
+      "agua sin gas"
+    ],
+    "stock": 240,
+    "active": true
+  },
+  {
+    "sku": "WAT-SPRK-330",
+    "name": "Sparkling Mineral Water, 330 ml glass",
+    "brand": "Veldbron",
+    "category": "water",
+    "unit": "case",
+    "packSize": "24 × 330 ml",
+    "priceEur": 13.2,
+    "aliases": [
+      "sparkling water",
+      "sparkling",
+      "sparkling 330",
+      "small sparkling",
+      "bruisend water",
+      "sprudel",
+      "mineralwasser mit kohlensäure",
+      "agua con gas"
+    ],
+    "stock": 220,
+    "active": true
+  },
+  {
+    "sku": "WAT-STIL-750",
+    "name": "Still Mineral Water, 750 ml glass",
+    "brand": "Veldbron",
+    "category": "water",
+    "unit": "case",
+    "packSize": "12 × 750 ml",
+    "priceEur": 14.4,
+    "aliases": [
+      "still water",
+      "still 750",
+      "large still",
+      "big still"
+    ],
+    "stock": 120,
+    "active": true
+  },
+  {
+    "sku": "WAT-SPRK-750",
+    "name": "Sparkling Mineral Water, 750 ml glass",
+    "brand": "Veldbron",
+    "category": "water",
+    "unit": "case",
+    "packSize": "12 × 750 ml",
+    "priceEur": 14.4,
+    "aliases": [
+      "sparkling water",
+      "sparkling 750",
+      "large sparkling",
+      "big sparkling"
+    ],
+    "stock": 110,
+    "active": true
+  },
+  {
+    "sku": "WAT-PET-500",
+    "name": "Still Spring Water, 500 ml PET",
+    "brand": "Fuente Clara",
+    "category": "water",
+    "unit": "case",
+    "packSize": "24 × 500 ml",
+    "priceEur": 8.4,
+    "aliases": [
+      "water bottles",
+      "plastic water bottles",
+      "still 500",
+      "pet water",
+      "small plastic water"
+    ],
+    "stock": 150,
+    "active": true
+  }
+]

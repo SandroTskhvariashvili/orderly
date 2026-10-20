@@ -1,0 +1,30 @@
+{
+  "emailId": "E-046",
+  "split": "test",
+  "intent": "new_order",
+  "customerId": "C-1012",
+  "lines": [
+    {
+      "sku": "SYR-PUMP-750",
+      "qty": 6,
+      "unit": "bottle"
+    },
+    {
+      "sku": "PLM-OATB-1L",
+      "qty": 2,
+      "unit": "case"
+    },
+    {
+      "sku": "DAI-WHOLE-1L",
+      "qty": 1,
+      "unit": "case"
+    }
+  ],
+  "deliveryDate": "2026-10-15",
+  "route": "needs_review",
+  "reasons": [
+    "out_of_stock"
+  ],
+  "refersToOrderId": null,
+  "purpose": "Orders 6 pumpkin spice syrups, which are out of stock."
+}

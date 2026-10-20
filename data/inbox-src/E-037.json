@@ -1,0 +1,18 @@
+{
+  "id": "E-037",
+  "receivedAt": "2026-10-13T12:10:08+02:00",
+  "from": {
+    "name": "Camille Laurent",
+    "address": "camille@maisonsablon.be"
+  },
+  "to": {
+    "name": "Harbor Lane Orders",
+    "address": "orders@harborlane-provisions.nl"
+  },
+  "cc": [],
+  "subject": "Commande pour demain / order for tomorrow",
+  "messageId": "<CAVSZTA3rQcJN_TqQtErnbYSxYCBGiOcMaBn_kUzARv@mail.gmail.com>",
+  "inReplyTo": null,
+  "body": "Bonjour Marieke,\n\nFor tomorrow please:\n- 2 Colombia Huila\n- 3 whole milk 1L\n- 2 whipping cream\n- 2 butter\n- 1 almond croissants\n- 1 dark hot chocolate\n\nMerci beaucoup,\nCamille\n\nMaison Sablon\nRue des Minimes 19, 1000 Bruxelles",
+  "attachments": []
+}

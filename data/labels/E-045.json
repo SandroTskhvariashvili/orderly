@@ -1,0 +1,40 @@
+{
+  "emailId": "E-045",
+  "split": "test",
+  "intent": "new_order",
+  "customerId": "C-1005",
+  "lines": [
+    {
+      "sku": "COF-HUILA-1K",
+      "qty": 3,
+      "unit": "bag"
+    },
+    {
+      "sku": "DAI-BARIS-1L",
+      "qty": 2,
+      "unit": "case"
+    },
+    {
+      "sku": "PLM-OATP-1L",
+      "qty": 3,
+      "unit": "case"
+    },
+    {
+      "sku": "PKG-DW8-500",
+      "qty": 1,
+      "unit": "box"
+    },
+    {
+      "sku": "PKG-DW12-500",
+      "qty": 1,
+      "unit": "box"
+    }
+  ],
+  "deliveryDate": "2026-10-15",
+  "route": "needs_review",
+  "reasons": [
+    "ambiguous_product"
+  ],
+  "refersToOrderId": null,
+  "purpose": "'2 boxes of lids' while ordering both 8 oz and 12 oz cups; the lid size is unclear."
+}

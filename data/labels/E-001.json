@@ -1,0 +1,48 @@
+{
+  "emailId": "E-001",
+  "split": "test",
+  "intent": "new_order",
+  "customerId": "C-1004",
+  "lines": [
+    {
+      "sku": "DAI-WHOLE-1L",
+      "qty": 5,
+      "unit": "case"
+    },
+    {
+      "sku": "DAI-SEMI-1L",
+      "qty": 3,
+      "unit": "case"
+    },
+    {
+      "sku": "JUI-ORNG-1L",
+      "qty": 3,
+      "unit": "case"
+    },
+    {
+      "sku": "JUI-APCL-1L",
+      "qty": 2,
+      "unit": "case"
+    },
+    {
+      "sku": "DAI-YOGH-1K",
+      "qty": 3,
+      "unit": "case"
+    },
+    {
+      "sku": "BAK-CROI-45",
+      "qty": 1,
+      "unit": "box"
+    },
+    {
+      "sku": "COF-CREMA-1K",
+      "qty": 4,
+      "unit": "bag"
+    }
+  ],
+  "deliveryDate": "2026-10-13",
+  "route": "create_draft",
+  "reasons": [],
+  "refersToOrderId": null,
+  "purpose": "Clean hotel order as a neat list, for tomorrow."
+}

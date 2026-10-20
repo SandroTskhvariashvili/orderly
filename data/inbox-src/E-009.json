@@ -1,0 +1,18 @@
+{
+  "id": "E-009",
+  "receivedAt": "2026-10-12T09:03:58+02:00",
+  "from": {
+    "name": "Ciara Byrne",
+    "address": "ciara@hatchlanecoffee.ie"
+  },
+  "to": {
+    "name": "Harbor Lane Orders",
+    "address": "orders@harborlane-provisions.nl"
+  },
+  "cc": [],
+  "subject": "Order for Wednesday",
+  "messageId": "<CAQrxInZ2SrCV-6yzZdLDYSKVCArjfxmaqPC_XNDJ2M@mail.gmail.com>",
+  "inReplyTo": null,
+  "body": "Hi folks,\n\nOrder for Wednesday please\n\nHouse blend x3\nColombia beans x2\nWhole milk 1L x3\nOat milk x4\nSalted caramel x2\n\nThanks a mil,\nCiara\n\nHatch Lane Coffee\nMon-Fri 7.30-4 | Sat 9-3\n@hatchlanecoffee",
+  "attachments": []
+}

@@ -1,0 +1,18 @@
+{
+  "id": "E-053",
+  "receivedAt": "2026-10-15T08:12:40+02:00",
+  "from": {
+    "name": "Charlotte Dewulf",
+    "address": "charlotte@patersholpantry.be"
+  },
+  "to": {
+    "name": "Harbor Lane Orders",
+    "address": "orders@harborlane-provisions.nl"
+  },
+  "cc": [],
+  "subject": "order",
+  "messageId": "<AM6PR10MB2519C5AA72D027418DD28FD0EF168AC73479@AM6PR10MB2519.EURP281.prod.outlook.com>",
+  "inReplyTo": null,
+  "body": "Hi Marieke,\n\nSame as last week but without the decaf please (still have a bag). For tomorrow.\n\nThanks for the price list btw!\n\nCharlotte",
+  "attachments": []
+}

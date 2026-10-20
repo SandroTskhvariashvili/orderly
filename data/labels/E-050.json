@@ -1,0 +1,45 @@
+{
+  "emailId": "E-050",
+  "split": "dev",
+  "intent": "new_order",
+  "customerId": "C-1008",
+  "lines": [
+    {
+      "sku": "PLM-OATB-1L",
+      "qty": 5,
+      "unit": "case"
+    },
+    {
+      "sku": "COF-HOUSE-1K",
+      "qty": 4,
+      "unit": "bag"
+    },
+    {
+      "sku": "DAI-WHOLE-1L",
+      "qty": 4,
+      "unit": "case"
+    },
+    {
+      "sku": "DAI-BUTT-250",
+      "qty": 2,
+      "unit": "case"
+    },
+    {
+      "sku": "CHO-CAL54-25",
+      "qty": 1,
+      "unit": "bag"
+    },
+    {
+      "sku": "PKG-BAGS-1000",
+      "qty": 1,
+      "unit": "box"
+    }
+  ],
+  "deliveryDate": "2026-10-17",
+  "route": "needs_review",
+  "reasons": [
+    "unknown_customer"
+  ],
+  "refersToOrderId": null,
+  "purpose": "Staff member orders for a known café from a personal Gmail address that is not on file."
+}

@@ -1,0 +1,18 @@
+{
+  "id": "E-030",
+  "receivedAt": "2026-10-13T08:15:57+02:00",
+  "from": {
+    "name": "Bram Koster",
+    "address": "bram@zeewegkitchen.nl"
+  },
+  "to": {
+    "name": "Harbor Lane Orders",
+    "address": "orders@harborlane-provisions.nl"
+  },
+  "cc": [],
+  "subject": "cancel thursday",
+  "messageId": "<CARqR9Q8pgr56-Te9aF7K17PRVc0Vv5D8w5H=ogiBAQ@mail.gmail.com>",
+  "inReplyTo": null,
+  "body": "Hi,\n\nToday's delivery came in fine thanks, but the dishwasher flooded the kitchen last night and we're closed until at least next Wednesday. Can you cancel Thursday's order? I'll send a new one when we know more.\n\nBram\nZeeweg Kitchen",
+  "attachments": []
+}

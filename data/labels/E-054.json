@@ -1,0 +1,35 @@
+{
+  "emailId": "E-054",
+  "split": "test",
+  "intent": "new_order",
+  "customerId": "C-1015",
+  "lines": [
+    {
+      "sku": "DAI-WHOLE-1L",
+      "qty": 5,
+      "unit": "case"
+    },
+    {
+      "sku": "JUI-ORNG-1L",
+      "qty": 3,
+      "unit": "case"
+    },
+    {
+      "sku": "TEA-EBPYR-100",
+      "qty": 1,
+      "unit": "box"
+    },
+    {
+      "sku": "COF-CREMA-1K",
+      "qty": 3,
+      "unit": "bag"
+    }
+  ],
+  "deliveryDate": "2026-10-16",
+  "route": "needs_review",
+  "reasons": [
+    "ambiguous_product"
+  ],
+  "refersToOrderId": null,
+  "purpose": "'Earl Grey - 2' from a hotel that buys both the pyramid bags and the loose leaf."
+}

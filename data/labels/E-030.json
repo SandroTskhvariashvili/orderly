@@ -1,0 +1,14 @@
+{
+  "emailId": "E-030",
+  "split": "dev",
+  "intent": "cancel_order",
+  "customerId": "C-1014",
+  "lines": [],
+  "deliveryDate": null,
+  "route": "needs_review",
+  "reasons": [
+    "change_or_cancel"
+  ],
+  "refersToOrderId": "SO-11363",
+  "purpose": "Cancels Thursday's order but not today's; two orders are open and only one should go."
+}

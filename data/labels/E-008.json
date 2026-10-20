@@ -1,0 +1,14 @@
+{
+  "emailId": "E-008",
+  "split": "test",
+  "intent": "cancel_order",
+  "customerId": "C-1038",
+  "lines": [],
+  "deliveryDate": null,
+  "route": "needs_review",
+  "reasons": [
+    "change_or_cancel"
+  ],
+  "refersToOrderId": "SO-11360",
+  "purpose": "Spanish email cancelling Thursday's open order."
+}

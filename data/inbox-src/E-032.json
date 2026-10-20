@@ -1,0 +1,18 @@
+{
+  "id": "E-032",
+  "receivedAt": "2026-10-13T09:05:48+02:00",
+  "from": {
+    "name": "Lotte Jansen",
+    "address": "facilities@werkhal-noord.nl"
+  },
+  "to": {
+    "name": "Harbor Lane Orders",
+    "address": "orders@harborlane-provisions.nl"
+  },
+  "cc": [],
+  "subject": "Weekly order Werkhal Noord",
+  "messageId": "<AM0PR06MB9587B41474EC8312221C7B5370AEB26BD1D8@AM0PR06MB9587.eurprd06.prod.outlook.com>",
+  "inReplyTo": null,
+  "body": "Hi,\n\nOur order for this week:\n- 3 kg house blend\n- 2 cases Haverland oat original\n- 3 cases semi-skimmed\n- 1 box mint tea\n- 2 boxes of Nespresso compatible capsules (lungo) for the meeting room machine\n\nWednesday is fine.\n\nKind regards,\n\nLotte Jansen\nOffice & Community Manager\nWerkhal Noord Coworking\nNDSM-straat 8, 1033 SB Amsterdam",
+  "attachments": []
+}

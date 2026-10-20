@@ -1,0 +1,38 @@
+{
+  "emailId": "E-027",
+  "split": "test",
+  "intent": "new_order",
+  "customerId": "C-1039",
+  "lines": [
+    {
+      "sku": "DAI-WHOLE-1L",
+      "qty": 3,
+      "unit": "case"
+    },
+    {
+      "sku": "DAI-BUTT-250",
+      "qty": 2,
+      "unit": "case"
+    },
+    {
+      "sku": "DAI-CREAM-1L",
+      "qty": 1,
+      "unit": "case"
+    },
+    {
+      "sku": "COF-HOUSE-1K",
+      "qty": 2,
+      "unit": "bag"
+    },
+    {
+      "sku": "CHO-COCOA-1K",
+      "qty": 1,
+      "unit": "bag"
+    }
+  ],
+  "deliveryDate": "2026-10-14",
+  "route": "create_draft",
+  "reasons": [],
+  "refersToOrderId": null,
+  "purpose": "Late-evening order in simple English from a Spanish bakery; Wednesday is still reachable."
+}

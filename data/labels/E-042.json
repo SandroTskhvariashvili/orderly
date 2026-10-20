@@ -1,0 +1,48 @@
+{
+  "emailId": "E-042",
+  "split": "dev",
+  "intent": "new_order",
+  "customerId": "C-1013",
+  "lines": [
+    {
+      "sku": "COF-CREMA-1K",
+      "qty": 4,
+      "unit": "bag"
+    },
+    {
+      "sku": "DAI-SEMI-1L",
+      "qty": 3,
+      "unit": "case"
+    },
+    {
+      "sku": "PLM-OATO-1L",
+      "qty": 2,
+      "unit": "case"
+    },
+    {
+      "sku": "TEA-EBPYR-100",
+      "qty": 1,
+      "unit": "box"
+    },
+    {
+      "sku": "TEA-GINLE-100",
+      "qty": 1,
+      "unit": "box"
+    },
+    {
+      "sku": "WAT-SPRK-330",
+      "qty": 2,
+      "unit": "case"
+    },
+    {
+      "sku": "BAK-BISC-300",
+      "qty": 1,
+      "unit": "box"
+    }
+  ],
+  "deliveryDate": "2026-10-15",
+  "route": "create_draft",
+  "reasons": [],
+  "refersToOrderId": null,
+  "purpose": "PDF purchase order from an office, in its own material codes and procurement wording."
+}

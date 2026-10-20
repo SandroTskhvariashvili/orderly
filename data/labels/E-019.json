@@ -1,0 +1,53 @@
+{
+  "emailId": "E-019",
+  "split": "test",
+  "intent": "new_order",
+  "customerId": "C-1008",
+  "lines": [
+    {
+      "sku": "COF-HOUSE-1K",
+      "qty": 4,
+      "unit": "bag"
+    },
+    {
+      "sku": "PLM-OATB-1L",
+      "qty": 5,
+      "unit": "case"
+    },
+    {
+      "sku": "DAI-WHOLE-1L",
+      "qty": 4,
+      "unit": "case"
+    },
+    {
+      "sku": "DAI-BUTT-250",
+      "qty": 2,
+      "unit": "case"
+    },
+    {
+      "sku": "DAI-CREAM-1L",
+      "qty": 1,
+      "unit": "case"
+    },
+    {
+      "sku": "SYR-CAR-750",
+      "qty": 2,
+      "unit": "bottle"
+    },
+    {
+      "sku": "PKG-DW12-500",
+      "qty": 1,
+      "unit": "box"
+    },
+    {
+      "sku": "PKG-LID90-1000",
+      "qty": 1,
+      "unit": "box"
+    }
+  ],
+  "deliveryDate": "2026-10-13",
+  "route": "create_draft",
+  "reasons": [],
+  "refersToOrderId": null,
+  "purpose": "Clean 8-line order sent eight minutes before the 14:00 cutoff, so tomorrow still works."
+}
