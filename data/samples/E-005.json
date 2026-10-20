@@ -1,0 +1,12 @@
+{
+  "emailId": "E-005",
+  "triage": {
+    "intent": "not_business",
+    "language": "en",
+    "suspicious": false,
+    "summary": "Phishing: fake mailbox-full warning asking us to verify the account via a link."
+  },
+  "lookups": [],
+  "extraction": null,
+  "reply": null
+}

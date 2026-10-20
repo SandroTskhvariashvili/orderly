@@ -1,0 +1,71 @@
+{
+  "emailId": "E-020",
+  "triage": {
+    "intent": "new_order",
+    "language": "en",
+    "suspicious": false,
+    "summary": "Wants milk, cream and butter delivered tomorrow morning; they have run out."
+  },
+  "lookups": [
+    {
+      "tool": "search_catalog",
+      "query": "whole milk 1L"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "whipping cream"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "butter"
+    }
+  ],
+  "extraction": {
+    "lines": [
+      {
+        "said": "whole milk 1L 4 cases",
+        "sku": "DAI-WHOLE-1L",
+        "candidates": [],
+        "qty": 4,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "whipping cream 2",
+        "sku": "DAI-CREAM-1L",
+        "candidates": [],
+        "qty": 2,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "butter 2",
+        "sku": "DAI-BUTT-250",
+        "candidates": [],
+        "qty": 2,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      }
+    ],
+    "requested_delivery": {
+      "date": "2026-10-13",
+      "said": "tomorrow morning"
+    },
+    "based_on_order_id": null,
+    "refers_to_order_id": null,
+    "change_summary": null,
+    "suspicious_instructions": [],
+    "customer_guess": {
+      "customer_id": null,
+      "said": null
+    },
+    "note_for_reviewer": null
+  },
+  "reply": {
+    "subject": "Re: Order for tomorrow morning",
+    "body": "Hi Joost,\n\nThanks for your order. Unfortunately tomorrow, Tuesday 13 October, is too soon for us now. The earliest we can deliver is Wednesday 14 October. Shall we send it then?\n\nThe order itself is fine as it is:\n\n- 4 cases Fresh Whole Milk 3.5%, 1 L\n- 2 cases Whipping Cream 35%, 1 L\n- 2 cases Unsalted Butter, 250 g\n\nKind regards,\nHarbor Lane Orders"
+  }
+}

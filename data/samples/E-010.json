@@ -1,0 +1,12 @@
+{
+  "emailId": "E-010",
+  "triage": {
+    "intent": "not_business",
+    "language": "en",
+    "suspicious": false,
+    "summary": "Packaging supplier newsletter about PPWR rules, new fibre lids and 2027 price rises."
+  },
+  "lookups": [],
+  "extraction": null,
+  "reply": null
+}

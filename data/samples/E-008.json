@@ -1,0 +1,31 @@
+{
+  "emailId": "E-008",
+  "triage": {
+    "intent": "cancel_order",
+    "language": "es",
+    "suspicious": false,
+    "summary": "Cancels Thursday 15 October order after a large group booking fell through."
+  },
+  "lookups": [
+    {
+      "tool": "get_open_orders"
+    }
+  ],
+  "extraction": {
+    "lines": [],
+    "requested_delivery": {
+      "date": null,
+      "said": null
+    },
+    "based_on_order_id": null,
+    "refers_to_order_id": "SO-11360",
+    "change_summary": "Cancel the whole order for Thursday 15 October; a 30-person group booking fell through.",
+    "suspicious_instructions": [],
+    "customer_guess": {
+      "customer_id": null,
+      "said": null
+    },
+    "note_for_reviewer": null
+  },
+  "reply": null
+}

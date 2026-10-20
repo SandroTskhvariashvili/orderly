@@ -1,0 +1,31 @@
+{
+  "emailId": "E-030",
+  "triage": {
+    "intent": "cancel_order",
+    "language": "en",
+    "suspicious": false,
+    "summary": "Cancel Thursday's order after a kitchen flood; today's delivery was fine."
+  },
+  "lookups": [
+    {
+      "tool": "get_open_orders"
+    }
+  ],
+  "extraction": {
+    "lines": [],
+    "requested_delivery": {
+      "date": null,
+      "said": null
+    },
+    "based_on_order_id": null,
+    "refers_to_order_id": "SO-11363",
+    "change_summary": "Cancel the Thursday 15 October order in full. Today's delivery (SO-11362) arrived and is not affected.",
+    "suspicious_instructions": [],
+    "customer_guess": {
+      "customer_id": null,
+      "said": null
+    },
+    "note_for_reviewer": null
+  },
+  "reply": null
+}

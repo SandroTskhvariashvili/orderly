@@ -1,0 +1,110 @@
+{
+  "emailId": "E-037",
+  "triage": {
+    "intent": "new_order",
+    "language": "en",
+    "suspicious": false,
+    "summary": "Orders coffee, milk, cream, butter, almond croissants and dark hot chocolate for tomorrow."
+  },
+  "lookups": [
+    {
+      "tool": "search_catalog",
+      "query": "Colombia Huila"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "whole milk 1L"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "whipping cream"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "butter"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "almond croissants"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "dark hot chocolate"
+    }
+  ],
+  "extraction": {
+    "lines": [
+      {
+        "said": "2 Colombia Huila",
+        "sku": "COF-HUILA-1K",
+        "candidates": [],
+        "qty": 2,
+        "unit": "bag",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "3 whole milk 1L",
+        "sku": "DAI-WHOLE-1L",
+        "candidates": [],
+        "qty": 3,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "2 whipping cream",
+        "sku": "DAI-CREAM-1L",
+        "candidates": [],
+        "qty": 2,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "2 butter",
+        "sku": "DAI-BUTT-250",
+        "candidates": [],
+        "qty": 2,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "1 almond croissants",
+        "sku": "BAK-ALMCR-90",
+        "candidates": [],
+        "qty": 1,
+        "unit": "box",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "1 dark hot chocolate",
+        "sku": "CHO-HOT34-1K",
+        "candidates": [],
+        "qty": 1,
+        "unit": "bag",
+        "conversion": null,
+        "issue": "none"
+      }
+    ],
+    "requested_delivery": {
+      "date": "2026-10-14",
+      "said": "For tomorrow"
+    },
+    "based_on_order_id": null,
+    "refers_to_order_id": null,
+    "change_summary": null,
+    "suspicious_instructions": [],
+    "customer_guess": {
+      "customer_id": null,
+      "said": null
+    },
+    "note_for_reviewer": null
+  },
+  "reply": {
+    "subject": "Re: Commande pour demain / order for tomorrow",
+    "body": "Hi Camille,\n\nThanks for your order. Confirmed:\n\n- 2 bags Colombia Huila Espresso, whole bean (1 kg)\n- 3 cases Fresh Whole Milk 3.5%, 1 L (6 × 1 L)\n- 2 cases Whipping Cream 35%, 1 L (6 × 1 L)\n- 2 cases Unsalted Butter, 250 g (20 × 250 g)\n- 1 box Almond Croissant 90 g, frozen bake-off (48 pcs)\n- 1 bag Dark Hot Chocolate Powder 34% (1 kg)\n\nDelivery: Wednesday 14 October 2026.\n\nKind regards,\nHarbor Lane Orders"
+  }
+}

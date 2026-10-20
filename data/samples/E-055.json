@@ -1,0 +1,97 @@
+{
+  "emailId": "E-055",
+  "triage": {
+    "intent": "new_order",
+    "language": "en",
+    "suspicious": false,
+    "summary": "After the price list reply, orders their normal amounts for tomorrow."
+  },
+  "lookups": [
+    {
+      "tool": "search_catalog",
+      "query": "house blend"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "Haverland oat"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "coconut barista"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "whole milk 1L"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "culinary matcha"
+    }
+  ],
+  "extraction": {
+    "lines": [
+      {
+        "said": "2 house blend",
+        "sku": "COF-HOUSE-1K",
+        "candidates": [],
+        "qty": 2,
+        "unit": "bag",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "3 Haverland oat",
+        "sku": "PLM-OATB-1L",
+        "candidates": [],
+        "qty": 3,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "1 coconut barista",
+        "sku": "PLM-COCB-1L",
+        "candidates": [],
+        "qty": 1,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "1 whole milk 1L",
+        "sku": "DAI-WHOLE-1L",
+        "candidates": [],
+        "qty": 1,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "1 culinary matcha",
+        "sku": "TEA-MATCU-500",
+        "candidates": [],
+        "qty": 1,
+        "unit": "bag",
+        "conversion": null,
+        "issue": "none"
+      }
+    ],
+    "requested_delivery": {
+      "date": "2026-10-16",
+      "said": "for tomorrow"
+    },
+    "based_on_order_id": null,
+    "refers_to_order_id": null,
+    "change_summary": null,
+    "suspicious_instructions": [],
+    "customer_guess": {
+      "customer_id": null,
+      "said": null
+    },
+    "note_for_reviewer": null
+  },
+  "reply": {
+    "subject": "Re: price list?",
+    "body": "Hi Dewi,\n\nThanks for the order. Confirmed:\n\n- 2 bags House Espresso Blend, whole bean (1 kg)\n- 3 cases Haverland Barista Oat, 1 L (6 × 1 L)\n- 1 case Plainsong Coconut Barista, 1 L (6 × 1 L)\n- 1 case Fresh Whole Milk 3.5%, 1 L (6 × 1 L)\n- 1 bag Culinary / Latte Grade Matcha (500 g)\n\nDelivery: Friday 16 October 2026.\n\nKind regards,\nHarbor Lane Orders"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "emailId": "E-025",
+  "triage": {
+    "intent": "complaint",
+    "language": "en",
+    "suspicious": false,
+    "summary": "Two of four vanilla syrup bottles arrived smashed; asks for a credit and better padding."
+  },
+  "lookups": [],
+  "extraction": null,
+  "reply": null
+}

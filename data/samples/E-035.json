@@ -1,0 +1,162 @@
+{
+  "emailId": "E-035",
+  "triage": {
+    "intent": "new_order",
+    "language": "de",
+    "suspicious": false,
+    "summary": "Sends purchase order PO-2026-0417 for Friday 16 October and asks for confirmation."
+  },
+  "lookups": [
+    {
+      "tool": "search_catalog",
+      "query": "Kaffee Crema"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "Vollmilch 1 L"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "Laktosefreie Vollmilch"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "Magermilch"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "Sojadrink Barista"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "Joghurt griechische Art"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "Orangensaft 1 L"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "Apfelsaft naturtrüb"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "English Breakfast Pyramidenbeutel"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "Kamillentee"
+    }
+  ],
+  "extraction": {
+    "lines": [
+      {
+        "said": "Kaffee Crema, ganze Bohne, 1 kg 4 Btl.",
+        "sku": "COF-CREMA-1K",
+        "candidates": [],
+        "qty": 4,
+        "unit": "bag",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "Vollmilch 3,5 % 1 L (Karton à 6) 5 Kart.",
+        "sku": "DAI-WHOLE-1L",
+        "candidates": [],
+        "qty": 5,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "Laktosefreie Vollmilch 1 L (Karton à 6) 1 Kart.",
+        "sku": "DAI-LACFR-1L",
+        "candidates": [],
+        "qty": 1,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "Magermilch 0,1 % 1 L (Karton à 6) 1 Kart.",
+        "sku": "DAI-SKIM-1L",
+        "candidates": [],
+        "qty": 1,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "Sojadrink Barista 1 L (Karton à 6) 1 Kart.",
+        "sku": "PLM-SOYB-1L",
+        "candidates": [],
+        "qty": 1,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "Joghurt griechische Art 10 %, 1 kg (Karton à 4) 3 Kart.",
+        "sku": "DAI-YOGH-1K",
+        "candidates": [],
+        "qty": 3,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "Orangensaft frisch gepresst, 1 L Flasche 18 Fl.",
+        "sku": "JUI-ORNG-1L",
+        "candidates": [],
+        "qty": 3,
+        "unit": "case",
+        "conversion": "18 bottles ÷ 6 per case = 3 cases",
+        "issue": "none"
+      },
+      {
+        "said": "Apfelsaft naturtrüb 1 L (Karton à 6) 2 Kart.",
+        "sku": "JUI-APCL-1L",
+        "candidates": [],
+        "qty": 2,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "Tee English Breakfast, Pyramidenbeutel (100 St.) 1 Pkg.",
+        "sku": "TEA-EBPYR-100",
+        "candidates": [],
+        "qty": 1,
+        "unit": "box",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "Kamillentee, Pyramidenbeutel (100 St.) 1 Pkg.",
+        "sku": "TEA-CHAM-100",
+        "candidates": [],
+        "qty": 1,
+        "unit": "box",
+        "conversion": null,
+        "issue": "none"
+      }
+    ],
+    "requested_delivery": {
+      "date": "2026-10-16",
+      "said": "Lieferung am Freitag, 16.10.2026"
+    },
+    "based_on_order_id": null,
+    "refers_to_order_id": null,
+    "change_summary": null,
+    "suspicious_instructions": [],
+    "customer_guess": {
+      "customer_id": null,
+      "said": null
+    },
+    "note_for_reviewer": "Delivery note must show PO-2026-0417; goods in by 10:00 via the rear entrance (Warenannahme Hintereingang)."
+  },
+  "reply": {
+    "subject": "Re: Bestellung PO-2026-0417 Hotel Alsterblick Garni",
+    "body": "Hallo Katrin,\n\nvielen Dank für Ihre Bestellung PO-2026-0417. Wir bestätigen folgende Positionen:\n\n- 4 Beutel Caffè Crema Classico, whole bean (1 kg)\n- 5 Kartons Fresh Whole Milk 3.5%, 1 L (6 × 1 L)\n- 1 Karton Lactose-Free Whole Milk, 1 L (6 × 1 L)\n- 1 Karton Fresh Skimmed Milk 0.1%, 1 L (6 × 1 L)\n- 1 Karton Haverland Soya Barista, 1 L (6 × 1 L)\n- 3 Kartons Greek-Style Yoghurt 10%, 1 kg (4 × 1 kg)\n- 3 Kartons Fresh-Pressed Orange Juice (HPP, chilled), 1 L (6 × 1 L)\n- 2 Kartons Cloudy Apple Juice, 1 L (6 × 1 L)\n- 1 Packung English Breakfast, pyramid bags (100 Beutel)\n- 1 Packung Chamomile Flowers, pyramid bags (100 Beutel)\n\nLiefertermin: Freitag, 16. Oktober 2026.\n\nMit freundlichen Grüßen\nHarbor Lane Orders"
+  }
+}

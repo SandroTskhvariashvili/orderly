@@ -1,0 +1,101 @@
+{
+  "emailId": "E-032",
+  "triage": {
+    "intent": "new_order",
+    "language": "en",
+    "suspicious": false,
+    "summary": "Weekly office order for Wednesday, including Nespresso-compatible capsules for the meeting room."
+  },
+  "lookups": [
+    {
+      "tool": "search_catalog",
+      "query": "house blend"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "Haverland oat original"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "semi-skimmed"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "mint tea"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "Nespresso compatible capsules"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "coffee capsules"
+    }
+  ],
+  "extraction": {
+    "lines": [
+      {
+        "said": "3 kg house blend",
+        "sku": "COF-HOUSE-1K",
+        "candidates": [],
+        "qty": 3,
+        "unit": "bag",
+        "conversion": "3 kg ÷ 1 kg per bag = 3 bags",
+        "issue": "none"
+      },
+      {
+        "said": "2 cases Haverland oat original",
+        "sku": "PLM-OATO-1L",
+        "candidates": [],
+        "qty": 2,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "3 cases semi-skimmed",
+        "sku": "DAI-SEMI-1L",
+        "candidates": [],
+        "qty": 3,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "1 box mint tea",
+        "sku": "TEA-MINT-100",
+        "candidates": [],
+        "qty": 1,
+        "unit": "box",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "2 boxes of Nespresso compatible capsules (lungo)",
+        "sku": null,
+        "candidates": [],
+        "qty": 2,
+        "unit": null,
+        "conversion": null,
+        "issue": "not_in_catalog"
+      }
+    ],
+    "requested_delivery": {
+      "date": "2026-10-14",
+      "said": "Wednesday is fine"
+    },
+    "based_on_order_id": null,
+    "refers_to_order_id": null,
+    "change_summary": null,
+    "suspicious_instructions": [],
+    "customer_guess": {
+      "customer_id": null,
+      "said": null
+    },
+    "note_for_reviewer": null
+  },
+  "reply": {
+    "subject": "Re: Weekly order Werkhal Noord",
+    "body": "Hi Lotte,\n\nThanks for your order. We don't sell Nespresso-compatible capsules, so we can't include the 2 boxes of lungo capsules.\n\nThe rest is fine as ordered:\n\n- 3 bags House Espresso Blend, whole bean\n- 2 cases Haverland Oat Original (not barista), 1 L\n- 3 cases Fresh Semi-Skimmed Milk 1.5%, 1 L\n- 1 box Moroccan Mint, pyramid bags\n\nShall we go ahead with these four lines without the capsules?\n\nKind regards,\nHarbor Lane Orders"
+  }
+}

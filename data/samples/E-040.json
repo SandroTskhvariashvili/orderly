@@ -1,0 +1,112 @@
+{
+  "emailId": "E-040",
+  "triage": {
+    "intent": "new_order",
+    "language": "de",
+    "suspicious": false,
+    "summary": "Same order as last week for Thursday, plus two boxes of 12 oz lids."
+  },
+  "lookups": [
+    {
+      "tool": "get_recent_orders",
+      "limit": 1
+    },
+    {
+      "tool": "search_catalog",
+      "query": "Deckel 12oz"
+    }
+  ],
+  "extraction": {
+    "lines": [
+      {
+        "said": "das Gleiche wie letzte Woche",
+        "sku": "DAI-WHOLE-1L",
+        "candidates": [],
+        "qty": 4,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "das Gleiche wie letzte Woche",
+        "sku": "DAI-CREAM-1L",
+        "candidates": [],
+        "qty": 3,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "das Gleiche wie letzte Woche",
+        "sku": "DAI-BUTT-250",
+        "candidates": [],
+        "qty": 3,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "das Gleiche wie letzte Woche",
+        "sku": "COF-CREMA-1K",
+        "candidates": [],
+        "qty": 3,
+        "unit": "bag",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "das Gleiche wie letzte Woche",
+        "sku": "PLM-OATB-1L",
+        "candidates": [],
+        "qty": 2,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "das Gleiche wie letzte Woche",
+        "sku": "PKG-DW12-500",
+        "candidates": [],
+        "qty": 1,
+        "unit": "box",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "das Gleiche wie letzte Woche",
+        "sku": "PKG-BAGS-1000",
+        "candidates": [],
+        "qty": 2,
+        "unit": "box",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "2 Kartons Deckel für die 12oz-Becher",
+        "sku": "PKG-LID90-1000",
+        "candidates": [],
+        "qty": 2,
+        "unit": "box",
+        "conversion": null,
+        "issue": "none"
+      }
+    ],
+    "requested_delivery": {
+      "date": "2026-10-15",
+      "said": "für Donnerstag"
+    },
+    "based_on_order_id": "SO-11335",
+    "refers_to_order_id": null,
+    "change_summary": null,
+    "suspicious_instructions": [],
+    "customer_guess": {
+      "customer_id": null,
+      "said": null
+    },
+    "note_for_reviewer": null
+  },
+  "reply": {
+    "subject": "Re: Bestellung Donnerstag",
+    "body": "Hallo Sabine,\n\nvielen Dank für Ihre Bestellung. Wir liefern:\n\n- 4 Kartons Fresh Whole Milk 3.5%, 1 L (6 × 1 L)\n- 3 Kartons Whipping Cream 35%, 1 L (6 × 1 L)\n- 3 Kartons Unsalted Butter, 250 g (20 × 250 g)\n- 3 Beutel Caffè Crema Classico, whole bean (1 kg)\n- 2 Kartons Haverland Barista Oat, 1 L (6 × 1 L)\n- 1 Karton Double Wall Hot Cup 12 oz, white (500 Stück)\n- 2 Kartons Kraft Paper Pastry Bags, small (1000 Stück)\n- 2 Kartons Sip Lid 90 mm, white (fits 12 oz) (1000 Stück)\n\nLiefertermin: Donnerstag, 15. Oktober 2026.\n\nViele Grüße\nHarbor Lane Orders"
+  }
+}

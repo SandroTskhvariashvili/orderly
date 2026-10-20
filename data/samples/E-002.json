@@ -1,0 +1,12 @@
+{
+  "emailId": "E-002",
+  "triage": {
+    "intent": "not_business",
+    "language": "en",
+    "suspicious": false,
+    "summary": "Out-of-office auto-reply to our statement email; sender away until 19 October."
+  },
+  "lookups": [],
+  "extraction": null,
+  "reply": null
+}

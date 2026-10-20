@@ -1,0 +1,104 @@
+{
+  "emailId": "E-054",
+  "triage": {
+    "intent": "new_order",
+    "language": "en",
+    "suspicious": false,
+    "summary": "Order for Friday: milk, orange juice, Earl Grey, English Breakfast tea, Crema beans."
+  },
+  "lookups": [
+    {
+      "tool": "search_catalog",
+      "query": "whole milk 1L"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "orange juice 1L"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "Earl Grey"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "English Breakfast tea"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "Crema beans"
+    },
+    {
+      "tool": "get_recent_orders",
+      "limit": 3
+    }
+  ],
+  "extraction": {
+    "lines": [
+      {
+        "said": "Whole milk 1L - 5 cases",
+        "sku": "DAI-WHOLE-1L",
+        "candidates": [],
+        "qty": 5,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "Orange juice 1L - 3 cases",
+        "sku": "JUI-ORNG-1L",
+        "candidates": [],
+        "qty": 3,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "Earl Grey - 2",
+        "sku": null,
+        "candidates": [
+          "TEA-EGPYR-100",
+          "TEA-EGLOO-1K"
+        ],
+        "qty": 2,
+        "unit": null,
+        "conversion": null,
+        "issue": "ambiguous"
+      },
+      {
+        "said": "English Breakfast tea - 1 box",
+        "sku": "TEA-EBPYR-100",
+        "candidates": [],
+        "qty": 1,
+        "unit": "box",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "Crema beans - 3 bags",
+        "sku": "COF-CREMA-1K",
+        "candidates": [],
+        "qty": 3,
+        "unit": "bag",
+        "conversion": null,
+        "issue": "none"
+      }
+    ],
+    "requested_delivery": {
+      "date": "2026-10-16",
+      "said": "Our order for Friday"
+    },
+    "based_on_order_id": null,
+    "refers_to_order_id": null,
+    "change_summary": null,
+    "suspicious_instructions": [],
+    "customer_guess": {
+      "customer_id": null,
+      "said": null
+    },
+    "note_for_reviewer": "They buy both Earl Grey pyramid bags (per box) and loose leaf (per kg); SO-11333 had one of each. '2' with no unit does not say which."
+  },
+  "reply": {
+    "subject": "Re: Order for Friday 16.10",
+    "body": "Hi Natasha,\n\nThanks for your order. One question: for the 2 Earl Grey, would you like Earl Grey, pyramid bags or Earl Grey, loose leaf?\n\nThe other lines are fine as they are:\n\n- 5 cases Fresh Whole Milk 3.5%, 1 L\n- 3 cases Fresh-Pressed Orange Juice (HPP, chilled), 1 L\n- 1 box English Breakfast, pyramid bags\n- 3 bags Caffè Crema Classico, whole bean\n\nKind regards,\nHarbor Lane Orders"
+  }
+}

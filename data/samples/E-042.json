@@ -1,0 +1,123 @@
+{
+  "emailId": "E-042",
+  "triage": {
+    "intent": "new_order",
+    "language": "en",
+    "suspicious": false,
+    "summary": "Sends PO 4500012876 for Thursday 15 October; wants the PO number on the invoice."
+  },
+  "lookups": [
+    {
+      "tool": "search_catalog",
+      "query": "Caffe Crema"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "Milk semi-skimmed 1L"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "oat drink original"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "English Breakfast pyramid bags"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "ginger & lemon"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "Sparkling water 330ml glass"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "caramelised biscuits"
+    }
+  ],
+  "extraction": {
+    "lines": [
+      {
+        "said": "Coffee beans Caffe Crema (Ostkai), 1kg bag 4 BAG",
+        "sku": "COF-CREMA-1K",
+        "candidates": [],
+        "qty": 4,
+        "unit": "bag",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "Milk semi-skimmed 1L, carton of 6 3 CAR",
+        "sku": "DAI-SEMI-1L",
+        "candidates": [],
+        "qty": 3,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "Oat drink original 1L (not barista), carton of 6 2 CAR",
+        "sku": "PLM-OATO-1L",
+        "candidates": [],
+        "qty": 2,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "Tea English Breakfast, box 100 pyramid bags 1 BOX",
+        "sku": "TEA-EBPYR-100",
+        "candidates": [],
+        "qty": 1,
+        "unit": "box",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "Tea ginger & lemon, box 100 pyramid bags 1 BOX",
+        "sku": "TEA-GINLE-100",
+        "candidates": [],
+        "qty": 1,
+        "unit": "box",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "Sparkling water 330ml glass, crate of 24 2 CRT",
+        "sku": "WAT-SPRK-330",
+        "candidates": [],
+        "qty": 2,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "Biscuits caramelised, individually wrapped, box 300 1 BOX",
+        "sku": "BAK-BISC-300",
+        "candidates": [],
+        "qty": 1,
+        "unit": "box",
+        "conversion": null,
+        "issue": "none"
+      }
+    ],
+    "requested_delivery": {
+      "date": "2026-10-15",
+      "said": "for delivery on Thursday 15 October"
+    },
+    "based_on_order_id": null,
+    "refers_to_order_id": null,
+    "change_summary": null,
+    "suspicious_instructions": [],
+    "customer_guess": {
+      "customer_id": null,
+      "said": null
+    },
+    "note_for_reviewer": "Invoice must quote PO 4500012876 or their finance team cannot process it."
+  },
+  "reply": {
+    "subject": "Re: PO 4500012876 - Harbor Lane Provisions",
+    "body": "Hi Priya,\n\nThanks for PO 4500012876. Confirmed:\n\n- 4 bags Caffè Crema Classico, whole bean (1 kg)\n- 3 cases Fresh Semi-Skimmed Milk 1.5%, 1 L (6 × 1 L)\n- 2 cases Haverland Oat Original (not barista), 1 L (6 × 1 L)\n- 1 box English Breakfast, pyramid bags (100 bags)\n- 1 box Ginger & Lemon, pyramid bags (100 bags)\n- 2 cases Sparkling Mineral Water, 330 ml glass (24 × 330 ml)\n- 1 box Caramelised Biscuits, individually wrapped (300 pcs)\n\nDelivery: Thursday 15 October 2026.\n\nKind regards,\nHarbor Lane Orders"
+  }
+}

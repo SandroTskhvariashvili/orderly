@@ -1,0 +1,136 @@
+{
+  "emailId": "E-019",
+  "triage": {
+    "intent": "new_order",
+    "language": "en",
+    "suspicious": false,
+    "summary": "Eight-line order for tomorrow: coffee, oat milk, dairy, caramel syrup, 12oz cups and lids."
+  },
+  "lookups": [
+    {
+      "tool": "search_catalog",
+      "query": "House blend 1kg"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "Haverland barista oat"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "Whole milk 1L"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "Butter"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "Whipping cream"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "Caramel syrup"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "12oz cups"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "12oz lids"
+    }
+  ],
+  "extraction": {
+    "lines": [
+      {
+        "said": "House blend 1kg x4",
+        "sku": "COF-HOUSE-1K",
+        "candidates": [],
+        "qty": 4,
+        "unit": "bag",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "Haverland barista oat x5",
+        "sku": "PLM-OATB-1L",
+        "candidates": [],
+        "qty": 5,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "Whole milk 1L x4",
+        "sku": "DAI-WHOLE-1L",
+        "candidates": [],
+        "qty": 4,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "Butter x2",
+        "sku": "DAI-BUTT-250",
+        "candidates": [],
+        "qty": 2,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "Whipping cream x1",
+        "sku": "DAI-CREAM-1L",
+        "candidates": [],
+        "qty": 1,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "Caramel syrup x2",
+        "sku": "SYR-CAR-750",
+        "candidates": [],
+        "qty": 2,
+        "unit": "bottle",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "12oz cups x1",
+        "sku": "PKG-DW12-500",
+        "candidates": [],
+        "qty": 1,
+        "unit": "box",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "12oz lids x1",
+        "sku": "PKG-LID90-1000",
+        "candidates": [],
+        "qty": 1,
+        "unit": "box",
+        "conversion": null,
+        "issue": "none"
+      }
+    ],
+    "requested_delivery": {
+      "date": "2026-10-13",
+      "said": "for tomorrow"
+    },
+    "based_on_order_id": null,
+    "refers_to_order_id": null,
+    "change_summary": null,
+    "suspicious_instructions": [],
+    "customer_guess": {
+      "customer_id": null,
+      "said": null
+    },
+    "note_for_reviewer": null
+  },
+  "reply": {
+    "subject": "Re: Order for tomorrow - Maple & Rye",
+    "body": "Hi Sophie,\n\nThanks for your order. Here is what we have:\n\n- 4 bags House Espresso Blend, whole bean\n- 5 cases Haverland Barista Oat, 1 L\n- 4 cases Fresh Whole Milk 3.5%, 1 L\n- 2 cases Unsalted Butter, 250 g\n- 1 case Whipping Cream 35%, 1 L\n- 2 bottles Caramel Syrup, 750 ml\n- 1 box Double Wall Hot Cup 12 oz, white\n- 1 box Sip Lid 90 mm, white (fits 12 oz)\n\nDelivery: Tuesday 13 October 2026.\n\nKind regards,\nHarbor Lane Orders"
+  }
+}

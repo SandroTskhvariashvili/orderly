@@ -1,0 +1,97 @@
+{
+  "emailId": "E-052",
+  "triage": {
+    "intent": "new_order",
+    "language": "en",
+    "suspicious": false,
+    "summary": "Order for Saturday 17 October in pieces, bottles, litres and sticks."
+  },
+  "lookups": [
+    {
+      "tool": "search_catalog",
+      "query": "mini croissants"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "small orange juice 250ml"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "semi-skimmed"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "white sugar sticks"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "Caffè Crema"
+    }
+  ],
+  "extraction": {
+    "lines": [
+      {
+        "said": "120 mini croissants",
+        "sku": "BAK-CROI-45",
+        "candidates": [],
+        "qty": 1,
+        "unit": "box",
+        "conversion": "120 pieces ÷ 120 per box = 1 box",
+        "issue": "none"
+      },
+      {
+        "said": "24 small orange juices (250ml bottles)",
+        "sku": "JUI-ORNG-250",
+        "candidates": [],
+        "qty": 2,
+        "unit": "case",
+        "conversion": "24 bottles ÷ 12 per case = 2 cases",
+        "issue": "none"
+      },
+      {
+        "said": "30 litres semi-skimmed",
+        "sku": "DAI-SEMI-1L",
+        "candidates": [],
+        "qty": 5,
+        "unit": "case",
+        "conversion": "30 L ÷ 6 L per case = 5 cases",
+        "issue": "none"
+      },
+      {
+        "said": "2000 white sugar sticks",
+        "sku": "PKG-SUGW-1000",
+        "candidates": [],
+        "qty": 2,
+        "unit": "box",
+        "conversion": "2000 sticks ÷ 1000 per box = 2 boxes",
+        "issue": "none"
+      },
+      {
+        "said": "4 bags Caffè Crema",
+        "sku": "COF-CREMA-1K",
+        "candidates": [],
+        "qty": 4,
+        "unit": "bag",
+        "conversion": null,
+        "issue": "none"
+      }
+    ],
+    "requested_delivery": {
+      "date": "2026-10-17",
+      "said": "For Saturday 17/10"
+    },
+    "based_on_order_id": null,
+    "refers_to_order_id": null,
+    "change_summary": null,
+    "suspicious_instructions": [],
+    "customer_guess": {
+      "customer_id": null,
+      "said": null
+    },
+    "note_for_reviewer": null
+  },
+  "reply": {
+    "subject": "Re: Order Saturday 17/10",
+    "body": "Hello Mark,\n\nThanks for your order. Confirmed:\n\n- 1 box Mini Butter Croissant 45 g, frozen ready-to-bake (120 pcs)\n- 2 cases Fresh-Pressed Orange Juice (HPP, chilled), 250 ml (12 × 250 ml)\n- 5 cases Fresh Semi-Skimmed Milk 1.5%, 1 L (6 × 1 L)\n- 2 boxes White Sugar Sticks 4 g (1000 pcs)\n- 4 bags Caffè Crema Classico, whole bean (1 kg)\n\nDelivery: Saturday 17 October 2026.\n\nKind regards,\nHarbor Lane Orders"
+  }
+}

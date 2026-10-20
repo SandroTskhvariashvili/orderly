@@ -2,7 +2,7 @@
 // calls an API, so every routing decision is reproducible and unit-testable.
 
 import { checkDeliveryDate, nextDeliveryDate, weekdayOf } from "./calendar.ts";
-import { maxHistoricQty, type MasterData } from "./fixtures.ts";
+import { usualQty, type MasterData } from "./fixtures.ts";
 import type { Customer, Intent, OrderLine, ReviewReason, Route } from "./schema.ts";
 import type { Extraction } from "./steps.ts";
 
@@ -37,6 +37,8 @@ export interface Decision {
   deliveryDate: string | null;
   requestedDeliveryDate: string | null;
   deliveryEvidence: Evidence | null;
+  /** Where the instructions aimed at the system sit in the email. */
+  flaggedEvidence: Evidence[];
 }
 
 export interface DecisionInput {
@@ -106,7 +108,11 @@ export function decide(data: MasterData, input: DecisionInput): Decision {
 
   const requested = x?.requested_delivery.date ?? null;
   const deliveryEvidence = x?.requested_delivery.said ? input.locate(x.requested_delivery.said) : null;
-  const base = { lines, requestedDeliveryDate: requested, deliveryEvidence };
+  const flaggedEvidence = (x?.suspicious_instructions ?? []).flatMap((q) => {
+    const e = input.locate(q.said);
+    return e ? [e] : [];
+  });
+  const base = { lines, requestedDeliveryDate: requested, deliveryEvidence, flaggedEvidence };
 
   if (input.intent === "question" || input.intent === "complaint" || input.intent === "not_business") {
     return { route: "not_an_order", issues: [], deliveryDate: null, ...base };
@@ -132,7 +138,7 @@ export function decide(data: MasterData, input: DecisionInput): Decision {
     add(
       "suspicious_instructions",
       quote
-        ? `The email contains instructions aimed at the system: "${quote.slice(0, 120)}". Not followed.`
+        ? `The email contains instructions aimed at the system: “${quote.replace(/[\s.]+$/, "").slice(0, 140)}”. They were not followed.`
         : "The email contains text aimed at the system. Not followed.",
     );
   }
@@ -200,12 +206,12 @@ export function decide(data: MasterData, input: DecisionInput): Decision {
       );
     }
     if (c) {
-      const max = maxHistoricQty(data, c.id, product.sku);
-      if (max != null ? line.qty > max * 4 : line.qty > c.usualCasesPerOrder * 2) {
+      const usual = usualQty(data, c.id, product.sku);
+      if (usual != null ? line.qty > usual * 4 : line.qty > c.usualCasesPerOrder * 2) {
         add(
           "unusual_quantity",
-          max != null
-            ? `Line ${n}: ${line.qty} ${product.unit} of ${product.name}. Their largest order so far was ${max}.`
+          usual != null
+            ? `Line ${n}: ${line.qty} ${product.unit} of ${product.name}. They usually order ${usual}.`
             : `Line ${n}: ${line.qty} ${product.unit} of ${product.name}, a product they have never ordered.`,
           i,
         );

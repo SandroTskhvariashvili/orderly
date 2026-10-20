@@ -1,0 +1,114 @@
+{
+  "emailId": "E-057",
+  "triage": {
+    "intent": "new_order",
+    "language": "en",
+    "suspicious": false,
+    "summary": "Order for Monday, including gluten-free croissants they hope we stock."
+  },
+  "lookups": [
+    {
+      "tool": "search_catalog",
+      "query": "Colombia Huila"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "Hafen Espresso"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "Haverland Barista Oat"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "barista milk"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "butter croissants"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "gluten-free croissants"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "gluten free"
+    }
+  ],
+  "extraction": {
+    "lines": [
+      {
+        "said": "2x Colombia Huila",
+        "sku": "COF-HUILA-1K",
+        "candidates": [],
+        "qty": 2,
+        "unit": "bag",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "2x Hafen Espresso",
+        "sku": "COF-HAFEN-1K",
+        "candidates": [],
+        "qty": 2,
+        "unit": "bag",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "3x Haverland Barista Oat",
+        "sku": "PLM-OATB-1L",
+        "candidates": [],
+        "qty": 3,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "1x barista milk",
+        "sku": "DAI-BARIS-1L",
+        "candidates": [],
+        "qty": 1,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "1 box butter croissants",
+        "sku": "BAK-CROI-80",
+        "candidates": [],
+        "qty": 1,
+        "unit": "box",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "1 box gluten-free croissants",
+        "sku": null,
+        "candidates": [],
+        "qty": 1,
+        "unit": null,
+        "conversion": null,
+        "issue": "not_in_catalog"
+      }
+    ],
+    "requested_delivery": {
+      "date": "2026-10-19",
+      "said": "for Monday"
+    },
+    "based_on_order_id": null,
+    "refers_to_order_id": null,
+    "change_summary": null,
+    "suspicious_instructions": [],
+    "customer_guess": {
+      "customer_id": null,
+      "said": null
+    },
+    "note_for_reviewer": null
+  },
+  "reply": {
+    "subject": "Re: Order Monday + gluten free?",
+    "body": "Hi Lukas,\n\nThanks for the order. We don't carry gluten-free croissants at the moment, so we can't add those.\n\nThe rest is all fine for Monday:\n\n- 2 bags Colombia Huila Espresso, whole bean\n- 2 bags Hafen Espresso Dark Roast, whole bean\n- 3 cases Haverland Barista Oat, 1 L\n- 1 case Barista Whole Milk 3.8%, 1 L\n- 1 box Butter Croissant 80 g, frozen ready-to-bake\n\nShall we send it like this, without the gluten-free croissants?\n\nBest,\nHarbor Lane Orders"
+  }
+}

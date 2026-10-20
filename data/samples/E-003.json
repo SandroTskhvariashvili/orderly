@@ -1,0 +1,99 @@
+{
+  "emailId": "E-003",
+  "triage": {
+    "intent": "new_order",
+    "language": "en",
+    "suspicious": false,
+    "summary": "Repeat of last week's order with double the oat milk."
+  },
+  "lookups": [
+    {
+      "tool": "get_recent_orders",
+      "limit": 1
+    }
+  ],
+  "extraction": {
+    "lines": [
+      {
+        "said": "same as last week",
+        "sku": "COF-HOUSE-1K",
+        "candidates": [],
+        "qty": 3,
+        "unit": "bag",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "double the oat milk",
+        "sku": "PLM-OATB-1L",
+        "candidates": [],
+        "qty": 8,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "same as last week",
+        "sku": "DAI-WHOLE-1L",
+        "candidates": [],
+        "qty": 4,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "same as last week",
+        "sku": "JUI-ORNG-1L",
+        "candidates": [],
+        "qty": 2,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "same as last week",
+        "sku": "BAK-CROI-80",
+        "candidates": [],
+        "qty": 1,
+        "unit": "box",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "same as last week",
+        "sku": "DAI-YOGH-1K",
+        "candidates": [],
+        "qty": 2,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "same as last week",
+        "sku": "SYR-VAN-750",
+        "candidates": [],
+        "qty": 2,
+        "unit": "bottle",
+        "conversion": null,
+        "issue": "none"
+      }
+    ],
+    "requested_delivery": {
+      "date": null,
+      "said": null
+    },
+    "based_on_order_id": "SO-11313",
+    "refers_to_order_id": null,
+    "change_summary": null,
+    "suspicious_instructions": [],
+    "customer_guess": {
+      "customer_id": null,
+      "said": null
+    },
+    "note_for_reviewer": null
+  },
+  "reply": {
+    "subject": "Re: order",
+    "body": "Hi Aisha,\n\nThanks for your order. Here is what we have:\n\n- 3 bags House Espresso Blend, whole bean\n- 8 cases Haverland Barista Oat, 1 L\n- 4 cases Fresh Whole Milk 3.5%, 1 L\n- 2 cases Fresh-Pressed Orange Juice (HPP, chilled), 1 L\n- 1 box Butter Croissant 80 g, frozen ready-to-bake\n- 2 cases Greek-Style Yoghurt 10%, 1 kg\n- 2 bottles Vanilla Syrup, 750 ml\n\nDelivery: Tuesday 13 October 2026.\n\nKind regards,\nHarbor Lane Orders"
+  }
+}

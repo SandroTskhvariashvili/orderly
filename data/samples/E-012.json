@@ -1,0 +1,97 @@
+{
+  "emailId": "E-012",
+  "triage": {
+    "intent": "new_order",
+    "language": "en",
+    "suspicious": false,
+    "summary": "Hotel order for Wednesday 14 October, quantities given in litres, bottles and kilos."
+  },
+  "lookups": [
+    {
+      "tool": "search_catalog",
+      "query": "Whole milk 1L"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "Still water 330ml"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "Sparkling water 750ml"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "Orange juice 1L"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "Crema beans"
+    }
+  ],
+  "extraction": {
+    "lines": [
+      {
+        "said": "Whole milk 1L - 36 liters",
+        "sku": "DAI-WHOLE-1L",
+        "candidates": [],
+        "qty": 6,
+        "unit": "case",
+        "conversion": "36 L ÷ 6 L per case = 6 cases",
+        "issue": "none"
+      },
+      {
+        "said": "Still water 330ml - 48 bottles",
+        "sku": "WAT-STIL-330",
+        "candidates": [],
+        "qty": 2,
+        "unit": "case",
+        "conversion": "48 bottles ÷ 24 per case = 2 cases",
+        "issue": "none"
+      },
+      {
+        "said": "Sparkling water 750ml - 12 bottles",
+        "sku": "WAT-SPRK-750",
+        "candidates": [],
+        "qty": 1,
+        "unit": "case",
+        "conversion": "12 bottles ÷ 12 per case = 1 case",
+        "issue": "none"
+      },
+      {
+        "said": "Orange juice 1L - 18 bottles",
+        "sku": "JUI-ORNG-1L",
+        "candidates": [],
+        "qty": 3,
+        "unit": "case",
+        "conversion": "18 bottles ÷ 6 per case = 3 cases",
+        "issue": "none"
+      },
+      {
+        "said": "Crema beans - 3 kg",
+        "sku": "COF-CREMA-1K",
+        "candidates": [],
+        "qty": 3,
+        "unit": "bag",
+        "conversion": "3 kg ÷ 1 kg per bag = 3 bags",
+        "issue": "none"
+      }
+    ],
+    "requested_delivery": {
+      "date": "2026-10-14",
+      "said": "Wednesday 14.10"
+    },
+    "based_on_order_id": null,
+    "refers_to_order_id": null,
+    "change_summary": null,
+    "suspicious_instructions": [],
+    "customer_guess": {
+      "customer_id": null,
+      "said": null
+    },
+    "note_for_reviewer": null
+  },
+  "reply": {
+    "subject": "Re: Order for Wednesday 14.10",
+    "body": "Hi Natasha,\n\nThanks for your order. Here is what we have, in our selling units:\n\n- 6 cases Fresh Whole Milk 3.5%, 1 L (6 × 1 L)\n- 2 cases Still Mineral Water, 330 ml glass (24 × 330 ml)\n- 1 case Sparkling Mineral Water, 750 ml glass (12 × 750 ml)\n- 3 cases Fresh-Pressed Orange Juice (HPP, chilled), 1 L (6 × 1 L)\n- 3 bags Caffè Crema Classico, whole bean (1 kg bag)\n\nDelivery: Wednesday 14 October 2026.\n\nKind regards,\nHarbor Lane Orders"
+  }
+}

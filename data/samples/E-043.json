@@ -1,0 +1,107 @@
+{
+  "emailId": "E-043",
+  "triage": {
+    "intent": "new_order",
+    "language": "en",
+    "suspicious": false,
+    "summary": "Resends Tuesday's order for Friday because she did not get a confirmation."
+  },
+  "lookups": [
+    {
+      "tool": "search_catalog",
+      "query": "whole milk 1L"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "orange juice 1L"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "Caffè Crema beans"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "English Breakfast tea bags"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "Greek yoghurt"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "mini croissants"
+    }
+  ],
+  "extraction": {
+    "lines": [
+      {
+        "said": "2 x whole milk 1L",
+        "sku": "DAI-WHOLE-1L",
+        "candidates": [],
+        "qty": 2,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "2 x orange juice 1L",
+        "sku": "JUI-ORNG-1L",
+        "candidates": [],
+        "qty": 2,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "2 x Caffè Crema beans",
+        "sku": "COF-CREMA-1K",
+        "candidates": [],
+        "qty": 2,
+        "unit": "bag",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "1 x English Breakfast tea bags",
+        "sku": "TEA-EBPYR-100",
+        "candidates": [],
+        "qty": 1,
+        "unit": "box",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "1 x Greek yoghurt",
+        "sku": "DAI-YOGH-1K",
+        "candidates": [],
+        "qty": 1,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "1 x mini croissants",
+        "sku": "BAK-CROI-45",
+        "candidates": [],
+        "qty": 1,
+        "unit": "box",
+        "conversion": null,
+        "issue": "none"
+      }
+    ],
+    "requested_delivery": {
+      "date": "2026-10-16",
+      "said": "for Friday"
+    },
+    "based_on_order_id": null,
+    "refers_to_order_id": null,
+    "change_summary": null,
+    "suspicious_instructions": [],
+    "customer_guess": {
+      "customer_id": null,
+      "said": null
+    },
+    "note_for_reviewer": "Forward of the order she sent on Tue 13 Oct at 08:40, resent because no confirmation arrived. Check it is not already in before creating a second one."
+  },
+  "reply": null
+}

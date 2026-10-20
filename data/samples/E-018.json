@@ -1,0 +1,111 @@
+{
+  "emailId": "E-018",
+  "triage": {
+    "intent": "new_order",
+    "language": "en",
+    "suspicious": false,
+    "summary": "Hostel breakfast order for tomorrow: milk, coffee, juice, tea and sugar sticks."
+  },
+  "lookups": [
+    {
+      "tool": "search_catalog",
+      "query": "whole milk 1L"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "crema beans"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "orange juice 1L"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "apple juice 1L"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "english breakfast"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "sugar sticks"
+    },
+    {
+      "tool": "get_recent_orders",
+      "limit": 2
+    }
+  ],
+  "extraction": {
+    "lines": [
+      {
+        "said": "whole milk 1L - 40",
+        "sku": "DAI-WHOLE-1L",
+        "candidates": [],
+        "qty": 40,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "crema beans - 3",
+        "sku": "COF-CREMA-1K",
+        "candidates": [],
+        "qty": 3,
+        "unit": "bag",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "orange juice 1L - 2",
+        "sku": "JUI-ORNG-1L",
+        "candidates": [],
+        "qty": 2,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "apple juice 1L - 2",
+        "sku": "JUI-APCL-1L",
+        "candidates": [],
+        "qty": 2,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "english breakfast - 1",
+        "sku": "TEA-EBPYR-100",
+        "candidates": [],
+        "qty": 1,
+        "unit": "box",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "sugar sticks - 1",
+        "sku": "PKG-SUGW-1000",
+        "candidates": [],
+        "qty": 1,
+        "unit": "box",
+        "conversion": null,
+        "issue": "none"
+      }
+    ],
+    "requested_delivery": {
+      "date": "2026-10-13",
+      "said": "for tomorrow"
+    },
+    "based_on_order_id": null,
+    "refers_to_order_id": null,
+    "change_summary": null,
+    "suspicious_instructions": [],
+    "customer_guess": {
+      "customer_id": null,
+      "said": null
+    },
+    "note_for_reviewer": "40 cases of whole milk against 4 in each of their last two orders; possibly a typo for 4. English breakfast taken as the pyramid bags they usually order."
+  },
+  "reply": null
+}

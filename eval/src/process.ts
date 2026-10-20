@@ -5,6 +5,7 @@
 //   pnpm process --split dev           the 20 tuning emails
 //   pnpm process --only E-004,E-017    a few emails while debugging
 //   pnpm process --model claude-sonnet-5-5
+//   pnpm process --samples             replay recorded model output, no API calls
 
 import { mkdir, readdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
@@ -18,8 +19,10 @@ import {
   draftLines,
   finish,
   loadMasterData,
+  loadSamples,
   REPO_ROOT,
   type Analysis,
+  type Brain,
   type PriorDraft,
   type ProcessedEmail,
 } from "@orderly/core";
@@ -30,10 +33,12 @@ const { values: args } = parseArgs({
     split: { type: "string", default: "all" },
     only: { type: "string" },
     concurrency: { type: "string", default: "4" },
+    samples: { type: "boolean", default: false },
   },
 });
 
-const model = args.model!;
+const brain: Brain = args.samples ? { kind: "sample", samples: await loadSamples() } : { kind: "live", model: args.model! };
+const model = brain.kind === "live" ? brain.model : "sample";
 const data = await loadMasterData();
 const inboxDir = path.join(DATA_DIR, "inbox");
 
@@ -63,7 +68,7 @@ const analyses = (
     ids.map((id) =>
       limit(async () => {
         try {
-          const a = await analyze(data, path.join(inboxDir, `${id}.eml`), id, model);
+          const a = await analyze(data, path.join(inboxDir, `${id}.eml`), id, brain);
           process.stdout.write(`\r  analysed ${++done}/${ids.length}`);
           return a;
         } catch (err) {
@@ -94,7 +99,7 @@ const processed = (
     decided.map(({ a, decision, step }) =>
       limit(async () => {
         try {
-          const p = await finish(data, a, decision, step, model);
+          const p = await finish(data, a, decision, step, brain);
           process.stdout.write(`\r  finished ${++done}/${decided.length}`);
           return p;
         } catch (err) {
@@ -124,6 +129,6 @@ await writeFile(file, JSON.stringify(run, null, 2));
 
 const routes = processed.reduce<Record<string, number>>((m, p) => ((m[p.decision.route] = (m[p.decision.route] ?? 0) + 1), m), {});
 console.log(`routes  ${JSON.stringify(routes)}`);
-console.log(`cost    $${total.toFixed(4)} total, $${(total / Math.max(1, processed.length)).toFixed(4)} per email`);
+console.log(brain.kind === "sample" ? "cost    none, recorded samples (no API calls)" : `cost    $${total.toFixed(4)} total, $${(total / Math.max(1, processed.length)).toFixed(4)} per email`);
 for (const e of errors) console.log(`ERROR   ${e.emailId}: ${e.error}`);
 console.log(`saved   ${path.relative(REPO_ROOT, file)}`);

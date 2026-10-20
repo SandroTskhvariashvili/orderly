@@ -1,0 +1,110 @@
+{
+  "emailId": "E-015",
+  "triage": {
+    "intent": "new_order",
+    "language": "es",
+    "suspicious": false,
+    "summary": "Bakery order for Wednesday, plus a request to change the direct debit bank account."
+  },
+  "lookups": [
+    {
+      "tool": "search_catalog",
+      "query": "leche entera de litro"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "mantequilla"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "café de la casa 1 kg"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "cruasanes de mantequilla"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "napolitanas de chocolate"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "bolsas de papel pequeñas"
+    }
+  ],
+  "extraction": {
+    "lines": [
+      {
+        "said": "6 cajas de leche entera de litro",
+        "sku": "DAI-WHOLE-1L",
+        "candidates": [],
+        "qty": 6,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "2 cajas de mantequilla",
+        "sku": "DAI-BUTT-250",
+        "candidates": [],
+        "qty": 2,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "4 bolsas de café de la casa (1 kg)",
+        "sku": "COF-HOUSE-1K",
+        "candidates": [],
+        "qty": 4,
+        "unit": "bag",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "2 cajas de cruasanes de mantequilla, los grandes",
+        "sku": "BAK-CROI-80",
+        "candidates": [],
+        "qty": 2,
+        "unit": "box",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "2 cajas de napolitanas de chocolate",
+        "sku": "BAK-PAINC-75",
+        "candidates": [],
+        "qty": 2,
+        "unit": "box",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "1 caja de bolsas de papel pequeñas",
+        "sku": "PKG-BAGS-1000",
+        "candidates": [],
+        "qty": 1,
+        "unit": "box",
+        "conversion": null,
+        "issue": "none"
+      }
+    ],
+    "requested_delivery": {
+      "date": "2026-10-14",
+      "said": "Para el miércoles"
+    },
+    "based_on_order_id": null,
+    "refers_to_order_id": null,
+    "change_summary": null,
+    "suspicious_instructions": [],
+    "customer_guess": {
+      "customer_id": null,
+      "said": null
+    },
+    "note_for_reviewer": "Also asks to move the direct debit to a new IBAN from November. Not part of the order: pass to finance and verify by phone on a known number before changing bank details."
+  },
+  "reply": {
+    "subject": "Re: Pedido miércoles - Forn Sant Gervasi",
+    "body": "Hola Montserrat,\n\nGracias por el pedido. Te lo confirmamos:\n\n- 6 cajas de Fresh Whole Milk 3.5%, 1 L\n- 2 cajas de Unsalted Butter, 250 g\n- 4 bolsas de House Espresso Blend, whole bean\n- 2 cajas de Butter Croissant 80 g, frozen ready-to-bake\n- 2 cajas de Pain au Chocolat 75 g, frozen ready-to-bake\n- 1 caja de Kraft Paper Pastry Bags, small\n\nEntrega: miércoles 14 de octubre de 2026.\n\nUn saludo,\nHarbor Lane Orders"
+  }
+}

@@ -31,7 +31,8 @@ const PATTERNS: Array<{ kind: PiiKind; re: RegExp }> = [
     kind: "ADDRESS",
     re: /\b[A-ZÄÖÜ][\p{L}'-]*(?:straat|gracht|weg|laan|plein|kade|markt|dijk|straße|strasse|str\.|gasse|allee|platz|ring|damm|road|street|lane|avenue|quay)\s+\d{1,4}[a-zA-Z]?(?:[-/]\d{1,4})?\b|\b(?:Calle|Carrer|Avenida|Avinguda|Plaza|Plaça|Paseo|Passeig|Rue|Via)\s+(?:de(?:l| la| les)?\s+)?[\p{L}' ]{2,40}?,?\s*\d{1,4}\b/gu,
   },
-  { kind: "POSTCODE", re: /\b\d{4} ?[A-Z]{2}\b(?= [A-Z][a-z])|\b\d{5}(?= [A-ZÄÖÜ][\p{L}]+)/gu },
+  // Postcodes only when followed by a place name, and never inside a product or item code like MAT-00412.
+  { kind: "POSTCODE", re: /(?<![\w-])\d{4} ?[A-Z]{2}(?![\w-])(?= [A-Z][a-z])|(?<![\w-])\d{5}(?= [A-ZÄÖÜ][\p{Ll}]+)/gu },
 ];
 
 export function mask(text: string): Masked {

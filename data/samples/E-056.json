@@ -1,0 +1,12 @@
+{
+  "emailId": "E-056",
+  "triage": {
+    "intent": "question",
+    "language": "en",
+    "suspicious": false,
+    "summary": "Asks when customer service closes on Fridays and about bank holiday Monday deliveries."
+  },
+  "lookups": [],
+  "extraction": null,
+  "reply": null
+}

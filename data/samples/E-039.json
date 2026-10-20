@@ -1,0 +1,94 @@
+{
+  "emailId": "E-039",
+  "triage": {
+    "intent": "new_order",
+    "language": "en",
+    "suspicious": false,
+    "summary": "Orders coffee, milk, oat milk and water for tomorrow; says invoices get paid this week."
+  },
+  "lookups": [
+    {
+      "tool": "search_catalog",
+      "query": "hafen espresso"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "whole milk 1L"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "haverland oat"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "sparkling 330"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "still 330"
+    }
+  ],
+  "extraction": {
+    "lines": [
+      {
+        "said": "2x hafen espresso",
+        "sku": "COF-HAFEN-1K",
+        "candidates": [],
+        "qty": 2,
+        "unit": "bag",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "2x whole milk 1L",
+        "sku": "DAI-WHOLE-1L",
+        "candidates": [],
+        "qty": 2,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "1x haverland oat",
+        "sku": "PLM-OATB-1L",
+        "candidates": [],
+        "qty": 1,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "2 cases sparkling 330",
+        "sku": "WAT-SPRK-330",
+        "candidates": [],
+        "qty": 2,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "1 case still 330",
+        "sku": "WAT-STIL-330",
+        "candidates": [],
+        "qty": 1,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      }
+    ],
+    "requested_delivery": {
+      "date": "2026-10-14",
+      "said": "drop off tomorrow"
+    },
+    "based_on_order_id": null,
+    "refers_to_order_id": null,
+    "change_summary": null,
+    "suspicious_instructions": [],
+    "customer_guess": {
+      "customer_id": null,
+      "said": null
+    },
+    "note_for_reviewer": "Says their accountant is paying the outstanding invoices by the end of the week."
+  },
+  "reply": null
+}

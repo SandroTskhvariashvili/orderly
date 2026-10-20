@@ -1,0 +1,12 @@
+{
+  "emailId": "E-016",
+  "triage": {
+    "intent": "question",
+    "language": "en",
+    "suspicious": false,
+    "summary": "Asks if ceremonial matcha is back in stock and requests the current tea price list."
+  },
+  "lookups": [],
+  "extraction": null,
+  "reply": null
+}

@@ -1,0 +1,123 @@
+{
+  "emailId": "E-001",
+  "triage": {
+    "intent": "new_order",
+    "language": "en",
+    "suspicious": false,
+    "summary": "Wants seven lines of dairy, juice, pastry and coffee delivered Tuesday 13 October."
+  },
+  "lookups": [
+    {
+      "tool": "search_catalog",
+      "query": "Whole milk 1L"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "Semi-skimmed 1L"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "Orange juice 1L"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "Cloudy apple juice 1L"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "Greek yoghurt"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "Mini croissants"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "Caffè Crema beans"
+    }
+  ],
+  "extraction": {
+    "lines": [
+      {
+        "said": "Whole milk 1L: 5 cases",
+        "sku": "DAI-WHOLE-1L",
+        "candidates": [],
+        "qty": 5,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "Semi-skimmed 1L: 3 cases",
+        "sku": "DAI-SEMI-1L",
+        "candidates": [],
+        "qty": 3,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "Orange juice 1L: 3 cases",
+        "sku": "JUI-ORNG-1L",
+        "candidates": [],
+        "qty": 3,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "Cloudy apple juice 1L: 2 cases",
+        "sku": "JUI-APCL-1L",
+        "candidates": [],
+        "qty": 2,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "Greek yoghurt: 3 cases",
+        "sku": "DAI-YOGH-1K",
+        "candidates": [],
+        "qty": 3,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "Mini croissants: 1 box",
+        "sku": "BAK-CROI-45",
+        "candidates": [],
+        "qty": 1,
+        "unit": "box",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "Caffè Crema beans: 4 bags",
+        "sku": "COF-CREMA-1K",
+        "candidates": [],
+        "qty": 4,
+        "unit": "bag",
+        "conversion": null,
+        "issue": "none"
+      }
+    ],
+    "requested_delivery": {
+      "date": "2026-10-13",
+      "said": "tomorrow (Tuesday 13/10)"
+    },
+    "based_on_order_id": null,
+    "refers_to_order_id": null,
+    "change_summary": null,
+    "suspicious_instructions": [],
+    "customer_guess": {
+      "customer_id": null,
+      "said": null
+    },
+    "note_for_reviewer": "Asks for delivery before 08:00 if possible, via the goods entrance on the Leliegracht side."
+  },
+  "reply": {
+    "subject": "Re: Order Tuesday 13/10 - Hotel Keizersloot",
+    "body": "Hi Mark,\n\nThanks for your order. Here is what we have:\n\n- 5 cases Fresh Whole Milk 3.5%, 1 L\n- 3 cases Fresh Semi-Skimmed Milk 1.5%, 1 L\n- 3 cases Fresh-Pressed Orange Juice (HPP, chilled), 1 L\n- 2 cases Cloudy Apple Juice, 1 L\n- 3 cases Greek-Style Yoghurt 10%, 1 kg\n- 1 box Mini Butter Croissant 45 g, frozen ready-to-bake\n- 4 bags Caffè Crema Classico, whole bean\n\nDelivery: Tuesday 13 October 2026.\n\nKind regards,\nHarbor Lane Orders"
+  }
+}

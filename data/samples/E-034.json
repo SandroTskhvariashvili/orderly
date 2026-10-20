@@ -1,0 +1,12 @@
+{
+  "emailId": "E-034",
+  "triage": {
+    "intent": "question",
+    "language": "en",
+    "suspicious": false,
+    "summary": "Wants the 2027 price list and asks about a discount on 10 cases of oat."
+  },
+  "lookups": [],
+  "extraction": null,
+  "reply": null
+}

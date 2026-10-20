@@ -1,0 +1,104 @@
+{
+  "emailId": "E-009",
+  "triage": {
+    "intent": "new_order",
+    "language": "en",
+    "suspicious": false,
+    "summary": "Order for Wednesday: house blend, Colombia, whole milk, oat milk and salted caramel."
+  },
+  "lookups": [
+    {
+      "tool": "search_catalog",
+      "query": "House blend"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "Colombia beans"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "Whole milk 1L"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "Oat milk"
+    },
+    {
+      "tool": "get_recent_orders",
+      "limit": 3
+    },
+    {
+      "tool": "search_catalog",
+      "query": "Salted caramel"
+    }
+  ],
+  "extraction": {
+    "lines": [
+      {
+        "said": "House blend x3",
+        "sku": "COF-HOUSE-1K",
+        "candidates": [],
+        "qty": 3,
+        "unit": "bag",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "Colombia beans x2",
+        "sku": "COF-HUILA-1K",
+        "candidates": [],
+        "qty": 2,
+        "unit": "bag",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "Whole milk 1L x3",
+        "sku": "DAI-WHOLE-1L",
+        "candidates": [],
+        "qty": 3,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "Salted caramel x2",
+        "sku": "SYR-SCAR-750",
+        "candidates": [],
+        "qty": 2,
+        "unit": "bottle",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "Oat milk x4",
+        "sku": null,
+        "candidates": [
+          "PLM-OATB-1L",
+          "PLM-OATP-1L"
+        ],
+        "qty": 4,
+        "unit": "case",
+        "conversion": null,
+        "issue": "ambiguous"
+      }
+    ],
+    "requested_delivery": {
+      "date": "2026-10-14",
+      "said": "Order for Wednesday"
+    },
+    "based_on_order_id": null,
+    "refers_to_order_id": null,
+    "change_summary": null,
+    "suspicious_instructions": [],
+    "customer_guess": {
+      "customer_id": null,
+      "said": null
+    },
+    "note_for_reviewer": "Their recent orders include both Haverland and Plainsong barista oat, sometimes in the same order, so history does not settle which one."
+  },
+  "reply": {
+    "subject": "Re: Order for Wednesday",
+    "body": "Hi Ciara,\n\nThanks for your order. One thing to check before we confirm it: for the oat milk (x4), would you like Haverland Barista Oat, 1 L or Plainsong Barista Oat, 1 L?\n\nThe rest is fine as it is:\n\n- 3 bags House Espresso Blend, whole bean\n- 2 bags Colombia Huila Espresso, whole bean\n- 3 cases Fresh Whole Milk 3.5%, 1 L\n- 2 bottles Salted Caramel Syrup, 750 ml\n\nKind regards,\nHarbor Lane Orders"
+  }
+}

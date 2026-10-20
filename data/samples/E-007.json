@@ -1,0 +1,110 @@
+{
+  "emailId": "E-007",
+  "triage": {
+    "intent": "new_order",
+    "language": "en",
+    "suspicious": false,
+    "summary": "Six-line order for Wednesday: Hafen espresso, oat milk, milk, vanilla, 12oz cups and lids."
+  },
+  "lookups": [
+    {
+      "tool": "search_catalog",
+      "query": "hafen espresso"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "haverland barista"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "whole milk 1L"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "vanilla syrup"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "12oz cups"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "12oz lids"
+    }
+  ],
+  "extraction": {
+    "lines": [
+      {
+        "said": "3 hafen espresso",
+        "sku": "COF-HAFEN-1K",
+        "candidates": [],
+        "qty": 3,
+        "unit": "bag",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "3 haverland barista",
+        "sku": "PLM-OATB-1L",
+        "candidates": [],
+        "qty": 3,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "3 whole milk 1L",
+        "sku": "DAI-WHOLE-1L",
+        "candidates": [],
+        "qty": 3,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "2 vanilla syrup",
+        "sku": "SYR-VAN-750",
+        "candidates": [],
+        "qty": 2,
+        "unit": "bottle",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "1 box 12oz cups",
+        "sku": "PKG-DW12-500",
+        "candidates": [],
+        "qty": 1,
+        "unit": "box",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "1 box 12oz lids",
+        "sku": "PKG-LID90-1000",
+        "candidates": [],
+        "qty": 1,
+        "unit": "box",
+        "conversion": null,
+        "issue": "none"
+      }
+    ],
+    "requested_delivery": {
+      "date": "2026-10-14",
+      "said": "For Wednesday"
+    },
+    "based_on_order_id": null,
+    "refers_to_order_id": null,
+    "change_summary": null,
+    "suspicious_instructions": [],
+    "customer_guess": {
+      "customer_id": null,
+      "said": null
+    },
+    "note_for_reviewer": null
+  },
+  "reply": {
+    "subject": "Re: order wed",
+    "body": "Hi Ricardo,\n\nThanks for your order. Here is what we have:\n\n- 3 bags Hafen Espresso Dark Roast, whole bean\n- 3 cases Haverland Barista Oat, 1 L\n- 3 cases Fresh Whole Milk 3.5%, 1 L\n- 2 bottles Vanilla Syrup, 750 ml\n- 1 box Double Wall Hot Cup 12 oz, white\n- 1 box Sip Lid 90 mm, white (fits 12 oz)\n\nDelivery: Wednesday 14 October 2026.\n\nKind regards,\nHarbor Lane Orders"
+  }
+}

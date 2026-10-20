@@ -1,0 +1,90 @@
+{
+  "emailId": "E-006",
+  "triage": {
+    "intent": "change_order",
+    "language": "en",
+    "suspicious": false,
+    "summary": "Change tomorrow's order: oat milk 6 instead of 4, drop decaf, add 8oz lids."
+  },
+  "lookups": [
+    {
+      "tool": "get_open_orders"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "8oz lids"
+    }
+  ],
+  "extraction": {
+    "lines": [
+      {
+        "said": "change tomorrow's order",
+        "sku": "COF-HUILA-1K",
+        "candidates": [],
+        "qty": 4,
+        "unit": "bag",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "Oat milk 6 instead of 4",
+        "sku": "PLM-OATB-1L",
+        "candidates": [],
+        "qty": 6,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "change tomorrow's order",
+        "sku": "DAI-BARIS-1L",
+        "candidates": [],
+        "qty": 2,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "change tomorrow's order",
+        "sku": "SYR-VAN-750",
+        "candidates": [],
+        "qty": 3,
+        "unit": "bottle",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "change tomorrow's order",
+        "sku": "BAK-CROI-80",
+        "candidates": [],
+        "qty": 1,
+        "unit": "box",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "throw in a box of 8oz lids",
+        "sku": "PKG-LID80-1000",
+        "candidates": [],
+        "qty": 1,
+        "unit": "box",
+        "conversion": null,
+        "issue": "none"
+      }
+    ],
+    "requested_delivery": {
+      "date": "2026-10-13",
+      "said": "tomorrow's order"
+    },
+    "based_on_order_id": null,
+    "refers_to_order_id": "SO-11361",
+    "change_summary": "Oat milk from 4 to 6 cases, remove the 1 bag of decaf, and add 1 box of 8oz lids.",
+    "suspicious_instructions": [],
+    "customer_guess": {
+      "customer_id": null,
+      "said": null
+    },
+    "note_for_reviewer": null
+  },
+  "reply": null
+}

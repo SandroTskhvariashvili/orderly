@@ -3,9 +3,11 @@ import type { MasterData } from "./fixtures.ts";
 import { readEml, type Email } from "./ingest.ts";
 import { mask, toOriginalOffset, type Masked, type MaskSpan } from "./mask.ts";
 import type { OrderLine } from "./schema.ts";
+import type { Sample } from "./samples.ts";
 import {
   draftReply,
   extract,
+  lookups,
   triage,
   type EmailContext,
   type Extraction,
@@ -22,6 +24,17 @@ export interface Step {
   ms: number;
   cost: StepCost | null;
   note: string;
+  /** True when the model's output was replayed from a recorded sample. */
+  sample: boolean;
+}
+
+/** Where model output comes from: the API, or recorded samples (no API calls, no cost). */
+export type Brain = { kind: "live"; model: string } | { kind: "sample"; samples: Map<string, Sample> };
+
+function sampleFor(brain: Extract<Brain, { kind: "sample" }>, id: string): Sample {
+  const s = brain.samples.get(id);
+  if (!s) throw new Error(`no recorded sample for ${id}`);
+  return s;
 }
 
 export interface Analysis {
@@ -56,6 +69,10 @@ export interface ProcessedEmail {
 }
 
 const ORDERISH = new Set(["new_order", "change_order", "cancel_order"]);
+
+function plural(n: number, word: string) {
+  return `${n} ${word}${n === 1 ? "" : "s"}`;
+}
 
 function since(t: number) {
   return Math.round(performance.now() - t);
@@ -115,7 +132,7 @@ function makeLocator(body: Masked, attachments: Masked[]) {
 
 // --- phase 1: everything that needs the model, safe to run in parallel ------------
 
-export async function analyze(data: MasterData, file: string, id: string, model: string): Promise<Analysis> {
+export async function analyze(data: MasterData, file: string, id: string, brain: Brain): Promise<Analysis> {
   const steps: Step[] = [];
 
   let t = performance.now();
@@ -124,7 +141,8 @@ export async function analyze(data: MasterData, file: string, id: string, model:
     name: "read",
     ms: since(t),
     cost: null,
-    note: email.attachments.length ? `Parsed email and ${email.attachments.length} attachment(s).` : "Parsed email.",
+    sample: false,
+    note: email.attachments.length ? `Parsed the email and ${plural(email.attachments.length, "attachment")}.` : "Parsed the email.",
   });
 
   t = performance.now();
@@ -135,7 +153,8 @@ export async function analyze(data: MasterData, file: string, id: string, model:
     name: "mask",
     ms: since(t),
     cost: null,
-    note: masked ? `Masked ${masked} contact detail(s) before any model call.` : "No contact details to mask.",
+    sample: false,
+    note: masked ? `Masked ${plural(masked, "contact detail")} before any model call.` : "No contact details to mask.",
   });
 
   const customer = data.customerByEmail.get(email.from.address) ?? null;
@@ -148,24 +167,53 @@ export async function analyze(data: MasterData, file: string, id: string, model:
     customer,
   };
 
-  const tri = await triage(ctx, model);
-  steps.push({ name: "triage", ms: tri.cost.ms, cost: tri.cost, note: `${tri.result.intent}: ${tri.result.summary}` });
+  let triageResult: Triage;
+  if (brain.kind === "live") {
+    const tri = await triage(ctx, brain.model);
+    triageResult = tri.result;
+    steps.push({ name: "triage", ms: tri.cost.ms, cost: tri.cost, sample: false, note: `${tri.result.intent}: ${tri.result.summary}` });
+  } else {
+    triageResult = sampleFor(brain, id).triage;
+    steps.push({ name: "triage", ms: 0, cost: null, sample: true, note: `${triageResult.intent}: ${triageResult.summary}` });
+  }
 
   let extraction: Extraction | null = null;
   let toolCalls: ToolCall[] = [];
-  if (ORDERISH.has(tri.result.intent)) {
-    const ex = await extract(data, ctx, model);
-    extraction = ex.result;
-    toolCalls = ex.toolCalls;
-    steps.push({
-      name: "extract",
-      ms: ex.cost.ms,
-      cost: ex.cost,
-      note: `${ex.result.lines.length} line(s) after ${ex.toolCalls.length} lookup(s).`,
-    });
+  if (ORDERISH.has(triageResult.intent)) {
+    if (brain.kind === "live") {
+      const ex = await extract(data, ctx, brain.model);
+      extraction = ex.result;
+      toolCalls = ex.toolCalls;
+      steps.push({
+        name: "extract",
+        ms: ex.cost.ms,
+        cost: ex.cost,
+        sample: false,
+        note: `${plural(ex.result.lines.length, "line")} after ${plural(ex.toolCalls.length, "lookup")}.`,
+      });
+    } else {
+      const s = sampleFor(brain, id);
+      if (!s.extraction) throw new Error(`${id}: sample has intent ${triageResult.intent} but no extraction`);
+      // The lookups the model asked for run for real against the catalog and history.
+      const run = lookups(data, ctx, toolCalls);
+      for (const l of s.lookups) {
+        if (l.tool === "search_catalog") run.search_catalog({ query: l.query });
+        else if (l.tool === "get_recent_orders") run.get_recent_orders({ limit: l.limit });
+        else if (l.tool === "get_open_orders") run.get_open_orders();
+        else run.find_customer({ query: l.query });
+      }
+      extraction = s.extraction;
+      steps.push({
+        name: "extract",
+        ms: 0,
+        cost: null,
+        sample: true,
+        note: `${plural(extraction.lines.length, "line")} after ${plural(toolCalls.length, "lookup")}.`,
+      });
+    }
   }
 
-  return { email, maskedBody, maskedAttachments, customerId: customer?.id ?? null, triage: tri.result, extraction, toolCalls, steps };
+  return { email, maskedBody, maskedAttachments, customerId: customer?.id ?? null, triage: triageResult, extraction, toolCalls, steps };
 }
 
 // --- phase 2: deterministic decision, run in arrival order ------------------------
@@ -191,8 +239,8 @@ export function decideFor(data: MasterData, a: Analysis, priorDrafts: PriorDraft
       ? "All checks passed. Draft order created."
       : decision.route === "not_an_order"
         ? "Not an order. Left for the team."
-        : `Needs review: ${decision.issues.map((i) => i.reason).join(", ")}.`;
-  return { decision, step: { name: "decide", ms: since(t), cost: null, note } };
+        : `Needs review: ${[...new Set(decision.issues.map((i) => i.reason.replace(/_/g, " ")))].join(", ")}.`;
+  return { decision, step: { name: "decide", ms: since(t), cost: null, sample: false, note } };
 }
 
 export function draftLines(d: Decision): OrderLine[] {
@@ -205,10 +253,14 @@ function longDate(date: string) {
   return `${weekdayOf(date)} ${new Date(`${date}T12:00:00Z`).toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" })}`;
 }
 
-function replyFacts(data: MasterData, a: Analysis, d: Decision): string | null {
+export function replyFacts(data: MasterData, a: Analysis, d: Decision): string | null {
   const customer = a.customerId ? data.customerById.get(a.customerId)! : null;
   if (!customer) return null;
-  const contact = a.email.from.name.split(/\s+/)[0] || customer.contactName.split(/\s+/)[0];
+  // Shared mailboxes show the business name ("Café Graureiher"), not a person.
+  const display = a.email.from.name.trim();
+  const businessWords = new Set(customer.name.toLowerCase().split(/\s+/));
+  const looksLikeBusiness = !display || display.toLowerCase().split(/\s+/).some((w) => businessWords.has(w));
+  const contact = (looksLikeBusiness ? customer.contactName : display).split(/\s+/)[0];
   const header = [`Contact first name: ${contact}`, `Business: ${customer.name}`, `Their subject line: ${a.email.subject}`];
   if (d.route === "create_draft") {
     const lines = d.lines.map((l) => {
@@ -239,21 +291,25 @@ export async function finish(
   a: Analysis,
   decision: Decision,
   decideStep: Step,
-  model: string,
+  brain: Brain,
 ): Promise<ProcessedEmail> {
   const steps = [...a.steps, decideStep];
   let reply: ReplyDraft | null = null;
   const facts = replyFacts(data, a, decision);
   if (facts) {
-    const customer = data.customerById.get(a.customerId!)!;
-    const r = await draftReply(facts, customer.language, model);
-    reply = r.result;
-    steps.push({
-      name: "reply",
-      ms: r.cost.ms,
-      cost: r.cost,
-      note: decision.route === "create_draft" ? "Drafted a confirmation. Not sent." : "Drafted a clarifying question. Not sent.",
-    });
+    const note = decision.route === "create_draft" ? "Drafted a confirmation. Not sent." : "Drafted a clarifying question. Not sent.";
+    if (brain.kind === "live") {
+      // Answer in the language they wrote in, not the one on file.
+      const customer = data.customerById.get(a.customerId!)!;
+      const language = a.triage.language === "other" ? customer.language : a.triage.language;
+      const r = await draftReply(facts, language, brain.model);
+      reply = r.result;
+      steps.push({ name: "reply", ms: r.cost.ms, cost: r.cost, sample: false, note });
+    } else {
+      reply = sampleFor(brain, a.email.id).reply;
+      if (!reply) throw new Error(`${a.email.id}: a reply is needed but the sample has none`);
+      steps.push({ name: "reply", ms: 0, cost: null, sample: true, note });
+    }
   }
 
   const usage = steps.reduce((u, s) => (s.cost ? addUsage(u, s.cost.usage) : u), ZERO_USAGE);

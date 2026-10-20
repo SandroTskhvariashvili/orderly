@@ -1,0 +1,123 @@
+{
+  "emailId": "E-011",
+  "triage": {
+    "intent": "new_order",
+    "language": "en",
+    "suspicious": false,
+    "summary": "Order for tomorrow: coffee, barista milk, Plainsong oat, 12oz cups and lids, cleaning tablets."
+  },
+  "lookups": [
+    {
+      "tool": "search_catalog",
+      "query": "Colombia Huila 1kg"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "Seasonal (the Rwanda)"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "Polderhof barista milk"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "Plainsong oat"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "12oz cups"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "12oz lids"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "cleaning tablets"
+    }
+  ],
+  "extraction": {
+    "lines": [
+      {
+        "said": "3 x Colombia Huila 1kg",
+        "sku": "COF-HUILA-1K",
+        "candidates": [],
+        "qty": 3,
+        "unit": "bag",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "2 x Seasonal (the Rwanda)",
+        "sku": "COF-SEAS-1K",
+        "candidates": [],
+        "qty": 2,
+        "unit": "bag",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "2 x Polderhof barista milk",
+        "sku": "DAI-BARIS-1L",
+        "candidates": [],
+        "qty": 2,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "3 x Plainsong oat",
+        "sku": "PLM-OATP-1L",
+        "candidates": [],
+        "qty": 3,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "1 box 12oz cups",
+        "sku": "PKG-DW12-500",
+        "candidates": [],
+        "qty": 1,
+        "unit": "box",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "1 box 12oz lids",
+        "sku": "PKG-LID90-1000",
+        "candidates": [],
+        "qty": 1,
+        "unit": "box",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "one tub of the cleaning tablets",
+        "sku": "CLN-ESPTB-100",
+        "candidates": [],
+        "qty": 1,
+        "unit": "each",
+        "conversion": null,
+        "issue": "none"
+      }
+    ],
+    "requested_delivery": {
+      "date": "2026-10-13",
+      "said": "for tomorrow"
+    },
+    "based_on_order_id": null,
+    "refers_to_order_id": null,
+    "change_summary": null,
+    "suspicious_instructions": [],
+    "customer_guess": {
+      "customer_id": null,
+      "said": null
+    },
+    "note_for_reviewer": null
+  },
+  "reply": {
+    "subject": "Re: tomorrow",
+    "body": "Hi Tom,\n\nThanks for your order. Here is what we have:\n\n- 3 bags Colombia Huila Espresso, whole bean\n- 2 bags Seasonal Espresso (autumn: Rwanda Nyamasheke), whole bean\n- 2 cases Barista Whole Milk 3.8%, 1 L\n- 3 cases Plainsong Barista Oat, 1 L\n- 1 box Double Wall Hot Cup 12 oz, white\n- 1 box Sip Lid 90 mm, white (fits 12 oz)\n- 1 tub Espresso Machine Cleaning Tablets 2 g (100 tablets)\n\nDelivery: Tuesday 13 October 2026.\n\nKind regards,\nHarbor Lane Orders"
+  }
+}

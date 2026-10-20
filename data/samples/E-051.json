@@ -1,0 +1,12 @@
+{
+  "emailId": "E-051",
+  "triage": {
+    "intent": "complaint",
+    "language": "en",
+    "suspicious": false,
+    "summary": "Got sugar-free vanilla instead of regular; wants them collected and replaced."
+  },
+  "lookups": [],
+  "extraction": null,
+  "reply": null
+}

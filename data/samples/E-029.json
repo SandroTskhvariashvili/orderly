@@ -1,0 +1,77 @@
+{
+  "emailId": "E-029",
+  "triage": {
+    "intent": "change_order",
+    "language": "de",
+    "suspicious": false,
+    "summary": "Move tomorrow's Wednesday delivery to Friday because of roadworks; contents unchanged."
+  },
+  "lookups": [
+    {
+      "tool": "get_open_orders"
+    }
+  ],
+  "extraction": {
+    "lines": [
+      {
+        "said": "Inhalt bleibt gleich",
+        "sku": "COF-HAFEN-1K",
+        "candidates": [],
+        "qty": 3,
+        "unit": "bag",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "Inhalt bleibt gleich",
+        "sku": "COF-CREMA-1K",
+        "candidates": [],
+        "qty": 2,
+        "unit": "bag",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "Inhalt bleibt gleich",
+        "sku": "PLM-OATB-1L",
+        "candidates": [],
+        "qty": 3,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "Inhalt bleibt gleich",
+        "sku": "DAI-WHOLE-1L",
+        "candidates": [],
+        "qty": 3,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "Inhalt bleibt gleich",
+        "sku": "SYR-CAR-750",
+        "candidates": [],
+        "qty": 1,
+        "unit": "bottle",
+        "conversion": null,
+        "issue": "none"
+      }
+    ],
+    "requested_delivery": {
+      "date": "2026-10-16",
+      "said": "auf Freitag schieben"
+    },
+    "based_on_order_id": null,
+    "refers_to_order_id": "SO-11359",
+    "change_summary": "Move the delivery from Wednesday 14 October to Friday 16 October; contents stay the same.",
+    "suspicious_instructions": [],
+    "customer_guess": {
+      "customer_id": null,
+      "said": null
+    },
+    "note_for_reviewer": null
+  },
+  "reply": null
+}

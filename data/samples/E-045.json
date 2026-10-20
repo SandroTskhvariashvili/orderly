@@ -1,0 +1,117 @@
+{
+  "emailId": "E-045",
+  "triage": {
+    "intent": "new_order",
+    "language": "en",
+    "suspicious": false,
+    "summary": "Order for tomorrow: coffee, barista and oat milk, 8 and 12 oz cups, lids."
+  },
+  "lookups": [
+    {
+      "tool": "search_catalog",
+      "query": "Colombia"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "barista milk"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "Plainsong oat"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "8oz cups"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "12oz cups"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "lids"
+    },
+    {
+      "tool": "get_recent_orders",
+      "limit": 2
+    }
+  ],
+  "extraction": {
+    "lines": [
+      {
+        "said": "3 Colombia",
+        "sku": "COF-HUILA-1K",
+        "candidates": [],
+        "qty": 3,
+        "unit": "bag",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "2 barista milk",
+        "sku": "DAI-BARIS-1L",
+        "candidates": [],
+        "qty": 2,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "3 Plainsong oat",
+        "sku": "PLM-OATP-1L",
+        "candidates": [],
+        "qty": 3,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "1 box 8oz cups",
+        "sku": "PKG-DW8-500",
+        "candidates": [],
+        "qty": 1,
+        "unit": "box",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "1 box 12oz cups",
+        "sku": "PKG-DW12-500",
+        "candidates": [],
+        "qty": 1,
+        "unit": "box",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "2 boxes of lids",
+        "sku": null,
+        "candidates": [
+          "PKG-LID80-1000",
+          "PKG-LID90-1000"
+        ],
+        "qty": 2,
+        "unit": "box",
+        "conversion": null,
+        "issue": "ambiguous"
+      }
+    ],
+    "requested_delivery": {
+      "date": "2026-10-15",
+      "said": "for tomorrow"
+    },
+    "based_on_order_id": null,
+    "refers_to_order_id": null,
+    "change_summary": null,
+    "suspicious_instructions": [],
+    "customer_guess": {
+      "customer_id": null,
+      "said": null
+    },
+    "note_for_reviewer": "He orders both cup sizes. Recent orders had 1 box of each lid size, once 2 × 80 mm + 1 × 90 mm, so this could be one of each or two of one size."
+  },
+  "reply": {
+    "subject": "Re: order thursday",
+    "body": "Hi Tom,\n\nThanks for the order. One question before we put it through: which lids should the 2 boxes be?\n\n- Sip Lid 80 mm, white (fits 8 oz)\n- Sip Lid 90 mm, white (fits 12 oz)\n\nOr one box of each, if that's what you meant.\n\nThe rest is fine as it is:\n\n- 3 bags Colombia Huila Espresso, whole bean\n- 2 cases Barista Whole Milk 3.8%, 1 L\n- 3 cases Plainsong Barista Oat, 1 L\n- 1 box Double Wall Hot Cup 8 oz, white\n- 1 box Double Wall Hot Cup 12 oz, white\n\nThanks,\nHarbor Lane Orders"
+  }
+}

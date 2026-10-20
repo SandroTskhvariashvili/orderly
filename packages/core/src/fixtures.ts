@@ -45,12 +45,15 @@ export function ordersFor(data: MasterData, customerId: string): PastOrder[] {
     .sort((a, b) => b.placedOn.localeCompare(a.placedOn) || b.id.localeCompare(a.id));
 }
 
-/** Largest quantity this customer has ever ordered of a SKU, or null if never. */
-export function maxHistoricQty(data: MasterData, customerId: string, sku: string): number | null {
-  let max: number | null = null;
+/** This customer's usual (median) quantity of a SKU, or null if they never ordered it. */
+export function usualQty(data: MasterData, customerId: string, sku: string): number | null {
+  const qs: number[] = [];
   for (const o of data.orders) {
     if (o.customerId !== customerId) continue;
-    for (const l of o.lines) if (l.sku === sku) max = Math.max(max ?? 0, l.qty);
+    for (const l of o.lines) if (l.sku === sku) qs.push(l.qty);
   }
-  return max;
+  if (!qs.length) return null;
+  qs.sort((a, b) => a - b);
+  const mid = Math.floor(qs.length / 2);
+  return qs.length % 2 ? qs[mid]! : (qs[mid - 1]! + qs[mid]!) / 2;
 }

@@ -1,0 +1,81 @@
+{
+  "emailId": "E-028",
+  "triage": {
+    "intent": "new_order",
+    "language": "en",
+    "suspicious": false,
+    "summary": "Same order as last time, with no changes."
+  },
+  "lookups": [
+    {
+      "tool": "get_recent_orders",
+      "limit": 1
+    }
+  ],
+  "extraction": {
+    "lines": [
+      {
+        "said": "Same as last time",
+        "sku": "DAI-WHOLE-1L",
+        "candidates": [],
+        "qty": 2,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "Same as last time",
+        "sku": "DAI-CREAM-1L",
+        "candidates": [],
+        "qty": 1,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "Same as last time",
+        "sku": "DAI-BUTT-250",
+        "candidates": [],
+        "qty": 2,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "Same as last time",
+        "sku": "COF-CREMA-1K",
+        "candidates": [],
+        "qty": 1,
+        "unit": "bag",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "Same as last time",
+        "sku": "PKG-BAGS-1000",
+        "candidates": [],
+        "qty": 1,
+        "unit": "box",
+        "conversion": null,
+        "issue": "none"
+      }
+    ],
+    "requested_delivery": {
+      "date": null,
+      "said": null
+    },
+    "based_on_order_id": "SO-11297",
+    "refers_to_order_id": null,
+    "change_summary": null,
+    "suspicious_instructions": [],
+    "customer_guess": {
+      "customer_id": null,
+      "said": null
+    },
+    "note_for_reviewer": null
+  },
+  "reply": {
+    "subject": "Re: bestelling",
+    "body": "Hi Ingrid,\n\nThanks for your order. Here is what we have:\n\n- 2 cases Fresh Whole Milk 3.5%, 1 L\n- 1 case Whipping Cream 35%, 1 L\n- 2 cases Unsalted Butter, 250 g\n- 1 bag Caffè Crema Classico, whole bean\n- 1 box Kraft Paper Pastry Bags, small\n\nDelivery: Wednesday 14 October 2026.\n\nKind regards,\nHarbor Lane Orders"
+  }
+}

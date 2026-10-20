@@ -1,0 +1,93 @@
+{
+  "emailId": "E-058",
+  "triage": {
+    "intent": "new_order",
+    "language": "en",
+    "suspicious": false,
+    "summary": "Order for Saturday with milk in bottles, plus butter, cream and paper bags."
+  },
+  "lookups": [
+    {
+      "tool": "search_catalog",
+      "query": "whole milk"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "butter"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "cream"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "small paper bags"
+    }
+  ],
+  "extraction": {
+    "lines": [
+      {
+        "said": "a dozen of the 2 litre whole milk",
+        "sku": "DAI-WHOLE-2L",
+        "candidates": [],
+        "qty": 2,
+        "unit": "case",
+        "conversion": "12 bottles ÷ 6 per case = 2 cases",
+        "issue": "none"
+      },
+      {
+        "said": "18 bottles whole milk 1 litre",
+        "sku": "DAI-WHOLE-1L",
+        "candidates": [],
+        "qty": 3,
+        "unit": "case",
+        "conversion": "18 bottles ÷ 6 per case = 3 cases",
+        "issue": "none"
+      },
+      {
+        "said": "2 cases butter",
+        "sku": "DAI-BUTT-250",
+        "candidates": [],
+        "qty": 2,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "2 cream",
+        "sku": "DAI-CREAM-1L",
+        "candidates": [],
+        "qty": 2,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "1 box small paper bags",
+        "sku": "PKG-BAGS-1000",
+        "candidates": [],
+        "qty": 1,
+        "unit": "box",
+        "conversion": null,
+        "issue": "none"
+      }
+    ],
+    "requested_delivery": {
+      "date": "2026-10-17",
+      "said": "For tomorrow (Saturday)"
+    },
+    "based_on_order_id": null,
+    "refers_to_order_id": null,
+    "change_summary": null,
+    "suspicious_instructions": [],
+    "customer_guess": {
+      "customer_id": null,
+      "said": null
+    },
+    "note_for_reviewer": null
+  },
+  "reply": {
+    "subject": "Re: order saturday",
+    "body": "Hi Joost,\n\nThanks for your order. Confirmed:\n\n- 2 cases Fresh Whole Milk 3.5%, 2 L (6 × 2 L)\n- 3 cases Fresh Whole Milk 3.5%, 1 L (6 × 1 L)\n- 2 cases Unsalted Butter, 250 g (20 × 250 g)\n- 2 cases Whipping Cream 35%, 1 L (6 × 1 L)\n- 1 box Kraft Paper Pastry Bags, small (1000 pcs)\n\nDelivery: Saturday 17 October 2026.\n\nKind regards,\nHarbor Lane Orders"
+  }
+}

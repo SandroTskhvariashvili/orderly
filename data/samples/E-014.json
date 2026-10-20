@@ -1,0 +1,123 @@
+{
+  "emailId": "E-014",
+  "triage": {
+    "intent": "new_order",
+    "language": "en",
+    "suspicious": false,
+    "summary": "Seven-line café order for tomorrow, regular hot chocolate rather than dark."
+  },
+  "lookups": [
+    {
+      "tool": "search_catalog",
+      "query": "colombia huila"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "house blend"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "haverland oat"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "almond barista"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "whole milk 1L"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "vanilla"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "hot choc"
+    }
+  ],
+  "extraction": {
+    "lines": [
+      {
+        "said": "2 colombia huila",
+        "sku": "COF-HUILA-1K",
+        "candidates": [],
+        "qty": 2,
+        "unit": "bag",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "2 house blend",
+        "sku": "COF-HOUSE-1K",
+        "candidates": [],
+        "qty": 2,
+        "unit": "bag",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "haverland oat x3",
+        "sku": "PLM-OATB-1L",
+        "candidates": [],
+        "qty": 3,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "almond barista x1",
+        "sku": "PLM-ALMB-1L",
+        "candidates": [],
+        "qty": 1,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "whole milk 1L x3",
+        "sku": "DAI-WHOLE-1L",
+        "candidates": [],
+        "qty": 3,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "vanilla x2",
+        "sku": "SYR-VAN-750",
+        "candidates": [],
+        "qty": 2,
+        "unit": "bottle",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "1 hot choc, the normal one not the dark",
+        "sku": "CHO-HOT28-1K",
+        "candidates": [],
+        "qty": 1,
+        "unit": "bag",
+        "conversion": null,
+        "issue": "none"
+      }
+    ],
+    "requested_delivery": {
+      "date": "2026-10-13",
+      "said": "For tomorrow"
+    },
+    "based_on_order_id": null,
+    "refers_to_order_id": null,
+    "change_summary": null,
+    "suspicious_instructions": [],
+    "customer_guess": {
+      "customer_id": null,
+      "said": null
+    },
+    "note_for_reviewer": null
+  },
+  "reply": {
+    "subject": "Re: Order Dom & Daisy - Tuesday",
+    "body": "Hi Emma,\n\nThanks for your order. Here is what we have:\n\n- 2 bags Colombia Huila Espresso, whole bean\n- 2 bags House Espresso Blend, whole bean\n- 3 cases Haverland Barista Oat, 1 L\n- 1 case Plainsong Almond Barista, 1 L\n- 3 cases Fresh Whole Milk 3.5%, 1 L\n- 2 bottles Vanilla Syrup, 750 ml\n- 1 bag Hot Chocolate Powder 28%\n\nDelivery: Tuesday 13 October 2026.\n\nKind regards,\nHarbor Lane Orders"
+  }
+}

@@ -8,4 +8,5 @@ export * from "./search.ts";
 export * from "./steps.ts";
 export * from "./validate.ts";
 export * from "./pipeline.ts";
+export * from "./samples.ts";
 export { DEFAULT_MODEL, Declined } from "./llm.ts";

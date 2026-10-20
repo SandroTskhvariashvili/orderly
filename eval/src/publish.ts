@@ -1,14 +1,18 @@
-// Turns a scored run into the JSON the website and the video read.
+// Turns a run into the JSON the website and the video read.
 //
 //   pnpm publish:demo --run eval/runs/<id>.json [--compare eval/reports/<a>.test.json,...]
 //
-// Expects `pnpm eval --run <file> --split all` and `--split test` to have been run first.
+// A live run must be scored first (`pnpm eval --run <file> --split all` and
+// `--split test`), and its measured numbers are published. A sample run
+// (`pnpm process --samples`) publishes no accuracy or cost figures at all,
+// because replayed model output measures nothing.
 
 import { readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { parseArgs } from "node:util";
-import { REPO_ROOT, loadMasterData, type ProcessedEmail } from "@orderly/core";
-import type { DemoData, DemoEmail, ModelComparison } from "../../packages/ui/src/types.ts";
+import { readdir } from "node:fs/promises";
+import { DATA_DIR, Label, REPO_ROOT, loadMasterData, type ProcessedEmail } from "@orderly/core";
+import type { DemoData, DemoEmail, ModelComparison, RouteName, WeekSummary } from "../../packages/ui/src/types.ts";
 
 const { values: args } = parseArgs({
   options: { run: { type: "string" }, compare: { type: "string" } },
@@ -18,14 +22,19 @@ if (!args.run) throw new Error("--run is required");
 const runFile = path.resolve(args.run);
 const base = path.join(REPO_ROOT, "eval", "reports", path.basename(runFile, ".json"));
 const run = JSON.parse(await readFile(runFile, "utf8")) as { model: string; emails: ProcessedEmail[] };
-const all = JSON.parse(await readFile(`${base}.all.json`, "utf8"));
-const test = JSON.parse(await readFile(`${base}.test.json`, "utf8"));
+const live = run.model !== "sample";
 const data = await loadMasterData();
 
+const labels = new Map<string, Label>();
+for (const f of await readdir(path.join(DATA_DIR, "labels"))) {
+  const l = Label.parse(JSON.parse(await readFile(path.join(DATA_DIR, "labels", f), "utf8")));
+  labels.set(l.emailId, l);
+}
+
 type Row = { id: string; purpose: string; problems: string[]; expected: { route: string }; routeOk: boolean };
+const all = live ? JSON.parse(await readFile(`${base}.all.json`, "utf8")) : { rows: [] };
+const test = live ? JSON.parse(await readFile(`${base}.test.json`, "utf8")) : { rows: [], metrics: null };
 const rowById = new Map<string, Row>(all.rows.map((r: Row) => [r.id, r]));
-const splitById = new Map<string, "dev" | "test">();
-for (const r of test.rows as Row[]) splitById.set(r.id, "test");
 
 function describeTool(name: string, input: unknown, output: unknown): { input: string; result: string } {
   const i = input as Record<string, unknown>;
@@ -52,7 +61,7 @@ const emails: DemoEmail[] = run.emails
     const d = p.decision;
     return {
       id: p.emailId,
-      split: splitById.get(p.emailId) ?? "dev",
+      split: labels.get(p.emailId)?.split ?? "dev",
       receivedAt: p.receivedAt,
       from: p.from,
       subject: p.subject,
@@ -62,6 +71,7 @@ const emails: DemoEmail[] = run.emails
       attachments: p.attachments,
       customer: p.customer ? { id: p.customer.id, name: p.customer.name, city: p.customer.city } : null,
       intent: p.triage.intent,
+      language: p.triage.language === "other" ? "en" : p.triage.language,
       summary: p.triage.summary,
       route: d.route,
       issues: d.issues,
@@ -82,6 +92,7 @@ const emails: DemoEmail[] = run.emails
       deliveryDate: d.deliveryDate,
       requestedDeliveryDate: d.requestedDeliveryDate,
       deliveryEvidence: d.deliveryEvidence,
+      flagged: d.flaggedEvidence,
       basedOnOrderId: p.extraction?.based_on_order_id ?? null,
       refersToOrderId: p.extraction?.refers_to_order_id ?? null,
       changeSummary: p.extraction?.change_summary ?? null,
@@ -90,6 +101,7 @@ const emails: DemoEmail[] = run.emails
         name: s.name,
         ms: s.ms,
         note: s.note,
+        sample: s.sample,
         model: s.cost?.model ?? null,
         costUsd: s.cost?.costUsd ?? null,
         inputTokens: s.cost ? s.cost.usage.inputTokens + s.cost.usage.cacheReadTokens + s.cost.usage.cacheWriteTokens : null,
@@ -101,9 +113,9 @@ const emails: DemoEmail[] = run.emails
       ms: p.totals.ms,
       check: {
         correct: row ? row.problems.length === 0 : true,
-        expectedRoute: (row?.expected.route ?? d.route) as DemoEmail["route"],
+        expectedRoute: (labels.get(p.emailId)?.route ?? d.route) as DemoEmail["route"],
         problems: row?.problems ?? [],
-        purpose: row?.purpose ?? "",
+        purpose: labels.get(p.emailId)?.purpose ?? "",
       },
     };
   });
@@ -115,7 +127,7 @@ const LABELS: Record<string, string> = {
 };
 
 const comparison: ModelComparison[] = [];
-for (const file of [`${base}.test.json`, ...(args.compare?.split(",") ?? [])]) {
+for (const file of live ? [`${base}.test.json`, ...(args.compare?.split(",") ?? [])] : []) {
   const r = JSON.parse(await readFile(path.resolve(file), "utf8"));
   const m = r.metrics;
   comparison.push({
@@ -129,9 +141,32 @@ for (const file of [`${base}.test.json`, ...(args.compare?.split(",") ?? [])]) {
   });
 }
 
+// What the real checks did with the week. Counts only.
+const routes: Record<RouteName, number> = { create_draft: 0, needs_review: 0, not_an_order: 0 };
+const reasonCount = new Map<string, { count: number; example: string }>();
+for (const e of emails) {
+  routes[e.route]++;
+  for (const reason of new Set(e.issues.map((i) => i.reason))) {
+    const r = reasonCount.get(reason) ?? { count: 0, example: e.id };
+    r.count++;
+    reasonCount.set(reason, r);
+  }
+}
+const week: WeekSummary = {
+  emails: emails.length,
+  routes,
+  reasons: [...reasonCount.entries()]
+    .map(([reason, r]) => ({ reason, ...r }))
+    .sort((a, b) => b.count - a.count || a.reason.localeCompare(b.reason)),
+  contactDetailsMasked: emails.reduce((s, e) => s + e.maskSpans.length, 0),
+  lookups: emails.reduce((s, e) => s + e.toolCalls.length, 0),
+};
+
 const demo: DemoData = {
   generatedAt: new Date().toISOString(),
-  metrics: test.metrics,
+  mode: live ? "live" : "sample",
+  week,
+  metrics: live ? test.metrics : null,
   comparison: comparison.length > 1 ? comparison : [],
   failures: (test.rows as Row[]).filter((r) => r.problems.length).map((r) => ({ id: r.id, purpose: r.purpose, problems: r.problems })),
   emails,

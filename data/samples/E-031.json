@@ -1,0 +1,110 @@
+{
+  "emailId": "E-031",
+  "triage": {
+    "intent": "new_order",
+    "language": "en",
+    "suspicious": false,
+    "summary": "Orders milk, orange juice, coffee, tea, yoghurt and mini croissants for Friday."
+  },
+  "lookups": [
+    {
+      "tool": "search_catalog",
+      "query": "whole milk 1L"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "orange juice 1L"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "Caffè Crema beans"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "English Breakfast tea bags"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "Greek yoghurt"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "mini croissants"
+    }
+  ],
+  "extraction": {
+    "lines": [
+      {
+        "said": "2 x whole milk 1L",
+        "sku": "DAI-WHOLE-1L",
+        "candidates": [],
+        "qty": 2,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "2 x orange juice 1L",
+        "sku": "JUI-ORNG-1L",
+        "candidates": [],
+        "qty": 2,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "2 x Caffè Crema beans",
+        "sku": "COF-CREMA-1K",
+        "candidates": [],
+        "qty": 2,
+        "unit": "bag",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "1 x English Breakfast tea bags",
+        "sku": "TEA-EBPYR-100",
+        "candidates": [],
+        "qty": 1,
+        "unit": "box",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "1 x Greek yoghurt",
+        "sku": "DAI-YOGH-1K",
+        "candidates": [],
+        "qty": 1,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "1 x mini croissants",
+        "sku": "BAK-CROI-45",
+        "candidates": [],
+        "qty": 1,
+        "unit": "box",
+        "conversion": null,
+        "issue": "none"
+      }
+    ],
+    "requested_delivery": {
+      "date": "2026-10-16",
+      "said": "for Friday"
+    },
+    "based_on_order_id": null,
+    "refers_to_order_id": null,
+    "change_summary": null,
+    "suspicious_instructions": [],
+    "customer_guess": {
+      "customer_id": null,
+      "said": null
+    },
+    "note_for_reviewer": null
+  },
+  "reply": {
+    "subject": "Re: Order for Friday",
+    "body": "Hi Siobhán,\n\nThanks for your order. We have you down for:\n\n- 2 cases Fresh Whole Milk 3.5%, 1 L (6 × 1 L)\n- 2 cases Fresh-Pressed Orange Juice (HPP, chilled), 1 L (6 × 1 L)\n- 2 bags Caffè Crema Classico, whole bean (1 kg)\n- 1 box English Breakfast, pyramid bags (100 bags)\n- 1 case Greek-Style Yoghurt 10%, 1 kg (4 × 1 kg)\n- 1 box Mini Butter Croissant 45 g, frozen ready-to-bake (120 pcs)\n\nDelivery: Friday 16 October 2026.\n\nKind regards,\nHarbor Lane Orders"
+  }
+}

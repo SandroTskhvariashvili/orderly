@@ -133,64 +133,74 @@ function summariseOrder(data: MasterData, o: PastOrder) {
   };
 }
 
-function customerTools(data: MasterData, ctx: EmailContext, calls: ToolCall[]) {
+/** The four read-only lookups. Scoped to the sender: they never return another customer's orders. */
+export function lookups(data: MasterData, ctx: EmailContext, calls: ToolCall[]) {
   const log = <T>(name: string, input: unknown, output: T): string => {
     calls.push({ name, input, output });
     return JSON.stringify(output);
   };
   const receivedDate = localParts(ctx.receivedAt).date;
+  return {
+    search_catalog: ({ query }: { query: string }) =>
+      log(
+        "search_catalog",
+        { query },
+        searchCatalog(data.catalog, query).map(({ item: p, score }) => ({
+          sku: p.sku,
+          name: p.name,
+          brand: p.brand,
+          packSize: p.packSize,
+          unit: p.unit,
+          discontinued: !p.active,
+          score,
+        })),
+      ),
+    get_recent_orders: ({ limit }: { limit: number }) => {
+      if (!ctx.customer) return log("get_recent_orders", { limit }, { error: "Sender is not a known customer, so there is no order history." });
+      const past = ordersFor(data, ctx.customer.id).filter((o) => o.placedOn <= receivedDate);
+      return log("get_recent_orders", { limit }, past.slice(0, limit).map((o) => summariseOrder(data, o)));
+    },
+    get_open_orders: () => {
+      if (!ctx.customer) return log("get_open_orders", {}, { error: "Sender is not a known customer." });
+      const open = ordersFor(data, ctx.customer.id).filter((o) => o.deliveryDate >= receivedDate);
+      return log("get_open_orders", {}, open.map((o) => summariseOrder(data, o)));
+    },
+    find_customer: ({ query }: { query: string }) =>
+      log(
+        "find_customer",
+        { query },
+        searchCustomers(data.customers, query).map(({ item: c }) => ({ id: c.id, name: c.name, city: c.city })),
+      ),
+  };
+}
 
+function customerTools(data: MasterData, ctx: EmailContext, calls: ToolCall[]) {
+  const run = lookups(data, ctx, calls);
   return [
     betaZodTool({
       name: "search_catalog",
       description:
         "Search Harbor Lane's product catalog. Returns up to 8 products with SKU, name, brand, pack size, selling unit and whether it is still sold. Search one product at a time.",
       inputSchema: z.object({ query: z.string().describe("A product as the customer wrote it, or a simpler or translated form.") }),
-      run: async ({ query }) =>
-        log(
-          "search_catalog",
-          { query },
-          searchCatalog(data.catalog, query).map(({ item: p, score }) => ({
-            sku: p.sku,
-            name: p.name,
-            brand: p.brand,
-            packSize: p.packSize,
-            unit: p.unit,
-            discontinued: !p.active,
-            score,
-          })),
-        ),
+      run: async (input) => run.search_catalog(input),
     }),
     betaZodTool({
       name: "get_recent_orders",
       description: "This customer's most recent orders, newest first, with lines. Only works when the sender is a known customer.",
       inputSchema: z.object({ limit: z.number().int().min(1).max(5).describe("How many orders, 1 to 5.") }),
-      run: async ({ limit }) => {
-        if (!ctx.customer) return log("get_recent_orders", { limit }, { error: "Sender is not a known customer, so there is no order history." });
-        const past = ordersFor(data, ctx.customer.id).filter((o) => o.placedOn <= receivedDate);
-        return log("get_recent_orders", { limit }, past.slice(0, limit).map((o) => summariseOrder(data, o)));
-      },
+      run: async (input) => run.get_recent_orders(input),
     }),
     betaZodTool({
       name: "get_open_orders",
       description: "This customer's orders that have not been delivered yet. Use for changes and cancellations.",
       inputSchema: z.object({}),
-      run: async () => {
-        if (!ctx.customer) return log("get_open_orders", {}, { error: "Sender is not a known customer." });
-        const open = ordersFor(data, ctx.customer.id).filter((o) => o.deliveryDate >= receivedDate);
-        return log("get_open_orders", {}, open.map((o) => summariseOrder(data, o)));
-      },
+      run: async () => run.get_open_orders(),
     }),
     betaZodTool({
       name: "find_customer",
       description: "Look up customers by business name or city. Use only when the sender is not on file. Returns id, name and city.",
       inputSchema: z.object({ query: z.string() }),
-      run: async ({ query }) =>
-        log(
-          "find_customer",
-          { query },
-          searchCustomers(data.customers, query).map(({ item: c }) => ({ id: c.id, name: c.name, city: c.city })),
-        ),
+      run: async (input) => run.find_customer(input),
     }),
   ];
 }

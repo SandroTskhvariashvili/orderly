@@ -1,0 +1,110 @@
+{
+  "emailId": "E-024",
+  "triage": {
+    "intent": "new_order",
+    "language": "en",
+    "suspicious": false,
+    "summary": "Bakery order for Wednesday: butter, 2L milk, cream, milk callets, house blend, paper bags."
+  },
+  "lookups": [
+    {
+      "tool": "search_catalog",
+      "query": "Butter"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "Whole milk 2L"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "Cream"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "Milk callets"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "House blend"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "Paper bags"
+    }
+  ],
+  "extraction": {
+    "lines": [
+      {
+        "said": "Butter x 3 cases",
+        "sku": "DAI-BUTT-250",
+        "candidates": [],
+        "qty": 3,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "Whole milk 2L x 3 cases",
+        "sku": "DAI-WHOLE-2L",
+        "candidates": [],
+        "qty": 3,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "Cream x 2",
+        "sku": "DAI-CREAM-1L",
+        "candidates": [],
+        "qty": 2,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "Milk callets x 1 bag",
+        "sku": "CHO-CALMK-25",
+        "candidates": [],
+        "qty": 1,
+        "unit": "bag",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "House blend x 2",
+        "sku": "COF-HOUSE-1K",
+        "candidates": [],
+        "qty": 2,
+        "unit": "bag",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "Paper bags x 1 box",
+        "sku": "PKG-BAGS-1000",
+        "candidates": [],
+        "qty": 1,
+        "unit": "box",
+        "conversion": null,
+        "issue": "none"
+      }
+    ],
+    "requested_delivery": {
+      "date": "2026-10-14",
+      "said": "for Wednesday"
+    },
+    "based_on_order_id": null,
+    "refers_to_order_id": null,
+    "change_summary": null,
+    "suspicious_instructions": [],
+    "customer_guess": {
+      "customer_id": null,
+      "said": null
+    },
+    "note_for_reviewer": null
+  },
+  "reply": {
+    "subject": "Re: Order - Rathmines Bakehouse",
+    "body": "Hi Declan,\n\nThanks for your order. Here is what we have:\n\n- 3 cases Unsalted Butter, 250 g\n- 3 cases Fresh Whole Milk 3.5%, 2 L\n- 2 cases Whipping Cream 35%, 1 L\n- 1 bag Milk Chocolate Callets 33%\n- 2 bags House Espresso Blend, whole bean\n- 1 box Kraft Paper Pastry Bags, small\n\nDelivery: Wednesday 14 October 2026.\n\nKind regards,\nHarbor Lane Orders"
+  }
+}

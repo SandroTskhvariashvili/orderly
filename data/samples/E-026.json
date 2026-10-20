@@ -1,0 +1,123 @@
+{
+  "emailId": "E-026",
+  "triage": {
+    "intent": "new_order",
+    "language": "en",
+    "suspicious": false,
+    "summary": "Seven-line order for Thursday: coffee, oat, barista milk, 8oz cups and lids, hazelnut syrup."
+  },
+  "lookups": [
+    {
+      "tool": "search_catalog",
+      "query": "Colombia Huila 1 kg"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "Hafen Espresso 1 kg"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "Haverland Barista Oat"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "Barista milk 3.8%"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "8oz cups"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "8oz lids"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "hazelnut syrup"
+    }
+  ],
+  "extraction": {
+    "lines": [
+      {
+        "said": "2x Colombia Huila 1 kg",
+        "sku": "COF-HUILA-1K",
+        "candidates": [],
+        "qty": 2,
+        "unit": "bag",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "2x Hafen Espresso 1 kg",
+        "sku": "COF-HAFEN-1K",
+        "candidates": [],
+        "qty": 2,
+        "unit": "bag",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "3x Haverland Barista Oat (case)",
+        "sku": "PLM-OATB-1L",
+        "candidates": [],
+        "qty": 3,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "1x Barista milk 3.8% (case)",
+        "sku": "DAI-BARIS-1L",
+        "candidates": [],
+        "qty": 1,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "1x 8oz cups",
+        "sku": "PKG-DW8-500",
+        "candidates": [],
+        "qty": 1,
+        "unit": "box",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "1x 8oz lids",
+        "sku": "PKG-LID80-1000",
+        "candidates": [],
+        "qty": 1,
+        "unit": "box",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "1x hazelnut syrup",
+        "sku": "SYR-HAZ-750",
+        "candidates": [],
+        "qty": 1,
+        "unit": "bottle",
+        "conversion": null,
+        "issue": "none"
+      }
+    ],
+    "requested_delivery": {
+      "date": "2026-10-15",
+      "said": "deliver on Thursday"
+    },
+    "based_on_order_id": null,
+    "refers_to_order_id": null,
+    "change_summary": null,
+    "suspicious_instructions": [],
+    "customer_guess": {
+      "customer_id": null,
+      "said": null
+    },
+    "note_for_reviewer": null
+  },
+  "reply": {
+    "subject": "Re: Order for Thursday",
+    "body": "Hallo Lukas,\n\nvielen Dank für Ihre Bestellung. Wir liefern Folgendes:\n\n- 2 Beutel Colombia Huila Espresso, whole bean\n- 2 Beutel Hafen Espresso Dark Roast, whole bean\n- 3 Kartons Haverland Barista Oat, 1 L\n- 1 Karton Barista Whole Milk 3.8%, 1 L\n- 1 Karton Double Wall Hot Cup 8 oz, white\n- 1 Karton Sip Lid 80 mm, white (fits 8 oz)\n- 1 Flasche Hazelnut Syrup, 750 ml\n\nLieferung: Donnerstag, 15. Oktober 2026.\n\nViele Grüße\nHarbor Lane Orders"
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "emailId": "E-038",
+  "triage": {
+    "intent": "new_order",
+    "language": "es",
+    "suspicious": false,
+    "summary": "Order for Friday: coffee, oat and almond milk, whole milk, 8 oz cups and lids."
+  },
+  "lookups": [
+    {
+      "tool": "search_catalog",
+      "query": "Colombia Huila 1kg"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "Seasonal Ruanda"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "Haverland Barista"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "leche entera 1L"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "almendra Plainsong"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "vasos 8oz"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "tapas 8oz"
+    }
+  ],
+  "extraction": {
+    "lines": [
+      {
+        "said": "2 x Colombia Huila 1kg",
+        "sku": "COF-HUILA-1K",
+        "candidates": [],
+        "qty": 2,
+        "unit": "bag",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "1 x Seasonal (el de Ruanda)",
+        "sku": "COF-SEAS-1K",
+        "candidates": [],
+        "qty": 1,
+        "unit": "bag",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "3 x Haverland Barista (cajas)",
+        "sku": "PLM-OATB-1L",
+        "candidates": [],
+        "qty": 3,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "3 x leche entera 1L (cajas)",
+        "sku": "DAI-WHOLE-1L",
+        "candidates": [],
+        "qty": 3,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "1 x almendra Plainsong",
+        "sku": "PLM-ALMB-1L",
+        "candidates": [],
+        "qty": 1,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "1 x vasos 8oz",
+        "sku": "PKG-DW8-500",
+        "candidates": [],
+        "qty": 1,
+        "unit": "box",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "1 x tapas 8oz",
+        "sku": "PKG-LID80-1000",
+        "candidates": [],
+        "qty": 1,
+        "unit": "box",
+        "conversion": null,
+        "issue": "none"
+      }
+    ],
+    "requested_delivery": {
+      "date": "2026-10-16",
+      "said": "el pedido para el viernes"
+    },
+    "based_on_order_id": null,
+    "refers_to_order_id": null,
+    "change_summary": null,
+    "suspicious_instructions": [],
+    "customer_guess": {
+      "customer_id": null,
+      "said": null
+    },
+    "note_for_reviewer": null
+  },
+  "reply": {
+    "subject": "Re: Pedido para el viernes",
+    "body": "Hola Javi,\n\nGracias por el pedido. Te confirmamos:\n\n- 2 bolsas Colombia Huila Espresso, whole bean (1 kg)\n- 1 bolsa Seasonal Espresso (autumn: Rwanda Nyamasheke), whole bean (1 kg)\n- 3 cajas Haverland Barista Oat, 1 L (6 × 1 L)\n- 3 cajas Fresh Whole Milk 3.5%, 1 L (6 × 1 L)\n- 1 caja Plainsong Almond Barista, 1 L (6 × 1 L)\n- 1 caja Double Wall Hot Cup 8 oz, white (500 uds.)\n- 1 caja Sip Lid 80 mm, white (fits 8 oz) (1000 uds.)\n\nEntrega: viernes 16 de octubre de 2026.\n\nUn saludo,\nHarbor Lane Orders"
+  }
+}

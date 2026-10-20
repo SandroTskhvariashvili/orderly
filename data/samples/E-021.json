@@ -1,0 +1,118 @@
+{
+  "emailId": "E-021",
+  "triage": {
+    "intent": "new_order",
+    "language": "en",
+    "suspicious": false,
+    "summary": "Order for Friday: Hafen espresso, Haverland oat, whole milk, caramel syrup, 8oz cups and lids."
+  },
+  "lookups": [
+    {
+      "tool": "search_catalog",
+      "query": "hafen espreso"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "oatmlk haverland"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "whole mlk 1l"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "whole milk 1l"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "carmel syrup"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "caramel syrup"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "8oz cups"
+    },
+    {
+      "tool": "search_catalog",
+      "query": "8oz lids"
+    }
+  ],
+  "extraction": {
+    "lines": [
+      {
+        "said": "hafen espreso 4kg",
+        "sku": "COF-HAFEN-1K",
+        "candidates": [],
+        "qty": 4,
+        "unit": "bag",
+        "conversion": "4 kg ÷ 1 kg per bag = 4 bags",
+        "issue": "none"
+      },
+      {
+        "said": "oatmlk haverland 3",
+        "sku": "PLM-OATB-1L",
+        "candidates": [],
+        "qty": 3,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "whole mlk 1l 2",
+        "sku": "DAI-WHOLE-1L",
+        "candidates": [],
+        "qty": 2,
+        "unit": "case",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "carmel syrup 2",
+        "sku": "SYR-CAR-750",
+        "candidates": [],
+        "qty": 2,
+        "unit": "bottle",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "8oz cups 1 box",
+        "sku": "PKG-DW8-500",
+        "candidates": [],
+        "qty": 1,
+        "unit": "box",
+        "conversion": null,
+        "issue": "none"
+      },
+      {
+        "said": "the 8oz lids 1 box",
+        "sku": "PKG-LID80-1000",
+        "candidates": [],
+        "qty": 1,
+        "unit": "box",
+        "conversion": null,
+        "issue": "none"
+      }
+    ],
+    "requested_delivery": {
+      "date": "2026-10-16",
+      "said": "for friday"
+    },
+    "based_on_order_id": null,
+    "refers_to_order_id": null,
+    "change_summary": null,
+    "suspicious_instructions": [],
+    "customer_guess": {
+      "customer_id": null,
+      "said": null
+    },
+    "note_for_reviewer": null
+  },
+  "reply": {
+    "subject": "Re: bestelling",
+    "body": "Hi Youssef,\n\nThanks for your order. Here is what we have:\n\n- 4 bags Hafen Espresso Dark Roast, whole bean\n- 3 cases Haverland Barista Oat, 1 L\n- 2 cases Fresh Whole Milk 3.5%, 1 L\n- 2 bottles Caramel Syrup, 750 ml\n- 1 box Double Wall Hot Cup 8 oz, white\n- 1 box Sip Lid 80 mm, white (fits 8 oz)\n\nDelivery: Friday 16 October 2026.\n\nKind regards,\nHarbor Lane Orders"
+  }
+}
