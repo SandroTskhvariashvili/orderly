@@ -1,0 +1,26 @@
+{
+  "name": "@orderly/video",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "render": "remotion render src/index.ts Orderly out/orderly-1080p.mp4 --codec h264 --crf 16 --pixel-format yuv420p",
+    "render:square": "remotion render src/index.ts OrderlySquare out/orderly-square.mp4 --codec h264 --crf 16",
+    "still": "remotion still src/index.ts Cover out/cover.png"
+  },
+  "dependencies": {
+    "@orderly/ui": "workspace:*",
+    "@remotion/cli": "4.0.533",
+    "@remotion/google-fonts": "4.0.533",
+    "@remotion/tailwind-v4": "4.0.533",
+    "lucide-react": "1.52.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "remotion": "4.0.533"
+  },
+  "devDependencies": {
+    "@types/react": "19.3.0",
+    "tailwindcss": "4.3.3",
+    "typescript": "5.9.3"
+  }
+}

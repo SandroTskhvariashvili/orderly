@@ -1,0 +1,12 @@
+@import "tailwindcss";
+@import "../../../packages/ui/src/theme.css";
+
+@source "../../../packages/ui/src";
+@source "./";
+
+.serif-display {
+  font-family: var(--font-serif);
+  font-optical-sizing: auto;
+  font-variation-settings: "SOFT" 30, "WONK" 0;
+  letter-spacing: -0.025em;
+}
