@@ -1,0 +1,22 @@
+name: live-eval
+
+# Runs ten dev emails through the real model and fails if quality drops.
+# Manual only: it needs an ANTHROPIC_API_KEY secret and costs a few cents.
+on:
+  workflow_dispatch:
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    env:
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm process --only E-002,E-003,E-006,E-009,E-011,E-012,E-013,E-018,E-020,E-021
+      - run: pnpm eval --split all --gate

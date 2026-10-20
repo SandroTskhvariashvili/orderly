@@ -19,22 +19,6 @@ jobs:
       - run: pnpm typecheck
       - run: pnpm test
       - run: pnpm check:data
-
-  smoke-eval:
-    # Runs ten dev emails through the real model and fails if quality drops.
-    # Needs an ANTHROPIC_API_KEY secret; skipped on forks.
-    if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
-    needs: check
-    runs-on: ubuntu-latest
-    env:
-      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-    steps:
-      - uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 22
-          cache: pnpm
-      - run: pnpm install --frozen-lockfile
-      - run: pnpm process --only E-001,E-003,E-005,E-007,E-009,E-011,E-013,E-015,E-017,E-019
-      - run: pnpm eval --split all --gate
+      # Replays the recorded model output through the real pipeline and
+      # fails unless all 60 emails land exactly where the answer key says.
+      - run: pnpm check:samples

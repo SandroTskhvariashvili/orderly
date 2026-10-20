@@ -2,6 +2,8 @@
 
 **Order emails in. Draft orders out. The doubtful ones go to a person, with the reason.**
 
+**[Open the live demo](https://orderly-sandro.vercel.app)** · one week of order emails, already processed. Hover any order line to see the words it came from.
+
 Orderly reads a wholesaler's order inbox. It turns each email into a draft order, checked against the catalog, stock, delivery days and the customer's own history. When something is unclear, unusual or suspicious, it stops and says why.
 
 ![The Orderly console: an order email with its source words highlighted, and the draft order built from it](docs/media/console.png)
